@@ -1,6 +1,6 @@
 [
     "noindex",
     "jsx",
-    "nocss",
-    "notest"
+    "notest",
+    "scss"
 ]

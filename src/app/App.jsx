@@ -1,11 +1,11 @@
 import React from 'react';
-import AppTheme from 'src/app/AppTheme';
-import Avatar from 'src/shared/styled/Avatar';
+import AppTheme from './AppTheme';
+import HeaderToolbarMain from 'shared/layouts/HeaderToolbarMain';
 
 function App() {
   return (
     <AppTheme>
-      <Avatar />
+      <HeaderToolbarMain/>
     </AppTheme>
   );
 }

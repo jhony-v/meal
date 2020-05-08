@@ -7,8 +7,15 @@ const sizeAvatar = props => {
 const Avatar = styled.div`
     width : ${sizeAvatar}px;
     height : ${sizeAvatar}px;
-    border-radius:100%;
+    border-radius : 100%;
+    display: flex;
+    align-items : stretch;
+    justify-content : center;
     background:${props => props.theme.secondaryColors.primaryBackground};
+    & > img {
+        width : 100%;
+        border-radius:100%;
+    }
 `;
 
 export default Avatar;
