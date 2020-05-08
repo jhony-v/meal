@@ -1,9 +1,10 @@
 import React from 'react';
+import AppTheme from 'src/app/AppTheme';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <AppTheme>
+    </AppTheme>
   );
 }
 
