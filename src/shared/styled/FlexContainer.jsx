@@ -7,7 +7,7 @@ const FlexContainer = styled.div(
     props => ({
         alignItems: props.align && props.align,
         justifyContent: props.justify && props.justify,
-        flexDirection: props.direction && props.direction,
+        flexDirection: props.flexDir && props.flexDir,
     })
 )
 

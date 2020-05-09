@@ -8,7 +8,7 @@ const themePrimary = {
     secondaryColors: {
         primaryBackground: "rgb(240,240,240)",
         primaryText: "rgb(30,30,30)",
-        primaryTextSmooth: "rgb(60,60,60)",
+        primaryTextSmooth: "rgba(0,0,0,.6)",
     },
     fontSize: {
         regular: "1rem",
