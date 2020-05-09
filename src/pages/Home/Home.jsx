@@ -1,7 +1,13 @@
 import React from 'react';
+import "./Home.scss";
+import Drawer from 'shared/components/Drawer';
+import HeaderToolbarMain from 'shared/layouts/HeaderToolbarMain';
 
-const Home = () => {
-  return <div>Home</div>;
-};
+function Home() {
+  return (
+    <Drawer appbar={<HeaderToolbarMain/>}>
+    </Drawer>
+    )
+}
 
 export default Home;

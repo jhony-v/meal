@@ -12,6 +12,6 @@ function CardSimple({ children, ...props }) {
 
 CardSimple.propTypes = {
   child: PropTypes.element
-};
+}
 
 export default CardSimple;
