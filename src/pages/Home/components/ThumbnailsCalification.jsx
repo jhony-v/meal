@@ -7,17 +7,17 @@ import { jsx } from "@emotion/core";
 
 /**@jsx jsx */
 
-function ThumbnailsCalification({ img, title, icon : IconComponent }) {
+function ThumbnailsCalification({ img, title, points, icon: IconComponent }) {
     return (
-        <Container margin="20px 0">
+        <Container margin="30px 0">
             <FlexContainer justify="space-between">
                 <ThumbnailOfAvatarCompact
                     img={img}
                     title={title}
                 />
                 <FlexContainer align="center">
-                    <Text weight>35</Text>
-                    {<IconComponent color="orange" css={{marginLeft:5}} />}
+                    <Text weight>{points}</Text>
+                    {<IconComponent color="orange" css={{ marginLeft: 5 }} />}
                 </FlexContainer>
             </FlexContainer>
         </Container>

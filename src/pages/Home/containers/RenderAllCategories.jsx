@@ -8,9 +8,11 @@ const RenderAllCategories = () => {
         <Container>
             {Array(4).fill(0).map((current, index) => (
                 <ThumbnailsCalification
-                    img="https://cdn.pixabay.com/photo/2017/06/02/18/24/fruit-2367029__340.jpg"
+                    key={index}
+                    img={`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
                     title="Frutas naturales"
                     icon={IoIosStar}
+                    points={Math.floor(Math.random()*1000)}
                 />
             ))}
         </Container>
