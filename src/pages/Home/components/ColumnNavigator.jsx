@@ -11,7 +11,7 @@ const css = {
 const ColumnNavigator = {
     CenterViewNews({ children, ...props }) {
         return (
-            <Container sizeWidth="100%" {...css} {...props} >
+            <Container sizeWidth="100%" {...css} {...props}>
                 {children}
             </Container>
         )

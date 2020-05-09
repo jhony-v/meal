@@ -6,6 +6,7 @@ import FlexContainer from 'shared/styled/FlexContainer';
 import ViewCategories from './views/ViewCategories';
 import ColumnNavigator from './components/ColumnNavigator';
 import Ranking from './views/Ranking';
+import NewsPublishedOrdered from './views/NewsPublishedOrdered';
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
 
         <ColumnNavigator.CenterViewNews>
             <Ranking/>  
+            <NewsPublishedOrdered/>
         </ColumnNavigator.CenterViewNews>
       
         <ColumnNavigator.Aside>
