@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from "prop-types";
 import Avatar from 'shared/styled/Avatar';
 
-function AvatarWallpaper({ src }) {
+function AvatarWallpaper({ src, ...props }) {
   return (
-    <Avatar>
+    <Avatar {...props}>
       <img src={src} alt="" />
     </Avatar>
   )

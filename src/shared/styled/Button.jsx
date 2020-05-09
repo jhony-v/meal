@@ -12,13 +12,13 @@ const buttonTheme = (props, typeTheme) => {
 
 //base button theme
 const Button = styled.button`
-    ${props => (
-        props.variant ? buttonTheme(props, 'colors') : buttonTheme(props, 'secondaryColors')
-    )}
     border-radius : 5px;
     padding:10px 20px;
     transition : opacity .1s;
     font-size: ${props=>props.theme.fontSize.regular};
+    ${props => (
+        props.variant ? buttonTheme(props, 'colors') : buttonTheme(props, 'secondaryColors')
+    )}
     &:hover {
         opacity : 0.8;
     }
