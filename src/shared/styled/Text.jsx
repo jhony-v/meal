@@ -10,7 +10,7 @@ const Text = styled.div`
             font-size:${props.size}rem;
         `) :
         css(`
-            font-size : ${props => props.theme.fontSize.regular};
+            font-size : ${props.theme.fontSize.regular};
         `)
     }
 `

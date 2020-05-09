@@ -23,6 +23,7 @@ const Container = styled.div`
     height : ${props => props.sizeHeight && props.sizeHeight};
     background : ${themeBackgroundContainer};
     flex : ${props => props.flex && props.flex};
+    padding : ${props => props.padding && props.padding};
 `
 
 export default Container;
