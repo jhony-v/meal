@@ -21,6 +21,8 @@ const themeBackgroundContainer = props => {
 const Container = styled.div`
     width : ${props => props.sizeWidth || props.sizeWidth};
     height : ${props => props.sizeHeight && props.sizeHeight};
-    background : ${themeBackgroundContainer}
-    `
+    background : ${themeBackgroundContainer};
+    flex : ${props => props.flex && props.flex};
+`
+
 export default Container;
