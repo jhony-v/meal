@@ -9,11 +9,17 @@ const Avatar = styled.div`
     height : ${sizeAvatar}px;
     border-radius : 100%;
     display: flex;
-    align-items : stretch;
+    align-items : center;
     justify-content : center;
-    background:${props => props.theme.secondaryColors.primaryBackground};
+    background:${props => (
+        props.variant === "primary" ?
+            props.theme.colors.primaryBackground :
+            props.theme.secondaryColors.primaryBackground
+    )};
+    color : ${props => props.color};
     & > img {
-        width : 100%;
+        width : ${sizeAvatar}px;
+        height : ${sizeAvatar}px;
         border-radius:100%;
     }
 `;
