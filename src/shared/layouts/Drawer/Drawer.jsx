@@ -22,8 +22,4 @@ Drawer.propTypes = {
   spaceFromTop: PropTypes.string
 }
 
-Drawer.defaultProps = {
-  spaceFromTop: "100px",
-}
-
 export default Drawer;

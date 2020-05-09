@@ -1,25 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, Arial, Helvetica;
-  }
-  
-  button,
-  input,
-  textarea {
-    border-width: 0;
-    background: none;
-    outline: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  img {
-    display: block;
-    object-fit: cover;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica;
+}
+
+button,
+input,
+textarea {
+  border-width: 0;
+  background: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.1);
+}

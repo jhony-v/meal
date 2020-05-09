@@ -19,7 +19,8 @@ const themeBackgroundContainer = props => {
 }
 
 const Container = styled.div`
-    width : 100%;
+    width : ${props => props.sizeWidth || props.sizeWidth};
+    height : ${props => props.sizeHeight && props.sizeHeight};
     background : ${themeBackgroundContainer}
     `
 export default Container;
