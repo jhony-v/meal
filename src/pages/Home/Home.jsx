@@ -2,23 +2,22 @@ import React from 'react';
 import "./Home.scss";
 import Drawer from 'shared/layouts/Drawer';
 import HeaderToolbarMain from 'shared/layouts/HeaderToolbarMain';
-import Container from 'shared/styled/Container';
 import FlexContainer from 'shared/styled/FlexContainer';
 import ViewCategories from './views/ViewCategories';
+import ColumnNavigator from './components/ColumnNavigator';
 
 function Home() {
   return (
     <Drawer appbar={<HeaderToolbarMain />}>
       <FlexContainer sizeHeight="100%" justify="space-between">
-        <Container variantColor="layout" sizeWidth="350px" flex="none">
-                <ViewCategories/>
-        </Container>
-        <Container sizeWidth="100%">
-
-        </Container>
-        <Container variantColor="layout" sizeWidth="350px" flex="none">
-
-        </Container>
+        <ColumnNavigator.Aside>
+          <ViewCategories />
+        </ColumnNavigator.Aside>
+        <ColumnNavigator.CenterViewNews>
+        
+        </ColumnNavigator.CenterViewNews>
+        <ColumnNavigator.Aside>
+        </ColumnNavigator.Aside>
       </FlexContainer>
     </Drawer>
   )
