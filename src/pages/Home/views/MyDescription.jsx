@@ -10,7 +10,7 @@ function MyDescription() {
         <FlexContainer flexDir="column" align="stretch">
             <Container>
                 <Container margin="1em 0">
-                    <Text weight>My desscription</Text>
+                    <Text weight>My description</Text>
                 </Container>
                 <Container margin="1em 0">
                 <Smooth size={0.8}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam labore, numquam recusandae qui commodi distinctio consequatur deleniti architecto veniam sit praesentium cumque.</Smooth>

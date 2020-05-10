@@ -7,24 +7,26 @@ import ViewCategories from './views/ViewCategories';
 import ColumnNavigator from './components/ColumnNavigator';
 import Ranking from './views/Ranking';
 import NewsPublishedOrdered from './views/NewsPublishedOrdered';
+import MyDescription from './views/MyDescription';
 
 function Home() {
   return (
     <Drawer appbar={<HeaderToolbarMain />}>
       <FlexContainer sizeHeight="100%" justify="space-between" className={scss.drawerBody}>
-      
+
         <ColumnNavigator.Aside >
           <ViewCategories />
         </ColumnNavigator.Aside>
 
         <ColumnNavigator.CenterViewNews>
-            <Ranking/>  
-            <NewsPublishedOrdered/>
+          <Ranking />
+          <NewsPublishedOrdered />
         </ColumnNavigator.CenterViewNews>
-      
+
         <ColumnNavigator.Aside>
+          <MyDescription />
         </ColumnNavigator.Aside>
-      
+
       </FlexContainer>
     </Drawer>
   )
