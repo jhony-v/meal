@@ -1,11 +1,11 @@
 import React from 'react';
 import AppTheme from './AppTheme';
-import Home from 'pages/Home/Home';
+import AppRouteNavigator from './AppRouteNavigator';
 
 function App() {
   return (
     <AppTheme>
-      <Home/>
+      <AppRouteNavigator />
     </AppTheme>
   );
 }
