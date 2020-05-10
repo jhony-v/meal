@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { lighten } from "polished";
 
 const Backdrop = styled.div`
     position : absolute;
@@ -7,10 +6,7 @@ const Backdrop = styled.div`
     bottom : 0;
     left : 0;
     right : 0;
-    background : ${props => lighten(
-        props.opacity || 0.3,
-        props.color || 'black'
-    )};
+    background : rgba(0,0,0,${props => props.opacity || 0.5});
 `
 
 export default Backdrop;
