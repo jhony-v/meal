@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Home.scss";
+import scss from "./Home.module.scss";
 import Drawer from 'shared/layouts/Drawer';
 import HeaderToolbarMain from 'shared/layouts/HeaderToolbarMain';
 import FlexContainer from 'shared/styled/FlexContainer';
@@ -11,9 +11,9 @@ import NewsPublishedOrdered from './views/NewsPublishedOrdered';
 function Home() {
   return (
     <Drawer appbar={<HeaderToolbarMain />}>
-      <FlexContainer sizeHeight="100%" justify="space-between">
+      <FlexContainer sizeHeight="100%" justify="space-between" className={scss.drawerBody}>
       
-        <ColumnNavigator.Aside>
+        <ColumnNavigator.Aside >
           <ViewCategories />
         </ColumnNavigator.Aside>
 

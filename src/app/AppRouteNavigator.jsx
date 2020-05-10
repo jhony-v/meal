@@ -1,6 +1,6 @@
 import React, { memo, Suspense } from 'react'
 import { BrowserRouter, Switch } from 'react-router-dom';
-import Routes from "Routes";
+import Routes from "routes";
 
 function AppRouteNavigator() {
     return (

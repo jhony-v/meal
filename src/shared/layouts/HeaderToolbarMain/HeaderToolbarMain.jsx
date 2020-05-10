@@ -9,10 +9,10 @@ import Input from 'shared/styled/Input';
 function HeaderToolbarMain() {
   return (
     <Container variantColor="layout" className={scss.header}>
-      <FlexContainer align="center" justify="space-between">
+      <FlexContainer align="center" justify="space-between" sizeWidth="100%">
         <Avatar variant="primary" color="white">S</Avatar>
         <Input placeholder="Buscar los alimentos..." />
-        <ChipUsername/>
+        <ChipUsername />
       </FlexContainer>
     </Container>
   )

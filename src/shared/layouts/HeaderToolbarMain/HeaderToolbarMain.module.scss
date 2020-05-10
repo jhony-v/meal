@@ -1,3 +1,13 @@
-.header { 
-    padding : 10px 1em;
+@import "sass/main";
+
+.header {
+  padding: 10px 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  @include heightMainHeaderToolbar();
 }

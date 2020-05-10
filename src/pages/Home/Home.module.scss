@@ -1,0 +1,5 @@
+@import "sass/main";
+
+.drawerBody {
+  @include marginTopRespectToHeader();
+}
