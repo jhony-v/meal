@@ -5,7 +5,7 @@ import Routes from "routes";
 function AppRouteNavigator() {
     return (
         <BrowserRouter>
-            <Suspense fallback={<p>cargando...</p>}>
+            <Suspense fallback={<p>Loading files...</p>}>
                 <Switch>
                     <Routes />
                 </Switch>
