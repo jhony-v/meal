@@ -3,8 +3,7 @@ import Container from 'shared/styled/Container';
 import CardPublishedMain from 'shared/components/CardPublishedMain';
 import VideoPlayer from 'shared/components/VideoPlayer';
 
-// {`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
-function NewsPublishedOrdered() {
+function NewsFeedOrdered() {
     return (
         <Container margin="2em 0 0">
             {Array(2).fill(0).map((current, index) => (
@@ -24,4 +23,4 @@ function NewsPublishedOrdered() {
     )
 }
 
-export default NewsPublishedOrdered;
+export default NewsFeedOrdered;
