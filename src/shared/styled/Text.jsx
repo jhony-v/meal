@@ -5,7 +5,7 @@ const Text = styled.div`
     user-select : ${props => props.noSelect && 'none'};
     font-weight : ${props => props.weight && 'bold'};
     color : ${props => props.variant == "light" ? (
-        props.theme.colors.primaryLayoutBackground
+        props.theme.colors.primaryText
     ) : (
             props.theme.secondaryColors.primaryText
         )};

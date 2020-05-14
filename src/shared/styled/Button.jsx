@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
+import Text from "./Text";
 
 //theme button primary the background
 const buttonTheme = (props, typeTheme) => {
@@ -9,6 +10,7 @@ const buttonTheme = (props, typeTheme) => {
     `);
     return theme(props.theme[typeTheme]);
 }
+
 
 //base button theme
 const Button = styled.button`
@@ -21,6 +23,15 @@ const Button = styled.button`
     )}
     &:hover {
         opacity : 0.8;
+    }
+`
+
+export const ButtonHoverPrimary = styled(Button)`
+    &:hover {
+        background : ${props=>props.theme.colors.primaryBackground};
+        > * {
+            color : ${props=>props.theme.colors.primaryText};
+        }
     }
 `
 
