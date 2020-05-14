@@ -5,6 +5,7 @@ import FlexContainer from "shared/styled/FlexContainer";
 import Avatar from 'shared/styled/Avatar';
 import ChipUsername from 'shared/containers/ChipUsername';
 import Input from 'shared/styled/Input';
+import HeaderLinksNavigation from './dependencies/HeaderLinksNavigation';
 
 function HeaderToolbarMain() {
   return (
@@ -12,6 +13,7 @@ function HeaderToolbarMain() {
       <FlexContainer align="center" justify="space-between" sizeWidth="100%">
         <Avatar variant="primary" color="white">S</Avatar>
         <Input placeholder="Buscar los alimentos..." />
+        <HeaderLinksNavigation/>
         <ChipUsername />
       </FlexContainer>
     </Container>
