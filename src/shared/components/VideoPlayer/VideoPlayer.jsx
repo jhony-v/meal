@@ -1,29 +1,42 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import FlexContainer from 'shared/styled/FlexContainer';
 import Backdrop from 'shared/styled/Backdrop';
-import { IoIosPlayCircle } from 'react-icons/io';
+import useVideoPlayer from './useVideoPlayer';
+import VideoPlayerTextArea from './dependencies/VidePlayerTextAria';
+import VideoPlayerButton from './dependencies/VideoPlayerButton';
 import { jsx } from "@emotion/core"
-import Text from 'shared/styled/Text';
 
 /**@jsx jsx */
 
-const VideoPlayer = () => {
+const VideoPlayer = ({ src, detailVideo }) => {
+
+  const video = useRef(null);
+  const { isPlaying, onTogglePlayingVideo } = useVideoPlayer(video);
+  const opacityBackdrop = isPlaying ? -1 : 0.6;
+  const opacityText = { opacity: isPlaying ? 0 : 1 };
+
   return (
     <FlexContainer css={{ position: "relative" }}>
-      <video src="" poster="https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706__340.jpg" width="100%" />
-      <Backdrop opacity={0.4} >
+      <video src={src} ref={video} width="100%" preload="true" />
+      <Backdrop opacity={opacityBackdrop} >
         <FlexContainer flexDir="column" align="center" justify="center" sizeHeight="100%">
-          <IoIosPlayCircle color="white" size={50} />
-          <Text>food app</Text>
+          <VideoPlayerButton isPlaying={isPlaying} onClick={onTogglePlayingVideo} />
+          <VideoPlayerTextArea animate={opacityText}>{detailVideo}</VideoPlayerTextArea>
         </FlexContainer>
       </Backdrop>
     </FlexContainer>
   )
 };
 
-VideoPlayer.propTypes = {
+VideoPlayer.defaultProps = {
+  src: "",
+  detailVideo: ""
+}
 
+VideoPlayer.propTypes = {
+  src: PropTypes.string.isRequired,
+  detailVideo: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
 };
 
 export default VideoPlayer;
