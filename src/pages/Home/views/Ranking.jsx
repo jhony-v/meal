@@ -18,6 +18,7 @@ const Ranking = () => {
                             key={index}
                             image={`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
                             text="Arroz con pollo"
+                            isOutstanding
                         />
                     ))}
                 </FlexContainer>

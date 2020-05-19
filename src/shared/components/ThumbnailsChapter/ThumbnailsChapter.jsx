@@ -9,7 +9,13 @@ import { AvatarFeaturedPrimary } from 'shared/styled/Avatar';
 function ThumbnailsChapter({ text, image, sizeImage, isOutstanding }) {
   return (
     <FlexContainer flexDir="column" align="center" >
-      <AvatarWallpaper sizeAvatar={sizeImage} image={image} />
+      {isOutstanding ? (
+        <AvatarFeaturedPrimary>
+          <AvatarWallpaper sizeAvatar={sizeImage} image={image} />
+        </AvatarFeaturedPrimary>
+      ) : (
+          <AvatarWallpaper sizeAvatar={sizeImage} image={image} />
+        )}
       <Container margin="10px 0 0">
         <Text weight size="small">{text}</Text>
       </Container>
