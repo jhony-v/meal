@@ -1,5 +1,6 @@
 .drawer {
     height: 100vh;
-    display: grid;
-    grid-template-rows: min-content auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }

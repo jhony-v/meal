@@ -11,14 +11,14 @@ const css = {
 const ColumnNavigator = {
     CenterViewNews({ children, ...props }) {
         return (
-            <Container sizeWidth="100%" margin="0 2em" {...css} {...props}>
+            <Container sizeWidth="620px" margin="0 2em" flex="none"  {...css} {...props}>
                 {children}
             </Container>
         )
     },
     Aside({ children, ...props }) {
         return (
-            <Container variantColor="layout" sizeWidth="350px" flex="none" {...css} {...props} >
+            <Container variantColor="layout" sizeWidth="100%"  {...css} {...props} >
                 {children}
             </Container>
         )

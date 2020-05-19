@@ -2,8 +2,8 @@ import React from 'react'
 import CardSimple from 'shared/components/CardSimple';
 import Text from 'shared/styled/Text';
 import Container from 'shared/styled/Container';
-import FlexContainer from 'shared/styled/FlexContainer';
 import ThumbnailsChapter from 'shared/components/ThumbnailsChapter';
+import ScrollBarList from 'shared/styled/ScrollBarList';
 
 const Ranking = () => {
     return (
@@ -12,16 +12,18 @@ const Ranking = () => {
                 <Text weight >Los mas visitados</Text>
             </Container>
             <Container margin="1em">
-                <FlexContainer align="center" justify="space-between">
-                    {Array(4).fill(0).map((current, index) => (
-                        <ThumbnailsChapter
-                            key={index}
-                            image={`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
-                            text="Arroz con pollo"
-                            isOutstanding
-                        />
-                    ))}
-                </FlexContainer>
+                        <ScrollBarList>
+                            {Array(20).fill(0).map((current, index) => (
+                                <Container margin="0 1em">
+                                    <ThumbnailsChapter
+                                        key={index}
+                                        image={`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
+                                        text="Arroz con pollo"
+                                        isOutstanding
+                                    />
+                                </Container>
+                            ))}
+                        </ScrollBarList>
             </Container>
         </CardSimple>
     )
