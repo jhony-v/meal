@@ -1,10 +1,10 @@
 import React from "react";
 import { ThemeProvider } from "emotion-theming";
-import themePrimary from "../themes/primary";
+import primary from "../themes/primary";
 
 function AppTheme({ children }) {
     return (
-        <ThemeProvider theme={themePrimary}>
+        <ThemeProvider theme={primary}>
             {children}
         </ThemeProvider>
     );

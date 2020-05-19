@@ -7,13 +7,13 @@ import { jsx } from "@emotion/core";
 
 /**@jsx jsx */
 
-function ThumbnailOfAvatarCompact({ img, title, detail }) {
+function ThumbnailOfAvatarCompact({ image, title, detail }) {
   return (
     <FlexContainer align="center">
-      <AvatarWallpaper src={img} css={{ marginRight: 10 }} />
+      <AvatarWallpaper image={image} css={{ marginRight: 10 }} />
       <FlexContainer justify="center" flexDir="column">
-        <Text noSelect weight size={0.9}>{title}</Text>
-        <Smooth size={.8}>{detail}</Smooth>
+        <Text noSelect weight size="small">{title}</Text>
+        <Smooth size="small2" >{detail}</Smooth>
       </FlexContainer>
     </FlexContainer>
   )

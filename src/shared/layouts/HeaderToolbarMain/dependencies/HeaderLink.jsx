@@ -11,7 +11,7 @@ import { jsx } from "@emotion/core"
 const HeaderLink = ({ to, icon: IconLink, children, selected, ...props }) => {
     let theme = useTheme();
     let selectedColor = selected && {
-        css: { color: theme.colors.primaryBackground }
+        css: { color: theme.colors.primary }
     }
     let selectedColorContainer = selected && {
         css: {
@@ -27,7 +27,7 @@ const HeaderLink = ({ to, icon: IconLink, children, selected, ...props }) => {
                 <FlexContainer justify="center" {...selectedColorContainer}>
                     <IconLink {...selectedColor} />
                     <Container margin="0 0 0 10px">
-                        <Text size={0.8} weight {...selectedColor} ><Span>{children}</Span></Text>
+                        <Text size="small2" weight {...selectedColor} ><Span>{children}</Span></Text>
                     </Container>
                 </FlexContainer>
             </Smooth>

@@ -6,7 +6,7 @@ import RenderAllCategories from '../containers/RenderAllCategories';
 const ViewCategories = () => {
     return (
         <Fragment>
-            <Text weight >Categories</Text>
+            <Text weight size="big">Categories</Text>
             <Container margin="1em auto">
                     <RenderAllCategories/>
             </Container>

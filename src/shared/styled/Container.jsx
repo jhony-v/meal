@@ -3,17 +3,13 @@ import { css } from "@emotion/core";
 
 // theme container
 const themeBackgroundContainer = props => {
-    const {
-        theme: {
-            colors,
-        },
-        variantColor
-    } = props;
+    const { colors } = props.theme;
+    const { variantColor } = props;
     switch (variantColor) {
         case "page":
-            return colors.primaryPageBackground;
+            return colors.grayDark1;
         case "layout":
-            return colors.primaryLayoutBackground;
+            return colors.light;
         default:
             return null;
     }

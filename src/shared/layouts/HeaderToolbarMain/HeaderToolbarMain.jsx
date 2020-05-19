@@ -12,8 +12,8 @@ function HeaderToolbarMain() {
     <Container variantColor="layout" className={scss.header}>
       <FlexContainer align="center" justify="space-between" sizeWidth="100%">
         <Avatar variant="primary" color="white">S</Avatar>
-        <Input placeholder="Buscar los alimentos..." />
-        <HeaderLinksNavigation/>
+        <Input placeholder="Buscar los alimentos..." sizeWidth="30%" />
+        <HeaderLinksNavigation />
         <ChipUsername />
       </FlexContainer>
     </Container>

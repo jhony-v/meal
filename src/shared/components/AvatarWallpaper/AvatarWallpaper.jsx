@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from "prop-types";
 import Avatar from 'shared/styled/Avatar';
 
-function AvatarWallpaper({ src, ...props }) {
+function AvatarWallpaper({ image, ...props }) {
   return (
     <Avatar {...props}>
-      <img src={src} alt="" />
+      <img src={image} alt="" />
     </Avatar>
   )
 };
 
 AvatarWallpaper.propTypes = {
-  src: PropTypes.string.isRequired
+  image: PropTypes.string.isRequired
 }
 
 AvatarWallpaper.defaultProps = {
-  src: ""
+  image: ""
 }
 
 export default AvatarWallpaper;

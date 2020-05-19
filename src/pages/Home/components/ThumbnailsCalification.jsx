@@ -7,12 +7,12 @@ import { jsx } from "@emotion/core";
 
 /**@jsx jsx */
 
-function ThumbnailsCalification({ img, title, points, icon: IconComponent }) {
+function ThumbnailsCalification({ image, title, points, icon: IconComponent }) {
     return (
         <Container margin="30px 0">
             <FlexContainer justify="space-between">
                 <ThumbnailOfAvatarCompact
-                    img={img}
+                    image={image}
                     title={title}
                 />
                 <FlexContainer align="center">

@@ -4,30 +4,31 @@ import Text from 'shared/styled/Text';
 import Container from 'shared/styled/Container';
 import FlexContainer from 'shared/styled/FlexContainer';
 import AvatarWallpaper from '../AvatarWallpaper';
+import { AvatarFeaturedPrimary } from 'shared/styled/Avatar';
 
-function ThumbnailsCategory({ text, img, sizeImage }) {
+function ThumbnailsChapter({ text, image, sizeImage, isOutstanding }) {
   return (
     <FlexContainer flexDir="column" align="center" >
-      <AvatarWallpaper
-        size={sizeImage}
-        src={img} />
+      <AvatarWallpaper sizeAvatar={sizeImage} image={image} />
       <Container margin="10px 0 0">
-        <Text weight size={.8}>{text}</Text>
+        <Text weight size="small">{text}</Text>
       </Container>
     </FlexContainer>
   )
 };
 
-ThumbnailsCategory.propTypes = {
+ThumbnailsChapter.propTypes = {
   text: PropTypes.string,
-  img: PropTypes.string,
+  image: PropTypes.string,
   sizeImage: PropTypes.number,
+  isOutstanding: PropTypes.bool
 }
 
-ThumbnailsCategory.defaultProps = {
+ThumbnailsChapter.defaultProps = {
   text: "",
-  img: "",
-  sizeImage: 90
+  image: "",
+  sizeImage: 90,
+  isOutstanding: false
 }
 
-export default ThumbnailsCategory;
+export default ThumbnailsChapter;

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 const defaultBorderRadius = "100%";
 const sizeAvatar = props => {
-    return props.size ? props.size : 40
+    return props.sizeAvatar ? props.sizeAvatar : 40
 }
 
 const Avatar = styled.div`
@@ -14,8 +14,8 @@ const Avatar = styled.div`
     border-radius : ${props => props.radius || defaultBorderRadius};
     background:${props => (
         props.variant === "primary" ?
-            props.theme.colors.primaryBackground :
-            props.theme.secondaryColors.primaryBackground
+            props.theme.colors.primary :
+            props.theme.colors.grayLight1
     )};
     color : ${props => props.color};
     & > img {
@@ -24,5 +24,11 @@ const Avatar = styled.div`
         border-radius:${props => props.radius || defaultBorderRadius};
     }
 `;
+
+export const AvatarFeaturedPrimary = styled.span`
+    border: 2px solid ${props => props.theme.colors.primary};
+    padding: 5px;
+    border-radius:100%;
+`
 
 export default Avatar;

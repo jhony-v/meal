@@ -3,7 +3,7 @@ import CardSimple from 'shared/components/CardSimple';
 import Text from 'shared/styled/Text';
 import Container from 'shared/styled/Container';
 import FlexContainer from 'shared/styled/FlexContainer';
-import ThumbnailsCategory from 'shared/components/ThumbnailsCategory';
+import ThumbnailsChapter from 'shared/components/ThumbnailsChapter';
 
 const Ranking = () => {
     return (
@@ -14,9 +14,9 @@ const Ranking = () => {
             <Container margin="1em">
                 <FlexContainer align="center" justify="space-between">
                     {Array(4).fill(0).map((current, index) => (
-                        <ThumbnailsCategory
+                        <ThumbnailsChapter
                             key={index}
-                            img={`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
+                            image={`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
                             text="Arroz con pollo"
                         />
                     ))}

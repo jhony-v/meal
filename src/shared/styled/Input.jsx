@@ -3,7 +3,8 @@ import styled from "@emotion/styled";
 const Input = styled.input`
     padding : 10px;
     border-radius : 20px;
-    background : ${props => props.theme.secondaryColors.primaryBackground};
+    width:${props => props.sizeWidth };
+    background : ${props => props.theme.colors.grayLight1};
 `
 
 export default Input;

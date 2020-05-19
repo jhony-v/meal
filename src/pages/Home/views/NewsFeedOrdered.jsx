@@ -9,7 +9,7 @@ function NewsFeedOrdered() {
             {Array(2).fill(0).map((current, index) => (
                 <Container margin="10px 0 0" key={index}>
                     <CardPublishedMain
-                        srcImg={`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
+                        image={`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
                         cardTitle="Jhony Vega | Programmer"
                         cardDetailTitle="hace 10 horas"
                         detailContext={"Lorem ipsum dolor sit, amet consectetur aquam, laborum rerum soluta dicta tempore officiis eveniet, libero magnam expe."}>

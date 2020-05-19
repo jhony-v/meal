@@ -10,7 +10,7 @@ const ChipUsername = () => {
   return (
     <FlexContainer align="center" justify="center">
       <Text weight>Jhony vega</Text>
-      <AvatarWallpaper src="https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774__340.jpg" css={{marginLeft:10}} />
+      <AvatarWallpaper image="https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774__340.jpg" css={{marginLeft:10}} />
     </FlexContainer>
   )
 };

@@ -6,23 +6,18 @@ import Text from 'shared/styled/Text';
 import Container from 'shared/styled/Container';
 import PropTypes from "prop-types";
 
-function CardPublishedMain({
-  srcImg, cardTitle, cardDetailTitle, detailContext, publishedFooter,
-  children, ...props
-}) {
+function CardPublishedMain({ image, cardTitle, cardDetailTitle, detailContext, publishedFooter, children, ...props }) {
   return (
     <CardSimple {...props}>
       <ThumbnailOfAvatarCompact
-        img={srcImg}
+        image={image}
         title={cardTitle}
         detail={cardDetailTitle} />
       {children && (
         <Container>{children}</Container>
       )}
       <Container margin="1em 0">
-        <Text size={.8} >
-          <Smooth>{detailContext}</Smooth>
-        </Text>
+        <Text><Smooth size="small">{detailContext}</Smooth></Text>
       </Container>
       {publishedFooter && (
         <Container>{publishedFooter}</Container>
@@ -32,7 +27,7 @@ function CardPublishedMain({
 };
 
 CardPublishedMain.propTypes = {
-  srcImg: PropTypes.string,
+  image: PropTypes.string,
   cardTitle: PropTypes.string,
   cardDetailTitle: PropTypes.string,
   detailContext: PropTypes.string,
