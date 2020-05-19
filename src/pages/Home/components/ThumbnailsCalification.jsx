@@ -16,7 +16,7 @@ function ThumbnailsCalification({ img, title, points, icon: IconComponent }) {
                     title={title}
                 />
                 <FlexContainer align="center">
-                    <Text weight>{points}</Text>
+                    <Text weight size={0.9}>{points}</Text>
                     {<IconComponent color="orange" css={{ marginLeft: 5 }} />}
                 </FlexContainer>
             </FlexContainer>

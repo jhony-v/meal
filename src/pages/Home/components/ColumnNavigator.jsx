@@ -5,13 +5,13 @@ import { jsx } from "@emotion/core"
 /**@jsx jsx */
 
 const css = {
-    padding: "1em"
+    padding: "1em",
 }
 
 const ColumnNavigator = {
     CenterViewNews({ children, ...props }) {
         return (
-            <Container sizeWidth="100%" {...css} {...props}>
+            <Container sizeWidth="100%" margin="0 2em" {...css} {...props}>
                 {children}
             </Container>
         )

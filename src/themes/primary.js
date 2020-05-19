@@ -4,6 +4,7 @@ const themePrimary = {
         primaryText: "white",
         primaryPageBackground: "#FCFCFC",
         primaryLayoutBackground: "white",
+        primarySilver : "gray"
     },
     secondaryColors: {
         primaryBackground: "rgb(240,240,240)",
@@ -12,6 +13,7 @@ const themePrimary = {
     },
     fontSize: {
         regular: "1rem",
+        smallBig : ".9em",
         small: ".8rem",
     },
 }
