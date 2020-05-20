@@ -1,4 +1,18 @@
 import styled from "@emotion/styled";
+import { css } from "@emotion/core";
+
+const backgroundButton = (props) => {
+    return (props.variant == "primary") ?
+        css(`
+            background:${props.theme.colors.primary};
+            color:${props.theme.colors.light};`
+        )
+        :
+        css(`
+            background:${props.theme.colors.grayLight1};
+            color:${props.theme.colors.grayDark3};
+        `)
+}
 
 //base button theme
 const UIButton = styled.button`
@@ -6,18 +20,13 @@ const UIButton = styled.button`
     padding:10px 20px;
     transition : opacity .1s;
     font-size: ${props => props.theme.fontSize.regular};
+    ${backgroundButton}
     &:hover {
         opacity : 0.8;
     }
 `
 
 export const UIButtonHoverPrimary = styled(UIButton)`
-    &:hover {
-        background : ${props => props.theme.colors.primary};
-        > * {
-            color : ${props => props.theme.colors.light};
-        }
-    }
 `
 
 export default UIButton;
