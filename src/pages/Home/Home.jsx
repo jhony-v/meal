@@ -8,6 +8,7 @@ import Ranking from './dependencies/RankingFeeds';
 import ViewCategories from './dependencies/CategoriesEats';
 import NewsFeedOrdered from './dependencies/NewsFeedOrdered';
 import MyDescription from './dependencies/MyDescription';
+import SpectrumTooltip from "shared/components/smarts/SpectrumTooltip";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
 
         <ColumnNavigator.Aside >
           <ViewCategories />
+          <SpectrumTooltip/>
         </ColumnNavigator.Aside>
 
         <ColumnNavigator.CenterViewNews>

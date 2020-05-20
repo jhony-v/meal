@@ -15,6 +15,13 @@ const primary = {
         big: 1.1,
         big2: 1.2,
         big3: 1.3,
+    },
+    icons: {
+        color: {
+            red: "#FD2B83",
+            blue: "#0998D6",
+            yellow: "#FBD71B"
+        }
     }
 }
 
