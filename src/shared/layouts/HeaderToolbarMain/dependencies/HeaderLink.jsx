@@ -1,10 +1,9 @@
-import Container from 'shared/styled/Container'
-import FlexContainer from 'shared/styled/FlexContainer'
-import Smooth from 'shared/styled/Smooth'
+import UIContainer from 'shared/styled/UIContainer'
+import UIFlexContainer from 'shared/styled/UIFlexContainer'
+import UITextSmooth from 'shared/styled/UITextSmooth'
+import UIText from 'shared/styled/UIText'
 import { useTheme } from 'emotion-theming'
 import { Link } from 'react-router-dom'
-import Text from 'shared/styled/Text'
-import Span from 'shared/styled/Span'
 import { jsx } from "@emotion/core"
 /**@jsx jsx*/
 
@@ -23,14 +22,14 @@ const HeaderLink = ({ to, icon: IconLink, children, selected, ...props }) => {
 
     return (
         <Link to={to}>
-            <Smooth>
-                <FlexContainer justify="center" {...selectedColorContainer}>
+            <UITextSmooth>
+                <UIFlexContainer justify="center" {...selectedColorContainer}>
                     <IconLink {...selectedColor} />
-                    <Container margin="0 0 0 10px">
-                        <Text size="small2" weight {...selectedColor} ><Span>{children}</Span></Text>
-                    </Container>
-                </FlexContainer>
-            </Smooth>
+                    <UIContainer margin="0 0 0 10px">
+                        <UIText size="small2" weight {...selectedColor} >{children}</UIText>
+                    </UIContainer>
+                </UIFlexContainer>
+            </UITextSmooth>
         </Link>
     );
 }

@@ -1,19 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Container from 'shared/styled/Container';
+import UIContainer from 'shared/styled/UIContainer';
 import scss from "./Drawer.module.scss";
 
 function Drawer({ appbar, children }) {
   return (
-    <Container className={scss.drawer}>
-      {appbar && (
-        <Container>{appbar}</Container>
-      )}
-      {children && (
-        <Container>{children}</Container>
-      )}
-    </Container>
-  );
+    <UIContainer className={scss.drawer}>
+      {appbar && <UIContainer>{appbar}</UIContainer>}
+      {children && <UIContainer>{children}</UIContainer>}
+    </UIContainer>
+  )
 }
 
 Drawer.propTypes = {

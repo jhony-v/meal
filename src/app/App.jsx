@@ -7,7 +7,7 @@ function App() {
     <AppTheme>
       <AppRouteNavigator />
     </AppTheme>
-  );
+  )
 }
 
 export default App;

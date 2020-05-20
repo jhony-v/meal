@@ -2,17 +2,17 @@ import React from 'react';
 import scss from "./Home.module.scss";
 import Drawer from 'shared/layouts/Drawer';
 import HeaderToolbarMain from 'shared/layouts/HeaderToolbarMain';
-import FlexContainer from 'shared/styled/FlexContainer';
-import ViewCategories from './views/ViewCategories';
-import ColumnNavigator from './components/ColumnNavigator';
-import Ranking from './views/Ranking';
-import NewsFeedOrdered from './views/NewsFeedOrdered';
-import MyDescription from './views/MyDescription';
+import UIFlexContainer from 'shared/styled/UIFlexContainer';
+import ColumnNavigator from './dependencies/components/ColumnNavigator';
+import Ranking from './dependencies/RankingFeeds';
+import ViewCategories from './dependencies/CategoriesEats';
+import NewsFeedOrdered from './dependencies/NewsFeedOrdered';
+import MyDescription from './dependencies/MyDescription';
 
 function Home() {
   return (
     <Drawer appbar={<HeaderToolbarMain />}>
-      <FlexContainer sizeHeight="100%" justify="space-between" className={scss.drawerBody}>
+      <UIFlexContainer sizeHeight="100%" justify="space-between" className={scss.drawerBody}>
 
         <ColumnNavigator.Aside >
           <ViewCategories />
@@ -27,7 +27,7 @@ function Home() {
           <MyDescription />
         </ColumnNavigator.Aside>
 
-      </FlexContainer>
+      </UIFlexContainer>
     </Drawer>
   )
 }

@@ -7,7 +7,7 @@ function AppTheme({ children }) {
         <ThemeProvider theme={primary}>
             {children}
         </ThemeProvider>
-    );
+    )
 }
 
 export default AppTheme;
