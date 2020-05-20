@@ -20,6 +20,7 @@ const UIButton = styled.button`
     padding:10px 20px;
     transition : opacity .1s;
     font-size: ${props => props.theme.fontSize.regular};
+    width:${props => props.sizeWidth && props.sizeWidth};
     ${backgroundButton}
     &:hover {
         opacity : 0.8;
