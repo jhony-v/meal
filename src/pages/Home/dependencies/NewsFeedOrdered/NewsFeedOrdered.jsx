@@ -12,6 +12,7 @@ function NewsFeedOrdered() {
                     avatarTitle="Jhony Vega"
                     avatarDetail="publicado hace 10 dias"
                     detail="Lorem ipsum dolor sit, amet consectetur aqum soluta dicta tempore officiis eveniet, libero magnam expe."
+                    detailVideo="food app new"
                     video="//player.vimeo.com/external/408416886.hd.mp4?s=33e282afa3e7a14a53213130083de7b7a2327da9&profile_id=174" />
             ))}
         </UIContainer>
