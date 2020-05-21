@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import UIContainer from 'shared/styled/UIContainer'
 import { AnimatePresence } from 'framer-motion'
 
-const HoverElement = ({ elementHover, elementHoverView }) => {
+const HoverElement = ({ elementHover, elementHoverView, elementViewProps }) => {
     let [visible, setVisible] = useState(false);
     let setShowVisible = useCallback(() => setVisible(true), [visible]);
     let setHideVisible = useCallback(() => setVisible(false), [visible]);
@@ -29,6 +29,7 @@ const HoverElement = ({ elementHover, elementHoverView }) => {
                         initial="hide"
                         animate="show"
                         exit="hide"
+                        {...elementViewProps}
                     >
                         {elementHoverView}
                     </UIContainer>
