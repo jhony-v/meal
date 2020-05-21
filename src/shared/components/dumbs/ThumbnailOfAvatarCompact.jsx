@@ -4,18 +4,20 @@ import AvatarWallpaper from './AvatarWallpaper';
 import UIText from 'shared/styled/UIText';
 import UITextSmooth from 'shared/styled/UITextSmooth';
 import { jsx } from "@emotion/core";
-
+import UIContainer from 'shared/styled/UIContainer';
+import SpectrumTooltip from '../smarts/SpectrumTooltip/SpectrumTooltip';
+  
 /**@jsx jsx */
 
-function ThumbnailOfAvatarCompact({ image, title, detail }) {
+function ThumbnailOfAvatarCompact({ image, title, detail, ...props }) {
   return (
-    <UIFlexContainer align="center">
-      <AvatarWallpaper image={image} css={{ marginRight: 10 }} />
-      <UIFlexContainer justify="center" flexDir="column">
-        <UIText noSelect weight size="small">{title}</UIText>
-        <UITextSmooth size="small2" >{detail}</UITextSmooth>
+      <UIFlexContainer align="center" {...props}>
+        <AvatarWallpaper image={image} css={{ marginRight: 10 }} />
+        <UIFlexContainer justify="center" flexDir="column">
+          <UIText noSelect weight size="small">{title}</UIText>
+          <UITextSmooth size="small2" >{detail}</UITextSmooth>
+        </UIFlexContainer>
       </UIFlexContainer>
-    </UIFlexContainer>
   )
 };
 

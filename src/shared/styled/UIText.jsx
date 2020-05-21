@@ -7,7 +7,7 @@ const UIText = styled.span`
     user-select : ${props => props.noSelect && 'none'};
     font-weight : ${props => props.weight && 'bold'};
     text-align: ${props => props.textAlign && props.textAlign};
-    color : ${props => props.variant == "light" ? (
+    color : ${props => props.variant === "light" ? (
         props.theme.colors.light
     ) : (
             props.theme.colors.grayDark3

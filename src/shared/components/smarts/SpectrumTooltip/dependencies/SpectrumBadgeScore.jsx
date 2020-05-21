@@ -14,7 +14,7 @@ export default function SpectrumBadgeScore({ score, title, color }) {
     return (
         <UIFlexContainer flexDir="column" align="center">
             <UIText css={cssScore} weight>{score}</UIText>
-            <UITextSmooth>{title}</UITextSmooth>
+            <UITextSmooth size="small">{title}</UITextSmooth>
         </UIFlexContainer>
     )
 }

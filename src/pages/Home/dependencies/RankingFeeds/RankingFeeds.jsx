@@ -14,7 +14,7 @@ function RankingFeeds(){
             <UIContainer margin="1em">
                 <UIScrollBarList >
                     {Array(20).fill(0).map((current, index) => (
-                        <UIContainer margin="0 1em">
+                        <UIContainer margin="0 1em" key={index}>
                             <ThumbnailsChapter
                                 key={index}
                                 image={`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
