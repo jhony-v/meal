@@ -22,6 +22,7 @@ const UIAvatar = styled.div`
         width : ${sizeAvatar}px;
         height : ${sizeAvatar}px;
         border-radius:${props => props.radius || defaultBorderRadius};
+        -webkit-user-drag:none;
     }
 `;
 

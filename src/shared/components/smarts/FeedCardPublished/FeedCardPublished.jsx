@@ -4,7 +4,7 @@ import CardPublishedMain from 'shared/components/dumbs/CardPublishedMain';
 import VideoPlayer from 'shared/components/smarts/VideoPlayer';
 import FeedCardHeader from './dependencies/FeedCardHeader';
 
-const FeedCardPulished = ({ avatarImage, avatarTitle, avatarDetail, detail, video, detailVideo }) => {
+const FeedCardPublished = ({ avatarImage, avatarTitle, avatarDetail, detail, video, detailVideo }) => {
     return (
         <UIContainer margin="10px 0 0">
             <CardPublishedMain
@@ -24,4 +24,4 @@ const FeedCardPulished = ({ avatarImage, avatarTitle, avatarDetail, detail, vide
         </UIContainer>)
 }
 
-export default FeedCardPulished;
+export default FeedCardPublished;

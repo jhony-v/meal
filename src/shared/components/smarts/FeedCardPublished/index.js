@@ -1,1 +1,1 @@
-export { default } from "./FeedCardPulished";
+export { default } from "./FeedCardPublished";
