@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
 const backgroundButton = (props) => {
-    return (props.variant == "primary") ?
+    return (props.variant === "primary") ?
         css(`
             background:${props.theme.colors.primary};
             color:${props.theme.colors.light};`

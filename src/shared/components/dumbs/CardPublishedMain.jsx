@@ -1,18 +1,14 @@
 import React from 'react';
 import CardSimple from './CardSimple';
-import ThumbnailOfAvatarCompact from './ThumbnailOfAvatarCompact';
 import UITextSmooth from 'shared/styled/UITextSmooth';
 import UIText from 'shared/styled/UIText';
 import UIContainer from 'shared/styled/UIContainer';
 import PropTypes from "prop-types";
 
-function CardPublishedMain({ image, cardTitle, cardDetailTitle, detailContext, publishedFooter, children, ...props }) {
+function CardPublishedMain({ detailContext, publishedHeader, publishedFooter, children, ...props }) {
   return (
     <CardSimple {...props}>
-      <ThumbnailOfAvatarCompact
-        image={image}
-        title={cardTitle}
-        detail={cardDetailTitle} />
+      {publishedHeader}
       {children && (
         <UIContainer>{children}</UIContainer>
       )}
@@ -24,14 +20,12 @@ function CardPublishedMain({ image, cardTitle, cardDetailTitle, detailContext, p
       )}
     </CardSimple>
   )
-};
+}
 
 CardPublishedMain.propTypes = {
-  image: PropTypes.string,
-  cardTitle: PropTypes.string,
-  cardDetailTitle: PropTypes.string,
   detailContext: PropTypes.string,
   publishedFooter: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  publishedHeader: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
   children: PropTypes.element
 }
 

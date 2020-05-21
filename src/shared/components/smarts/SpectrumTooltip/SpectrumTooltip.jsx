@@ -6,12 +6,12 @@ import UIContainer from 'shared/styled/UIContainer';
 import UIButton from 'shared/styled/UIButton';
 import SpectrumChapterProfile from './dependencies/SpectrumChapterProfile';
 
-const SpectrumTooltip = ({...props}) => {
+const SpectrumTooltip = ({ image, titleImage, ...props }) => {
   return (
     <UIContainer sizeWidth="250px" {...props}>
-      <CardSimple isTooltip sizeTail={20} shadow="0 10px 20px rgba(0,0,0,.1)">
+      <CardSimple isTooltip sizeTail={20} shadow="0 20px 30px rgba(0,0,0,.1)">
         <UIFlexContainer flexDir="column">
-          <SpectrumChapterProfile image="https://cdn.pixabay.com/photo/2020/01/12/16/57/madrid-4760441__340.jpg" text="Jhony vega" />
+          <SpectrumChapterProfile image={image} text={titleImage} />
           <UIFlexContainer justify="space-between">
             <SpectrumBadgeScore score={232} title="Foods" color="red" />
             <SpectrumBadgeScore score={190} title="Meals" color="blue" />
