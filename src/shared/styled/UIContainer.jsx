@@ -15,7 +15,7 @@ const themeBackgroundContainer = props => {
     }
 }
 
-const UIContainer = motion.custom(styled.div`
+export const UIContainer = motion.custom(styled.div`
     position : ${props => props.position && props.position};
     width : ${props => props.sizeWidth || props.sizeWidth};
     height : ${props => props.sizeHeight && props.sizeHeight};
@@ -29,5 +29,3 @@ const UIContainer = motion.custom(styled.div`
     left : ${props => props.left && props.left};
     right : ${props => props.right && props.right};
 `)
-
-export default UIContainer;

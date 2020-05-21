@@ -1,9 +1,7 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
-
-
-const UIText = styled.span`
+export const UIText = styled.span`
     user-select : ${props => props.noSelect && 'none'};
     font-weight : ${props => props.weight && 'bold'};
     text-align: ${props => props.textAlign && props.textAlign};
@@ -21,5 +19,3 @@ const UIText = styled.span`
         `)
     }
 `
-
-export default UIText;

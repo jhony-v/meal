@@ -1,5 +1,5 @@
 import React from 'react'
-import UIContainer from 'shared/styled/UIContainer';
+import { UIContainer } from 'shared/styled/UIContainer';
 import { jsx } from "@emotion/core"
 
 /**@jsx jsx */

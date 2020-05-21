@@ -1,8 +1,8 @@
 import React from 'react';
-import UIFlexContainer from 'shared/styled/UIFlexContainer';
+import { UIFlexContainer } from 'shared/styled/UIFlexContainer';
 import AvatarWallpaper from './AvatarWallpaper';
-import UIText from 'shared/styled/UIText';
-import UITextSmooth from 'shared/styled/UITextSmooth';
+import { UIText } from 'shared/styled/UIText';
+import { UITextSmooth } from 'shared/styled/UITextSmooth';
 import { jsx } from "@emotion/core";
 
 /**@jsx jsx */

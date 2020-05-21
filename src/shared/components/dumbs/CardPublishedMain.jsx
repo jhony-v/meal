@@ -1,8 +1,8 @@
 import React from 'react';
 import CardSimple from './CardSimple';
-import UITextSmooth from 'shared/styled/UITextSmooth';
-import UIText from 'shared/styled/UIText';
-import UIContainer from 'shared/styled/UIContainer';
+import { UITextSmooth } from 'shared/styled/UITextSmooth';
+import { UIText } from 'shared/styled/UIText';
+import { UIContainer } from 'shared/styled/UIContainer';
 import PropTypes from "prop-types";
 
 function CardPublishedMain({ detailContext, publishedHeader, publishedFooter, children, ...props }) {

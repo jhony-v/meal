@@ -1,9 +1,9 @@
 import React from 'react'
-import UIButton from 'shared/styled/UIButton'
-import UIContainer from 'shared/styled/UIContainer'
-import UIFlexContainer from 'shared/styled/UIFlexContainer'
-import UIText from 'shared/styled/UIText'
-import UITextSmooth from 'shared/styled/UITextSmooth'
+import { UIButton } from 'shared/styled/UIButton'
+import { UIContainer } from 'shared/styled/UIContainer'
+import { UIFlexContainer } from 'shared/styled/UIFlexContainer'
+import { UIText } from 'shared/styled/UIText'
+import { UITextSmooth } from 'shared/styled/UITextSmooth'
 
 function MyDescription() {
     return (

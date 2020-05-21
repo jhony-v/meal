@@ -1,7 +1,7 @@
 import React from 'react'
-import UITextSmooth from 'shared/styled/UITextSmooth';
-import UIText from 'shared/styled/UIText';
-import UIFlexContainer from 'shared/styled/UIFlexContainer';
+import { UITextSmooth } from 'shared/styled/UITextSmooth';
+import { UIText } from 'shared/styled/UIText';
+import { UIFlexContainer } from 'shared/styled/UIFlexContainer';
 import PropTypes from "prop-types";
 import { useTheme } from 'emotion-theming';
 import { jsx } from "@emotion/core";

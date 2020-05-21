@@ -1,7 +1,8 @@
-import UIContainer from 'shared/styled/UIContainer'
-import UIFlexContainer from 'shared/styled/UIFlexContainer'
-import UITextSmooth from 'shared/styled/UITextSmooth'
-import UIText from 'shared/styled/UIText'
+import React from "react";
+import { UIContainer } from 'shared/styled/UIContainer'
+import { UIFlexContainer } from 'shared/styled/UIFlexContainer'
+import { UITextSmooth } from 'shared/styled/UITextSmooth'
+import { UIText } from 'shared/styled/UIText'
 import { useTheme } from 'emotion-theming'
 import { Link } from 'react-router-dom'
 import { jsx } from "@emotion/core"

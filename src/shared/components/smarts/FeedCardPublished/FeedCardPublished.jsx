@@ -1,5 +1,5 @@
 import React from 'react'
-import UIContainer from 'shared/styled/UIContainer';
+import { UIContainer } from 'shared/styled/UIContainer';
 import CardPublishedMain from 'shared/components/dumbs/CardPublishedMain';
 import VideoPlayer from 'shared/components/smarts/VideoPlayer';
 import FeedCardHeader from './dependencies/FeedCardHeader';

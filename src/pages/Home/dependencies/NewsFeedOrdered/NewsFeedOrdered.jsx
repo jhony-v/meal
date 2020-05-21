@@ -1,5 +1,5 @@
 import React from 'react'
-import UIContainer from 'shared/styled/UIContainer';
+import { UIContainer } from 'shared/styled/UIContainer';
 import FeedCardPulished from 'shared/components/smarts/FeedCardPublished';
 
 function NewsFeedOrdered() {

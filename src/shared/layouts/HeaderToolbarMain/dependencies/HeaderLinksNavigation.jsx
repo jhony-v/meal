@@ -1,6 +1,6 @@
 import React from 'react'
-import UIContainer from 'shared/styled/UIContainer'
-import UIFlexContainer from 'shared/styled/UIFlexContainer'
+import { UIContainer } from 'shared/styled/UIContainer'
+import { UIFlexContainer } from 'shared/styled/UIFlexContainer'
 import { IoIosHome } from 'react-icons/io'
 import { FaUser, FaGlobe } from 'react-icons/fa'
 import HeaderLink from './HeaderLink'

@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import UIAvatar from 'shared/styled/UIAvatar';
+import { UIAvatar } from 'shared/styled/UIAvatar';
+import { Img } from "react-image"
 
 function AvatarWallpaper({ image, ...props }) {
   return (
     <UIAvatar {...props}>
-      <img src={image} alt="" />
+      <Img src={image} />
     </UIAvatar>
   )
 };

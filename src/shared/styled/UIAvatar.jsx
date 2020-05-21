@@ -5,7 +5,7 @@ const sizeAvatar = props => {
     return props.sizeAvatar ? props.sizeAvatar : 40
 }
 
-const UIAvatar = styled.div`
+export const UIAvatar = styled.div`
     width : ${sizeAvatar}px;
     height : ${sizeAvatar}px;
     display: flex;
@@ -31,5 +31,3 @@ export const UIAvatarFeaturedPrimary = styled.span`
     padding: 5px;
     border-radius:100%;
 `
-
-export default UIAvatar;

@@ -14,7 +14,7 @@ const gridTemplateColumns = (props) => {
     }
 }
 
-const UIGrid = styled.div`
+export const UIGrid = styled.div`
     display:grid;
     gap:${props => props.gap && props.gap};
     ${gridTemplateColumns}
@@ -24,5 +24,3 @@ export const UIGridItem = styled.div`
     grid-column: ${props => props.gridColumn && props.gridColumn};
     grid-row:${props => props.gridRow && props.gridRow};
 `
-
-export default UIGrid;

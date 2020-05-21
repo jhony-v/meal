@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const UIBackdrop = styled.div`
+export const UIBackdrop = styled.div`
     position : absolute;
     top : 0;
     bottom : 0;
@@ -8,5 +8,3 @@ const UIBackdrop = styled.div`
     right : 0;
     background : rgba(0,0,0,${props => props.opacity || 0.5});
 `
-
-export default UIBackdrop;

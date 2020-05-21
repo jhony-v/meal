@@ -1,8 +1,8 @@
 import React from 'react'
-import UIContainer from 'shared/styled/UIContainer';
+import { UIContainer } from 'shared/styled/UIContainer';
 import ThumbnailOfAvatarCompact from 'shared/components/dumbs/ThumbnailOfAvatarCompact';
-import UIFlexContainer from 'shared/styled/UIFlexContainer';
-import UIText from 'shared/styled/UIText';
+import { UIFlexContainer } from 'shared/styled/UIFlexContainer';
+import { UIText } from 'shared/styled/UIText';
 import { jsx } from "@emotion/core";
 
 /**@jsx jsx */

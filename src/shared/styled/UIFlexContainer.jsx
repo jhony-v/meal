@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const UIFlexContainer = styled.div(
+export const UIFlexContainer = styled.div(
     {
         display: "flex",
     },
@@ -13,5 +13,3 @@ const UIFlexContainer = styled.div(
         height: props.sizeHeight && props.sizeHeight
     })
 )
-
-export default UIFlexContainer;

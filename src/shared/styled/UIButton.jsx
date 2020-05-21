@@ -15,7 +15,7 @@ const backgroundButton = (props) => {
 }
 
 //base button theme
-const UIButton = styled.button`
+export const UIButton = styled.button`
     border-radius : 5px;
     padding:10px 20px;
     transition : opacity .1s;
@@ -29,5 +29,3 @@ const UIButton = styled.button`
 
 export const UIButtonHoverPrimary = styled(UIButton)`
 `
-
-export default UIButton;

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
-const UICard = styled.div`
+export const UICard = styled.div`
     border-radius:10px;
     background : ${props => props.theme.colors.light};
     padding : 10px;
@@ -9,5 +9,3 @@ const UICard = styled.div`
     margin : ${props => props.margin || "0 auto"};
     }
 `
-
-export default UICard;

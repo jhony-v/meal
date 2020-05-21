@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import Text from 'shared/styled/UIText';
-import UIContainer from 'shared/styled/UIContainer';
-import UIFlexContainer from 'shared/styled/UIFlexContainer';
+import { UIText } from 'shared/styled/UIText';
+import { UIContainer } from 'shared/styled/UIContainer';
+import { UIFlexContainer } from 'shared/styled/UIFlexContainer';
 import { UIAvatarFeaturedPrimary } from 'shared/styled/UIAvatar';
 import AvatarWallpaper from './AvatarWallpaper';
 
@@ -17,7 +17,7 @@ function ThumbnailsChapter({ text, image, sizeImage, isOutstanding }) {
           <AvatarWallpaper sizeAvatar={sizeImage} image={image} />
         )}
       <UIContainer margin="10px 0 0">
-        <Text weight size="small">{text}</Text>
+        <UIText weight size="small">{text}</UIText>
       </UIContainer>
     </UIFlexContainer>
   )

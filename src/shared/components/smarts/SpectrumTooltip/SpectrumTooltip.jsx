@@ -1,9 +1,9 @@
 import React from 'react'
 import CardSimple from 'shared/components/dumbs/CardSimple';
-import UIFlexContainer from 'shared/styled/UIFlexContainer';
+import { UIFlexContainer } from 'shared/styled/UIFlexContainer';
 import SpectrumBadgeScore from './dependencies/SpectrumBadgeScore';
-import UIContainer from 'shared/styled/UIContainer';
-import UIButton from 'shared/styled/UIButton';
+import { UIContainer } from 'shared/styled/UIContainer';
+import { UIButton } from 'shared/styled/UIButton';
 import SpectrumChapterProfile from './dependencies/SpectrumChapterProfile';
 
 const SpectrumTooltip = ({ image, titleImage, ...props }) => {

@@ -1,11 +1,11 @@
 import React from 'react'
 import CardSimple from 'shared/components/dumbs/CardSimple';
-import UIText from 'shared/styled/UIText';
-import UIContainer from 'shared/styled/UIContainer';
+import { UIText } from 'shared/styled/UIText';
+import { UIContainer } from 'shared/styled/UIContainer';
 import ThumbnailsChapter from 'shared/components/dumbs/ThumbnailsChapter';
-import UIScrollBarList from 'shared/styled/UIScrollBarList';
+import { UIScrollBarList } from 'shared/styled/UIScrollBarList';
 
-function RankingFeeds(){
+function RankingFeeds() {
     return (
         <CardSimple>
             <UIContainer margin="1em 0">

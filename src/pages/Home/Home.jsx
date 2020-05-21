@@ -2,7 +2,7 @@ import React from 'react';
 import scss from "./Home.module.scss";
 import Drawer from 'shared/layouts/Drawer';
 import HeaderToolbarMain from 'shared/layouts/HeaderToolbarMain';
-import UIFlexContainer from 'shared/styled/UIFlexContainer';
+import { UIFlexContainer } from 'shared/styled/UIFlexContainer';
 import ColumnNavigator from './dependencies/components/ColumnNavigator';
 import Ranking from './dependencies/RankingFeeds';
 import ViewCategories from './dependencies/CategoriesEats';
