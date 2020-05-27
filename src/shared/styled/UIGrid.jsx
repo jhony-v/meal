@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
-const gridTemplateColumns = (props) => {
+const gridRepeatTemplateColumns = (props) => {
     if (props.repeatColumns) {
         return css(`
         grid-template-columns:repeat(${props.repeatColumns},1fr);
@@ -17,7 +17,7 @@ const gridTemplateColumns = (props) => {
 export const UIGrid = styled.div`
     display:grid;
     gap:${props => props.gap && props.gap};
-    ${gridTemplateColumns}
+    ${gridRepeatTemplateColumns}
 `
 
 export const UIGridItem = styled.div`

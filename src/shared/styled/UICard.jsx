@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { css } from "@emotion/core";
 
 export const UICard = styled.div`
     border-radius:10px;

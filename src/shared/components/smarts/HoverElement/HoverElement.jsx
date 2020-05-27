@@ -1,12 +1,12 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { UIContainer } from 'shared/styled/UIContainer'
 import { AnimatePresence } from 'framer-motion'
 
 const HoverElement = ({ elementHover, elementHoverView, elementHoverViewProps }) => {
     let [visible, setVisible] = useState(false);
-    let setShowVisible = useCallback(() => setVisible(true));
-    let setHideVisible = useCallback(() => setVisible(false));
+    let setShowVisible = () => setVisible(true);
+    let setHideVisible = () => setVisible(false);
     let variants = {
         show: {
             opacity: 1,
