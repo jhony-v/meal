@@ -7,7 +7,7 @@ function NewsFeedOrdered() {
         <UIContainer margin="2em 0 0">
             {Array(2).fill(0).map((current, index) => (
                 <FeedCardPulished
-                    index={index}
+                    key={index}
                     avatarImage={`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
                     avatarTitle="Jhony Vega"
                     avatarDetail="publicado hace 10 dias"
