@@ -2,6 +2,7 @@ import React from 'react'
 import { UIContainer } from 'shared/styled/UIContainer';
 import { IoIosStar } from "react-icons/io";
 import ThumbnailsCalification from '../components/ThumbnailsCalification';
+import { FaHome } from 'react-icons/fa';
 
 function ContainerAllEats() {
     return (
@@ -9,9 +10,10 @@ function ContainerAllEats() {
             {Array(4).fill(0).map((current, index) => (
                 <ThumbnailsCalification
                     key={index}
-                    image={`https://source.unsplash.com/collection/${Math.floor(Math.random() * 1000)}`}
+                    avatarIcon={<FaHome/>}
                     title="Frutas naturales"
-                    icon={IoIosStar}
+                    icon={<IoIosStar/>}
+                    bgColorAvatar="blue"
                     points={Math.floor(Math.random() * 1000)}
                 />
             ))}

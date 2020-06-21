@@ -7,17 +7,23 @@ import { jsx } from "@emotion/core";
 
 /**@jsx jsx */
 
-function ThumbnailsCalification({ image, title, points, icon: IconComponent }) {
+function ThumbnailsCalification({ avatarIcon ,bgColorAvatar, title, points, icon }) {
     return (
         <UIContainer margin="30px 0">
             <UIFlexContainer justify="space-between">
                 <ThumbnailOfAvatarCompact
-                    image={image}
                     title={title}
+                    propsUIAvatar={{
+                        isMaterial : true,
+                        personalized : true,
+                        avatarIcon : avatarIcon,
+                        bgColor : bgColorAvatar,
+                        color : "white"
+                    }}
                 />
                 <UIFlexContainer align="center">
                     <UIText weight size={0.9}>{points}</UIText>
-                    {<IconComponent color="orange" css={{ marginLeft: 5 }} />}
+                    <UIText css={{color:"orange",marginLeft:5}}>{icon}</UIText>
                 </UIFlexContainer>
             </UIFlexContainer>
         </UIContainer>

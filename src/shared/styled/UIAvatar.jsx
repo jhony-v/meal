@@ -15,7 +15,7 @@ const isPersonalized = (props) => {
         : props.theme.colors.grayLight1
     }`
   );
-  return props.isPersonalized ? personalized : notPersonalized;
+  return props.personalized ? personalized : notPersonalized;
 };
 
 // define all styled components

@@ -7,10 +7,10 @@ import { jsx } from "@emotion/core";
 
 /**@jsx jsx */
 
-function ThumbnailOfAvatarCompact({ image, title, detail, ...props }) {
+function ThumbnailOfAvatarCompact({ image, title, detail, propsUIAvatar , ...props }) {
   return (
     <UIFlexContainer align="center" {...props}>
-      <AvatarWallpaper image={image} css={{ marginRight: 10 }} />
+      <AvatarWallpaper image={image} css={{ marginRight: 10 }} {...propsUIAvatar} />
       <UIFlexContainer justify="center" flexDir="column">
         <UIText noSelect weight size="small">
           {title}

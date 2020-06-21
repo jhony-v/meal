@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import { UIAvatar } from "shared/styled/UIAvatar";
 import { Img } from "react-image";
 
-function AvatarWallpaper({ image, ...props }) {
+function AvatarWallpaper({ image, avatarIcon, ...props }) {
   return (
     <UIAvatar {...props}>
-      <Img src={image} />
+      {avatarIcon ? avatarIcon : <Img src={image} />}
     </UIAvatar>
   );
 }
