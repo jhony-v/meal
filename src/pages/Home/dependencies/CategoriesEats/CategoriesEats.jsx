@@ -11,7 +11,7 @@ function CategoriesEats() {
             <UIText weight size="big">Categories</UIText>
             <UIContainer margin="1em auto">
                 <ContainerAllEats />
-                <UIAvatar isMaterial variant="primary"><FaHome/></UIAvatar>
+                <UIAvatar isMaterial variant="primary" color="white" bgColor="blue" personalized ><FaHome/></UIAvatar>
             </UIContainer>
         </Fragment>
     )
