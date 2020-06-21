@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { UIFlexContainer } from 'shared/styled/UIFlexContainer';
 import { UIBackdrop } from 'shared/styled/UIBackdrop';
 import useVideoPlayer from './useVideoPlayer';
-import VideoPlayerTextArea from './dependencies/VidePlayerTextAria';
-import VideoPlayerButton from './dependencies/VideoPlayerButton';
-import VideoPlayerFullScreen from './dependencies/VideoPlayerFullScreen';
+import VideoPlayerTextArea from './VidePlayerTextAria';
+import VideoPlayerButton from './VideoPlayerButton';
+import VideoPlayerFullScreen from './VideoPlayerFullScreen';
 import { jsx } from "@emotion/core"
 
 /**@jsx jsx */
