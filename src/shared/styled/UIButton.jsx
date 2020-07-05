@@ -14,9 +14,9 @@ const backgroundButton = (props) => {
 
 //base button theme
 export const UIButton = styled.button`
-  border-radius: 5px;
   padding: 10px 20px;
   transition: opacity 0.1s;
+  border-radius: ${props => props.borderRadius || '5px'};
   font-size: ${(props) => props.theme.fontSize.regular};
   width: ${(props) => props.sizeWidth && props.sizeWidth};
   ${backgroundButton}
