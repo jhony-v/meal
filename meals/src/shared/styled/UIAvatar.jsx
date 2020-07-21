@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { Img } from "react-image";
 
 // dynamic styles with logic
 const defaultBorderRadius = "100%";
@@ -9,11 +8,11 @@ const sizeAvatar = (props) => {
 
 // define all styled components
 
-export const UIAvatarImage = styled(Img)`
+export const UIAvatarImage = styled.img`
+  -webkit-user-drag: none;
   width: ${sizeAvatar}px;
   height: ${sizeAvatar}px;
   border-radius: ${(props) => props.radius || defaultBorderRadius};
-  -webkit-user-drag: none;
 `;
 
 export const UIAvatar = styled.div`
@@ -27,7 +26,7 @@ export const UIAvatar = styled.div`
 `;
 
 export const UIAvatarFeaturedPrimary = styled(UIAvatar)`
-  border: 2px solid ${(props) => props.theme.colors.primary};
   padding: 4px;
   box-sizing : content-box;
+  border: 2px solid ${(props) => props.theme.colors.primary};
 `;
