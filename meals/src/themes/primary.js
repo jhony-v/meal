@@ -1,6 +1,6 @@
 const primary = {
     colors: {
-        primary: "rgb(230,60,90)",
+        primary: "#2196f3",
         light: "white",
         grayLight1: "rgb(240,240,240)",
         grayDark1: "gray",

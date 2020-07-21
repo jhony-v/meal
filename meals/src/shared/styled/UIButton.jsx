@@ -16,7 +16,7 @@ const backgroundButton = (props) => {
 export const UIButton = styled.button`
   padding: 10px 20px;
   transition: opacity 0.1s;
-  border-radius: ${props => props.borderRadius || '5px'};
+  border-radius: ${(props) => props.borderRadius || "5px"};
   font-size: ${(props) => props.theme.fontSize.regular};
   width: ${(props) => props.sizeWidth && props.sizeWidth};
   ${backgroundButton}
@@ -24,5 +24,3 @@ export const UIButton = styled.button`
     opacity: 0.8;
   }
 `;
-
-export const UIButtonHoverPrimary = styled(UIButton)``;
