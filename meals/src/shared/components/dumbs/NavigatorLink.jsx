@@ -1,4 +1,5 @@
 import React, { memo } from "react";
+import PropTypes from "prop-types";
 import { UIContainer } from "shared/styled/UIContainer";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer";
 import { UIText } from "shared/styled/UIText";
@@ -28,5 +29,11 @@ const NavigatorLink = ({ to, icon: IconLink, children, ...props }) => {
     </hoverRotate.ContainerMotion>
   );
 };
+
+NavigatorLink.propTypes = {
+  to : PropTypes.string.isRequired,
+  icon : PropTypes.func,
+  children : PropTypes.oneOfType([PropTypes.element,PropTypes.string]).isRequired
+}
 
 export default memo(NavigatorLink);
