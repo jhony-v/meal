@@ -11,7 +11,8 @@ function Home() {
     <Drawer appbar={<HeaderToolbarMain />}>
       <UIFlexContainer sizeHeight="100%" justify="space-between" className={scss.drawerBody}>
         <HomeTrendsContainer/>
-        <InputCommentUser/>
+        <InputCommentUser />
+        <HomeTrendsContainer/>
       </UIFlexContainer>
     </Drawer>
   )

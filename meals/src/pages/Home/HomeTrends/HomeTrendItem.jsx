@@ -6,7 +6,7 @@ import { UITextSmooth } from "shared/styled/UIText";
 
 const HomeTrendItem = ({index, title , detail, children }) => {
   return (
-    <UIFlexContainer padding="10px 0">
+    <UIFlexContainer padding="15px 0">
       <UIContainer marginRight="10px">
         <UITextSmooth weight>{index + 1}</UITextSmooth>
       </UIContainer>
