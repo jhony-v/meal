@@ -1,6 +1,5 @@
 import React from "react";
 import AvatarWallpaper from "shared/components/dumbs/AvatarWallpaper";
-import { UIAvatarFeaturedPrimary } from "shared/styled/UIAvatar";
 
 const ProfileAvatar = ({ ...props }) => {
   return (

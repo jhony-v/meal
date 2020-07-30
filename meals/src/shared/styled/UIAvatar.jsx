@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 // dynamic styles with logic
 const defaultBorderRadius = "100%";
-const sizeAvatar = (props) => {
+const computeSizeAvatar = (props) => {
   return props.sizeAvatar ? props.sizeAvatar : 40;
 };
 
@@ -10,8 +10,8 @@ const sizeAvatar = (props) => {
 
 export const UIAvatarImage = styled.img`
   -webkit-user-drag: none;
-  width: ${sizeAvatar}px;
-  height: ${sizeAvatar}px;
+  width: ${computeSizeAvatar}px;
+  height: ${computeSizeAvatar}px;
   border-radius: ${(props) => props.radius || defaultBorderRadius};
 `;
 
@@ -19,8 +19,8 @@ export const UIAvatar = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: ${sizeAvatar}px;
-  height: ${sizeAvatar}px;
+  width: ${computeSizeAvatar}px;
+  height: ${computeSizeAvatar}px;
   color: ${(props) => props.color};
   border-radius: ${(props) => props.radius || defaultBorderRadius};
 `;

@@ -19,14 +19,19 @@ const backgroundButton = (props) => {
   return css(`${style}`);
 };
 
+const blockButton = (props) => {
+  return props.block && css(`display:block;width:100%;`);
+};
+
 //base button theme
 export const UIButton = styled.button`
   padding: 10px 20px;
   transition: opacity 0.1s;
-  ${backgroundButton}
-  border-radius: ${(props) => props.borderRadius || "5px"};
+  border-radius: ${(props) => props.borderRadius || "15px"};
   font-size: ${(props) => props.theme.fontSize.regular};
   width: ${(props) => props.sizeWidth && props.sizeWidth};
+  ${backgroundButton}
+  ${blockButton}
   &:hover {
     opacity: 0.8;
   }
