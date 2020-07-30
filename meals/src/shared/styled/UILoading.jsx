@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/core";
 
-const rotateAnimation = keyframes`
+const keyframeRotateAnimation = keyframes`
     from {
         transform : rotate(-360deg);
     }
@@ -14,7 +14,7 @@ export const UILoading = styled.div`
     height:${(props) => props.sizeLoading || 40}px;
     border:3px solid ${(props) => props.theme.colors.grayLight1};
     border-left-color: ${(props) => props.theme.colors.primary};
-    animation ${rotateAnimation} .5s infinite linear;
+    animation ${keyframeRotateAnimation} .5s infinite linear;
 `;
 
 export const UILoadingPage = styled(UILoading)`

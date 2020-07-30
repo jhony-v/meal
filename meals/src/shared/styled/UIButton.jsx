@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
 // style of primary button
-const backgroundButton = (props) => {
+const computeBackgroundButton = (props) => {
   let style = "";
   let colors = props.theme.colors;
   switch (props.variant) {
@@ -19,7 +19,7 @@ const backgroundButton = (props) => {
   return css(`${style}`);
 };
 
-const blockButton = (props) => {
+const computeBlockButton = (props) => {
   return props.block && css(`display:block;width:100%;`);
 };
 
@@ -30,8 +30,8 @@ export const UIButton = styled.button`
   border-radius: ${(props) => props.borderRadius || "15px"};
   font-size: ${(props) => props.theme.fontSize.regular};
   width: ${(props) => props.sizeWidth && props.sizeWidth};
-  ${backgroundButton}
-  ${blockButton}
+  ${computeBackgroundButton}
+  ${computeBlockButton}
   &:hover {
     opacity: 0.8;
   }
