@@ -7,7 +7,7 @@ import { UIAvatarImage } from "shared/styled/UIAvatar";
 
 export default ({ name }) => {
   return (
-    <UICardFlat border radius="10px">
+    <UICardFlat radius="10px">
       <UIFlexContainer padding="20px">
         <UIAvatarImage src="https://cdn.pixabay.com/photo/2020/07/10/15/37/apple-5391076__340.jpg"  />
       </UIFlexContainer>

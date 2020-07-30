@@ -10,5 +10,5 @@ export const UICard = styled.div`
 
 export const UICardFlat = styled.div`
   border-radius: ${(props) => props.radius};
-  border: ${(props) => props.border && `1px solid ${props.theme.colors.grayLight1}`};
+  border: 1px solid ${(props) => props.theme.colors.grayLight1};
 `;
