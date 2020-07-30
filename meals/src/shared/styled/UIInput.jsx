@@ -6,3 +6,5 @@ export const UIInput = styled.input`
   width: ${(props) => props.sizeWidth || "100%"};
   background: ${(props) => props.theme.colors.grayLight1};
 `;
+
+
