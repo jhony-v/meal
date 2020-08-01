@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import PropTypes from "prop-types";
 import { UICard } from "shared/styled/UICard";
 
@@ -10,4 +10,4 @@ CardSimple.propTypes = {
   child: PropTypes.element,
 };
 
-export default CardSimple;
+export default memo(CardSimple);

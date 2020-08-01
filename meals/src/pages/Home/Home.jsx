@@ -11,7 +11,10 @@ function Home() {
     <Drawer appbar={<HeaderToolbarMain />}>
       <UIFlexContainer sizeHeight="100%" justify="space-between" className={scss.drawerBody}>
         <HomeTrendsContainer/>
-        <InputCommentUser />
+        <InputCommentUser 
+        avatar="https://cdn.pixabay.com/photo/2020/07/10/15/37/apple-5391076__340.jpg" 
+        maxLength={15} 
+        onSendMessage={(message) => alert(message)}/>
         <HomeTrendsContainer/>
       </UIFlexContainer>
     </Drawer>

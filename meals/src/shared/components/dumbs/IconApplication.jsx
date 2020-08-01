@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ memo } from "react";
 import AvatarWallpaper from "./AvatarWallpaper";
 
 function IconApplication() {
@@ -7,4 +7,4 @@ function IconApplication() {
   );
 }
 
-export default IconApplication;
+export default memo(IconApplication);

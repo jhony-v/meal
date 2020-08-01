@@ -1,9 +1,10 @@
+import React from "react";
 import styled from "@emotion/styled";
 import { computeBackgroundThemeContainer } from "./styledUtils/paints";
 import { computeBlockElement } from "./styledUtils/boxes";
 
 //base button theme
-export const UIButton = styled.button`
+export const UIButton = React.memo(styled.button`
   padding: 10px 20px;
   transition: opacity 0.1s;
   ${computeBlockElement};
@@ -14,4 +15,4 @@ export const UIButton = styled.button`
   &:hover {
     opacity: 0.8;
   }
-`;
+`);
