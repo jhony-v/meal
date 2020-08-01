@@ -1,11 +1,6 @@
 import styled from "@emotion/styled";
-import { keyframes } from "@emotion/core";
-
-const keyframeRotateAnimation = keyframes`
-    from {
-        transform : rotate(-360deg);
-    }
-`;
+import { keyframeRotateAnimation } from "./styledUtils/keyframes";
+import { computePositionAbsolute } from "./styledUtils/positions";
 
 export const UILoading = styled.div`
     border-radius:100%;
@@ -14,14 +9,11 @@ export const UILoading = styled.div`
     height:${(props) => props.sizeLoading || 40}px;
     border:3px solid ${(props) => props.theme.colors.grayLight1};
     border-left-color: ${(props) => props.theme.colors.primary};
-    animation ${keyframeRotateAnimation} .5s infinite linear;
+    animation: ${keyframeRotateAnimation} .5s infinite linear;
 `;
 
 export const UILoadingPage = styled(UILoading)`
   position: fixed;
   margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  ${computePositionAbsolute};
 `;

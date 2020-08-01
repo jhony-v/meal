@@ -1,20 +1,6 @@
 import styled from "@emotion/styled";
+import { computePadding, computeMargin } from "./styledUtils/boxes";
 
-const computeMargin = (props) => ({
-  margin: props.margin,
-  ...(props.marginVertical && {
-    marginTop: props.marginVertical,
-    marginBottom: props.marginVertical,
-  }),
-  ...(props.marginHorizontal && {
-    marginLeft: props.marginHorizontal,
-    marginRight: props.marginHorizontal,
-  }),
-});
-
-const computePadding = (props) => ({
-  padding: props.padding,
-});
 
 export const UIFlexContainer = styled.div(
   {

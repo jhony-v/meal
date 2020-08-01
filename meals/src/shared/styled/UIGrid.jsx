@@ -1,22 +1,11 @@
 import styled from "@emotion/styled";
-import { css } from "@emotion/core";
+import { computeGridRepeatTemplateColumns } from "./styledUtils/boxes";
 
-const computeGridRepeatTemplateColumns = (props) => {
-  if (props.repeatColumns) {
-    return css(`
-        grid-template-columns:repeat(${props.repeatColumns},1fr);
-        `);
-  } else if (props.sizeColumns) {
-    return css(`
-        grid-template-columns:${props.sizeColumns.join(" ")};
-        `);
-  }
-};
 
 export const UIGrid = styled.div`
   display: grid;
+  ${computeGridRepeatTemplateColumns};
   gap: ${(props) => props.gap && props.gap};
-  ${computeGridRepeatTemplateColumns}
 `;
 
 export const UIGridItem = styled.div`
