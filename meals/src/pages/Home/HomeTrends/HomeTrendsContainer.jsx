@@ -13,7 +13,7 @@ const HomeTrendsContainer = () => {
       renderHeader={<UITextBoldLarge>Trends</UITextBoldLarge>}
       renderFooter={<UIContainer marginTop="2em"><UIButton variant="primary" block>New post</UIButton></UIContainer>}
       render={(e, i) => (
-        <HomeTrendItem key={i} title="# New Event treends" detail="2353, Tweets" index={i}>
+        <HomeTrendItem key={i} title="* New Event treends" detail="2353, Tweets" index={i}>
             <HomeTrendItemUserDetail/>
         </HomeTrendItem>
         )}
