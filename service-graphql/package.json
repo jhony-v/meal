@@ -1,0 +1,40 @@
+{
+ "name": "service-graphql",
+ "version": "1.0.0",
+ "description": "Graphql services",
+ "main": "index.js",
+ "scripts": {
+  "start": "node dist/index.js",
+  "dev": "nodemon",
+  "build": "npx rimraf dist && tsc"
+ },
+ "keywords": [
+  "graphql",
+  "typescript"
+ ],
+ "author": {
+  "name": "Jhony Vega",
+  "url": "https://github.com/jhony-24"
+ },
+ "private": true,
+ "license": "ISC",
+ "devDependencies": {
+  "@types/node": "^14.0.27",
+  "nodemon": "^2.0.4",
+  "ts-node": "^8.10.2",
+  "typescript": "^3.9.7"
+ },
+ "dependencies": {
+  "@types/bcrypt": "^3.0.0",
+  "@types/uuid": "^8.0.0",
+  "apollo-server": "^2.16.1",
+  "bcrypt": "^5.0.0",
+  "dotenv": "^8.2.0",
+  "graphql": "^15.3.0",
+  "graphql-tools": "^6.0.15",
+  "mysql": "^2.18.1",
+  "rimraf": "^3.0.2",
+  "save-dev": "0.0.1-security",
+  "uuid": "^8.3.0"
+ }
+}
