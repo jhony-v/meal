@@ -1,5 +1,12 @@
 @import "sass/main";
 
 .drawerBody {
-  @include marginTopRespectToHeader();
+	@include marginTopRespectToHeader();
+	> *:first-child, *:last-child {
+		flex: none;
+	}
+}
+
+.feeds {
+	width: 50%;
 }

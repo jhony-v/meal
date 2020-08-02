@@ -8,7 +8,7 @@ const UserFollowerItem = () => {
 			username="Mark zuckerberg"
 			description="@CEO in facebook"
 			buttonContent="Follow"
-			padding="15px 0"
+			padding="18px 0"
 		/>
 	);
 };

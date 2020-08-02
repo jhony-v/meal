@@ -22,7 +22,8 @@ export const UIAvatar = styled.div`
   width: ${computeSizeAvatar}px;
   height: ${computeSizeAvatar}px;
   color: ${(props) => props.color};
-  border-radius: ${(props) => props.radius || defaultBorderRadius};
+	border-radius: ${(props) => props.radius || defaultBorderRadius};
+	background: ${props => props.background};
 `;
 
 export const UIAvatarFeaturedPrimary = styled(UIAvatar)`
