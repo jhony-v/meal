@@ -1,11 +1,13 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
+import { computeBlockElement } from "./styledUtils/boxes";
 
 export const UIText = styled.span`
   text-align: ${(props) => props.textAlign && props.textAlign};
   user-select: ${(props) => props.noSelect && "none"};
   font-weight: ${(props) => props.weight && "bold"};
   color: ${(props) => props.variant === "light" && props.theme.colors[props.variant] };
+	${computeBlockElement};
   ${(props) =>
     props.size
       ? css(`

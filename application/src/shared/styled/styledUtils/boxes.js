@@ -18,16 +18,19 @@ export const computePadding = (props) => ({
 
 export const computeGridRepeatTemplateColumns = (props) => {
   if (props.repeatColumns) {
-    return css(`
+    return css`
         grid-template-columns:repeat(${props.repeatColumns},1fr);
-        `);
+        `;
   } else if (props.sizeColumns) {
-    return css(`
+    return css`
         grid-template-columns:${props.sizeColumns.join(" ")};
-        `);
+        `;
   }
 };
 
 export const computeBlockElement = (props) => {
-  return props.block && css(`display:block;width:100%;`);
+  return props.block && css`
+	display:block;
+	width:${props.sizeWidth || "100%"};
+	`;
 };
