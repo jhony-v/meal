@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer";
 import { UIButton } from "shared/styled/UIButton";
 import { UITextSmooth } from "shared/styled/UIText";
-import { InputCommentContext } from "./InputCommentProvider";
+import { InputCommentContext } from "./Providers/InputCommentProvider";
 
 export default ({onClick}) => {
   const { isset, currentLength, maxLength , onSendMessage } = useContext(InputCommentContext);

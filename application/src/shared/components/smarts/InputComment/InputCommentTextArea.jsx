@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { UIInputTextArea } from "shared/styled/UIInput";
-import { InputCommentContext } from "./InputCommentProvider";
+import { InputCommentContext } from "./Providers/InputCommentProvider";
 
 export default ({ placeholder }) => {
   const { lengthRows , onChange } = useContext(InputCommentContext);

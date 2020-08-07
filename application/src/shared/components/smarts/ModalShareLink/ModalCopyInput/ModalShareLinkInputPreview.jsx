@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import styled from "@emotion/styled";
 import { UIText } from "shared/styled/UIText";
 import { UIContainer } from "shared/styled/UIContainer";
+import ModalCopyLinkButton from "./ModalCopyLinkButton";
 
 const UIModalInputPreviewLink = styled.div`
 	border-radius: 10px;
@@ -31,9 +32,7 @@ const ModalShareLinkInputPreview = ({ linkShare }) => {
 			</UIContainer>
 			<UIModalInputPreviewLink colorTextCopy="rgba(230,60,90,.8)">
 				<input defaultValue={linkShare} spellCheck={false} />
-				<UIText size="small" weight>
-					Copy
-				</UIText>
+				<ModalCopyLinkButton linkShare={linkShare} />
 			</UIModalInputPreviewLink>
 		</Fragment>
 	);

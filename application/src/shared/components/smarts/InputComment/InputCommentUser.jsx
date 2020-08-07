@@ -3,7 +3,7 @@ import { UIContainer } from "shared/styled/UIContainer";
 import { UICardFlat } from "shared/styled/UICard";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer";
 import { UIAvatarImage } from "shared/styled/UIAvatar";
-import InputCommentProvider from "./InputCommentProvider";
+import InputCommentProvider from "./Providers/InputCommentProvider";
 import InputCommentTextArea from "./InputCommentTextArea";
 import InputCommentButtonSend from "./InputCommentButtonSend";
 
