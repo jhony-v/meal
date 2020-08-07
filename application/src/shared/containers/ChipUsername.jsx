@@ -7,7 +7,7 @@ import { jsx } from "@emotion/core";
 const ChipUsername = () => {
   return (
     <UIFlexContainer align="center" justify="center">
-      <UIText weight>Jhony vega</UIText>
+      <UIText weight variant="dark">Jhony vega</UIText>
       <AvatarWallpaper
         image="https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774__340.jpg"
         css={{ marginLeft: 10 }}

@@ -2,10 +2,12 @@ const primary = {
     colors: {
         primary: "#2196f3",
         light: "white",
+				dark : "dark",
+				grayDarkBorder : "rgba(0,0,0,.1)", // rgba(255,255,255,.2)
         grayLight1: "rgb(240,240,240)",
         grayDark1: "gray",
-        grayDark2: "rgb(0,0,0,.6)",
-        grayDark3: "rgb(30,30,30)",
+				grayDark2: "rgb(0,0,0,.6)", // silver
+				grayDark3: "rgb(50,50,50)",
     },
     fontSize: {
         small: .9,

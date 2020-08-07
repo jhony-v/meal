@@ -17,7 +17,7 @@ const NewsFeedContainer = () => {
 					<UIFlexContainer>
 						<UIAvatarImage src="https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774__340.jpg"/>
 						<UIContainer marginLeft="10px">
-						<UIText weight block>Jhon Doe Stark</UIText>
+						<UIText weight block variant="grayDark1">Jhon Doe Stark</UIText>
 						<UITextSmooth size="small3">Publicado hace 13 horas <IoMdGlobe size={12} /></UITextSmooth>
 						</UIContainer>
 					</UIFlexContainer>

@@ -20,7 +20,7 @@ const NavigatorLink = ({ to, icon: IconLink, children, ...props }) => {
             <IconLink />
           </hoverRotate.AnimateMotion>
           <UIContainer margin="0 0 0 10px">
-            <UIText size="small1" weight>
+            <UIText size="small1" weight variant="dark">
               {children}
             </UIText>
           </UIContainer>

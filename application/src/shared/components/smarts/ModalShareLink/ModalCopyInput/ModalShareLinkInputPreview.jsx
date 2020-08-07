@@ -6,18 +6,19 @@ import ModalCopyLinkButton from "./ModalCopyLinkButton";
 
 const UIModalInputPreviewLink = styled.div`
 	border-radius: 10px;
-	border: 1px solid rgba(0, 0, 0, 0.08);
 	padding: 15px;
 	display: flex;
 	align-items: center;
 	width: 100%;
+	border: 1px solid ${props=>props.theme.colors.grayDarkBorder};
 	input {
 		width: 100%;
 		margin-right: 20px;
+		color : ${props=>props.theme.colors.dark};
 	}
 	> :last-child {
 		flex: none;
-		color: ${(props) => props.colorTextCopy};
+		color: rgba(230,60,90,.8);
 		cursor: pointer;
 	}
 `;
@@ -26,11 +27,11 @@ const ModalShareLinkInputPreview = ({ linkShare }) => {
 	return (
 		<Fragment>
 			<UIContainer marginBottom="1em">
-				<UIText weight size="small">
+				<UIText weight size="small" variant="dark">
 					Or copy link
 				</UIText>
 			</UIContainer>
-			<UIModalInputPreviewLink colorTextCopy="rgba(230,60,90,.8)">
+			<UIModalInputPreviewLink>
 				<input defaultValue={linkShare} spellCheck={false} />
 				<ModalCopyLinkButton linkShare={linkShare} />
 			</UIModalInputPreviewLink>

@@ -33,5 +33,5 @@ export const UIAvatarFeaturedPrimary = styled(UIAvatar)`
 `;
 
 export const UIAvatarFeaturedOutlined = styled(UIAvatar)`
-	border : 1px solid rgba(0,0,0,.1);
+	border : 1px solid ${props=>props.theme.colors.grayDarkBorder};
 `;

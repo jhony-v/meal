@@ -6,7 +6,7 @@ export const UIText = styled.span`
   text-align: ${(props) => props.textAlign && props.textAlign};
   user-select: ${(props) => props.noSelect && "none"};
   font-weight: ${(props) => props.weight && "bold"};
-  color: ${(props) => props.variant === "light" && props.theme.colors[props.variant] };
+  color: ${(props) => props.theme.colors[props.variant] };
 	${computeBlockElement};
   ${(props) =>
     props.size
@@ -24,5 +24,6 @@ export const UITextSmooth = styled(UIText)`
 
 export const UITextBoldLarge = styled(UIText)`
   font-size : ${props=> props.theme.fontSize.big*1.4}rem;
-  font-weight: bold;
+	font-weight: bold;
+	color: ${props=> !props.variant ? props.theme.colors.dark :  props.theme.colors[props.variant]};
 `;

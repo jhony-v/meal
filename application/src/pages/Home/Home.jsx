@@ -20,7 +20,7 @@ function Home() {
 			sizeHeight="100%" 
 			justify="space-between"
 			padding="2em 1in 0" >
-			<ModalShareLink visible={open} onClose={onToggle} />
+			<ModalShareLink visible={open} onClose={onToggle} link="https://www.youtube.com/watch?v=KtrNBI8JG3A" />
         <HomeTrendsContainer/>
 				<UIContainer className={scss.feeds}>
 			<button onClick={onToggle}>ckecheabke</button>
