@@ -58,6 +58,7 @@
   "devDependencies": {
     "babel-plugin-import-graphql": "^2.7.0",
     "create-react-component-folder": "^0.2.6",
-    "cross-env": "^7.0.2"
+    "cross-env": "^7.0.2",
+    "enzyme": "^3.11.0"
   }
 }
