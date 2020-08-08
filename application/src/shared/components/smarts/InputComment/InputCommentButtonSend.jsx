@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer";
 import { UIButton } from "shared/styled/UIButton";
 import { UITextSmooth } from "shared/styled/UIText";
-import { InputCommentContext } from "./Providers/InputCommentProvider";
+import { useInputCommentContext } from "./Providers/InputCommentProvider";
 
 export default ({onClick}) => {
-  const { isset, currentLength, maxLength , onSendMessage } = useContext(InputCommentContext);
-  const handlerOnClick = () => onClick(onSendMessage());
+  const { isset, currentLength, maxLength , onSendMessage } = useInputCommentContext();
+	const handlerOnClick = () => onClick(onSendMessage());
   return (
     <UIFlexContainer
       padding="0 20px 20px"

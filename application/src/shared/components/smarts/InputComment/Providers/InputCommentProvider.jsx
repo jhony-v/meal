@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import useInput from "shared/hooks/useInput";
 
-export const InputCommentContext = React.createContext();
+const InputCommentContext = React.createContext();
 const InputCommentProvider = ({ children, maxLengthText }) => {
   const {isset, currentLength, maxLength , onChange, value } = useInput(maxLengthText);
   const [ lengthRows , setLengthRows ] = useState(1);
@@ -32,4 +32,5 @@ const InputCommentProvider = ({ children, maxLengthText }) => {
   );
 };
 
+export const useInputCommentContext = () => useContext(InputCommentContext); 
 export default InputCommentProvider;

@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import { UIInputTextArea } from "shared/styled/UIInput";
-import { InputCommentContext } from "./Providers/InputCommentProvider";
+import { useInputCommentContext } from "./Providers/InputCommentProvider";
 
 export default ({ placeholder }) => {
-  const { lengthRows , onChange } = useContext(InputCommentContext);
+  const { lengthRows , onChange } = useInputCommentContext();
   return (
     <UIInputTextArea
       spellCheck="false"

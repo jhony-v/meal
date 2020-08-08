@@ -19,6 +19,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "classnames": "^2.2.6",
+    "dayjs": "^1.8.32",
     "emotion-theming": "^10.0.27",
     "framer-motion": "^1.10.3",
     "graphql": "^15.0.0",
