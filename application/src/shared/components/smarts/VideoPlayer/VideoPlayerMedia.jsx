@@ -3,11 +3,11 @@ import { jsx, css } from "@emotion/core";
 import { useVideoPlayerContext } from "./Providers/VideoPlayerProvider";
 /** @jsx jsx */
 
-const VideoPlayerMedia = forwardRef((_, ref) => {
+const VideoPlayerMedia = forwardRef(({src}, ref) => {
 	const { onToggleFullScreen } = useVideoPlayerContext();
 	return (
 		<video 
-		width="100%" preload="metadata" ref={ref} src={process.env.PUBLIC_URL + "/musk.mp4"}
+		width="100%" preload="metadata" ref={ref} src={src}
 		onDoubleClick={onToggleFullScreen}		
 		css={css`
 			object-fit: "cover";

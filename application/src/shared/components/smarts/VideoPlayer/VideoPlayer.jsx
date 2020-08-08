@@ -17,7 +17,7 @@ const VideoPlayer = ({src}) => {
 	return (
 		<UIContainer css={{overflow:"hidden",borderRadius:"10px"}} position="relative">
 			<VideoPlayerProvider video={video}>
-				<VideoPlayerMedia ref={video} />
+				<VideoPlayerMedia ref={video} src={src} />
 				<VideoPlayerControlButtonPlaying/>
 				<VideoPlayerFooterControls>
 								<VideoPlayerControlVolume />
