@@ -1,14 +1,14 @@
 import React from "react";
 import scss from "./HeaderToolbarMain.module.scss";
-import { UIContainer } from "shared/styled/UIContainer";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer";
 import ChipUsername from "shared/containers/ChipUsername";
 import HeaderLinksNavigation from "./dependencies/HeaderLinksNavigation";
 import IconApplication from "shared/components/dumbs/IconApplication";
+import { UIContainerLayoutFixed } from "shared/styled/UIContainer";
 
 function HeaderToolbarMain() {
   return (
-    <UIContainer variantColor="layout" className={scss.header}>
+    <UIContainerLayoutFixed variantColor="layout" className={scss.header}>
       <UIFlexContainer align="center" justify="space-between" sizeWidth="100%">
         <IconApplication />
         <HeaderLinksNavigation />
@@ -16,7 +16,7 @@ function HeaderToolbarMain() {
           <ChipUsername />
         </UIFlexContainer>
       </UIFlexContainer>
-    </UIContainer>
+    </UIContainerLayoutFixed>
   );
 }
 

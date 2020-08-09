@@ -1,16 +1,15 @@
-import React, { memo, Suspense } from "react";
+import React, { memo } from "react";
 import { BrowserRouter, Switch } from "react-router-dom";
-import { UILoadingPage } from "shared/styled/UILoading";
 import AppRoutes from "./AppRoutes";
+import HeaderToolbarMain from "shared/components/layouts/HeaderToolbarMain";
 
 function AppNavigator() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<UILoadingPage />}>
+			<HeaderToolbarMain/>
         <Switch>
           <AppRoutes />
-        </Switch>
-      </Suspense>
+      	</Switch>
     </BrowserRouter>
   );
 }

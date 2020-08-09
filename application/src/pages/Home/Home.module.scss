@@ -1,7 +1,6 @@
 @import "sass/main";
 
 .drawerBody {
-	@include marginTopRespectToHeader();
 	> *:first-child, *:last-child {
 		flex: none;
 	}

@@ -1,20 +1,27 @@
-import { lazy } from "react";
+import React from "react";
+import loadable from "@loadable/component";
+import { UILoadingPage } from "shared/styled/UILoading";
+
+
+const fallbackHomePage  = {
+	fallback : <UILoadingPage/>
+}
 
 const routes = {
   HOME: {
     path: "/",
-    component: lazy(() => import("pages/Home")),
+    component: loadable(()=>import("pages/Home"),fallbackHomePage),
     SEARCH: {
       path: "/search",
     },
   },
   PROFILE: {
-    path: "profile/:idUser",
-    component: lazy(() => import("pages/Profile")),
+    path: "/users/:idUser",
+    component: loadable(() => import("pages/Profile"),fallbackHomePage),
   },
   CONFIGURATION: {
     path: "configuration",
-    component: lazy(() => import("pages/ConfigurationProfile")),
+    component: loadable(() => import("pages/ConfigurationProfile"),fallbackHomePage),
   },
 };
 

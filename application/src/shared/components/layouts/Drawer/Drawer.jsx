@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import { UIContainer } from 'shared/styled/UIContainer';
 import scss from "./Drawer.module.scss";
 
-function Drawer({ appbar, children }) {
+function Drawer({ children, ...props }) {
   return (
-    <UIContainer className={scss.drawer}>
-      {appbar && <UIContainer>{appbar}</UIContainer>}
+    <UIContainer className={scss.drawer} {...props}>
       {children && <UIContainer>{children}</UIContainer>}
     </UIContainer>
   )
