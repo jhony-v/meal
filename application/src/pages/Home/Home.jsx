@@ -8,7 +8,7 @@ import UserFollowersContainer from 'shared/modules/User/UserFollowers/UserFollow
 import { UIContainer } from 'shared/styled/UIContainer';
 import NewsFeedContainer from 'shared/modules/Publication/NewsFeed/NewsFeedContainer';
 
-function Home() {
+export default function Home() {
 	return (
     <Drawer isMainContainerLayout>
 			<UIFlexContainer 
@@ -25,5 +25,3 @@ function Home() {
     </Drawer>
   )
 }
-
-export default Home;

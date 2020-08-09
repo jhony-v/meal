@@ -2,9 +2,9 @@ import React from "react";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer";
 import Drawer from "shared/components/layouts/Drawer";
 
-function Profile() {
+export default function Profile() {
 	return (
-		<Drawer>
+		<Drawer isMainContainerLayout>
 			<UIFlexContainer
 				sizeHeight="100%"
 				justify="space-between"
@@ -15,4 +15,3 @@ function Profile() {
 		</Drawer>
 	);
 }
-export default Profile;
