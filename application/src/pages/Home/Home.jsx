@@ -8,7 +8,6 @@ import HomeWrapperAddPostContainer from './HomeWrapperAddPost/HomeWrapperAddPost
 import UserFollowersContainer from 'shared/modules/User/UserFollowers/UserFollowersContainer';
 import { UIContainer } from 'shared/styled/UIContainer';
 import NewsFeedContainer from 'shared/modules/Publication/NewsFeed/NewsFeedContainer';
-import VideoPlayer from 'shared/components/smarts/VideoPlayer/VideoPlayer';
 
 function Home() {
 	return (
@@ -20,7 +19,6 @@ function Home() {
 			padding="2em 1in 0" >
         <HomeTrendsContainer/>
 				<UIContainer className={scss.feeds}>
-					<VideoPlayer/>
     	    <HomeWrapperAddPostContainer/>
 					<NewsFeedContainer/>
 				</UIContainer>

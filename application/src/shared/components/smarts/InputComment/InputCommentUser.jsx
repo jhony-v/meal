@@ -8,9 +8,9 @@ import InputCommentTextArea from "./InputCommentTextArea";
 import InputCommentButtonSend from "./InputCommentButtonSend";
 
 const InputCommentUser = (props) => {
-  const { children, placeholder, avatar, maxLength, onSendMessage } = props;
+	const { children, placeholder, avatar, maxLength, onSendMessage } = props;
   return (
-    <UIContainer sizeWidth="600px">
+    <UIContainer sizeWidth="auto">
       <UICardFlat radius="20px">
         <InputCommentProvider maxLengthText={maxLength}>
           <UIFlexContainer padding="20px">
@@ -26,7 +26,7 @@ const InputCommentUser = (props) => {
 };
 
 InputCommentUser.defaultProps = {
-  placeholder: "What's on your mind, Jhony?",
+  placeholder: "What's on your mind, Friend ?",
   avatar: "",
   onSendMessage: () => null,
   children : null

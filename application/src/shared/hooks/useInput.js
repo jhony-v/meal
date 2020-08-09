@@ -6,7 +6,7 @@ const useInput = ( maxLength = 400) => {
   const [isset, setCheckIsset] = useState(false);
 
   useEffect(() => {
-    setCurrentLength(value.length);
+		setCurrentLength(value.length);
     setCheckIsset(currentLength !== 0);
   }, [value,currentLength]);
 

@@ -6,7 +6,8 @@ const HomeWrapperAddPostContainer = () => {
   return (
     <InputCommentUser
       avatar="https://cdn.pixabay.com/photo/2020/07/10/15/37/apple-5391076__340.jpg"
-      maxLength={50}
+			maxLength={50}
+			onSendMessage={e=>alert(e)}
     >
         <HomeWrapperAddExtra/>
     </InputCommentUser>
