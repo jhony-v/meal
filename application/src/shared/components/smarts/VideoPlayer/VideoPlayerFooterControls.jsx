@@ -10,11 +10,11 @@ const VideoPlayerFooterControls = ({children}) => {
 			position="absolute"
 			bottom="0"
 			left="0"
-			sizeWidth="100%"
+			width="100%"
 			
 		>
 			<UIContainer p=".5em" css={{background:"rgba(0,0,0,.4)"}} position="absolute" bottom="0" left="0" width="100%">
-				<UIFlexContainer align="center" justify="space-between">
+				<UIFlexContainer alignItems="center" justifyContent="space-between">
 					{children}
 				</UIFlexContainer>
 			</UIContainer>
