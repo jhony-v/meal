@@ -1,7 +1,6 @@
+import React from "react";
 import { UIContainer } from "shared/styled/UIContainer";
-import { jsx } from "@emotion/core";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer";
-/** @jsx jsx */
 
 const VideoPlayerFooterControls = ({children}) => {
 	return (

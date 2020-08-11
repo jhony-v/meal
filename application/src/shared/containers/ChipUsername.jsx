@@ -1,8 +1,7 @@
+import React from "react";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer";
 import { UIText } from "shared/styled/UIText";
 import AvatarWallpaper from "shared/components/dumbs/AvatarWallpaper";
-import { jsx } from "@emotion/core";
-/**@jsx jsx */
 
 const ChipUsername = () => {
   return (

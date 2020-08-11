@@ -1,7 +1,6 @@
-import { jsx } from "@emotion/core";
+import React from "react";
 import { motion } from "framer-motion";
 import { UIAvatarFeaturedOutlined } from "shared/styled/UIAvatar";
-/**@jsx jsx */
 
 const variantsItem = {
 	closed: {

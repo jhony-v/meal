@@ -1,7 +1,6 @@
-import { forwardRef } from "react";
-import { jsx, css } from "@emotion/core";
+import React , { forwardRef } from "react";
+import { css } from "@emotion/core";
 import { useVideoPlayerContext } from "./Providers/VideoPlayerProvider";
-/** @jsx jsx */
 
 const VideoPlayerMedia = forwardRef(({src}, ref) => {
 	const { onToggleFullScreen } = useVideoPlayerContext();

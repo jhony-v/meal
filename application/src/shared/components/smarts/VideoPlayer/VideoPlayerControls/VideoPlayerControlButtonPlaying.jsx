@@ -1,7 +1,6 @@
+import React from "react";
 import { IoIosPlayCircle, IoIosPause } from "react-icons/io";
 import { useVideoPlayerContext } from "../Providers/VideoPlayerProvider";
-import { jsx } from "@emotion/core";
-/** @jsx jsx */
 
 export default () => {
 	const { playing, onTogglePlaying } = useVideoPlayerContext();

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import React,{ useRef } from "react";
 import { UIContainer } from "shared/styled/UIContainer";
 import VideoPlayerFooterControls from "./VideoPlayerFooterControls";
 import VideoPlayerControlVolume from "./VideoPlayerControls/VideoPlayerControlVolume";
@@ -7,8 +7,6 @@ import VideoPlayerMedia from "./VideoPlayerMedia";
 import VideoPlayerControlProgress from "./VideoPlayerControls/VideoPlayerControlProgress";
 import VideoPlayerProvider from "./Providers/VideoPlayerProvider";
 import VideoPlayerControlButtonPlaying from "./VideoPlayerControls/VideoPlayerControlButtonPlaying";
-import { jsx } from "@emotion/core";
-/** @jsx jsx */
 
 
 const VideoPlayer = ({src}) => {
