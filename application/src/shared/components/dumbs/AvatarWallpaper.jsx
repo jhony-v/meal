@@ -4,11 +4,11 @@ import { UIAvatar, UIAvatarImage } from "shared/styled/UIAvatar";
 
 function AvatarWallpaper({ image, avatarIcon, sizeAvatar, ...props }) {
   return (
-    <UIAvatar {...props} sizeAvatar={sizeAvatar}>
+    <UIAvatar {...props} size={sizeAvatar}>
       {avatarIcon ? (
         avatarIcon
       ) : (
-        <UIAvatarImage src={image} sizeAvatar={sizeAvatar} />
+        <UIAvatarImage src={image} size={sizeAvatar} />
       )}
     </UIAvatar>
   );

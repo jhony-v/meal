@@ -8,8 +8,8 @@ import NavigatorLink from 'shared/components/dumbs/NavigatorLink'
 
 export default function HeaderLinksNavigation() {
     return (
-        <UIContainer sizeWidth="50%">
-            <UIFlexContainer justify="space-between" align="center">
+        <UIContainer width="50%">
+            <UIFlexContainer justifyContent="space-between" alignItems="center">
                 <NavigatorLink to={routes.HOME.path} icon={IoIosHome}>Home</NavigatorLink>
                 <NavigatorLink to="/trends" icon={FaHashtag}>More</NavigatorLink>
                 <NavigatorLink to="/trends" icon={FaRegEnvelope}>Messages</NavigatorLink>

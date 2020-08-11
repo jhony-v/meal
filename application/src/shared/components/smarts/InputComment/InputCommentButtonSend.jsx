@@ -10,8 +10,8 @@ export default ({onClick}) => {
   return (
     <UIFlexContainer
       padding="0 20px 20px"
-      justify="space-between"
-      align="center"
+      justifyContent="space-between"
+      alignItems="center"
     >
       <UITextSmooth size="small"> {currentLength}/{maxLength} </UITextSmooth>
       {isset && <UIButton variant="primary" onClick={handlerOnClick}>comentar</UIButton>}

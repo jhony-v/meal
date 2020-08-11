@@ -5,7 +5,7 @@ import { useTheme } from "emotion-theming";
 export default function HomeWrapperExtraButton({icon: IconButton,...restProps}) {
   const { colors } = useTheme();
   return (
-    <UIContainer {...restProps} block marginRight="20px">
+    <UIContainer {...restProps} block mr="20px">
       <IconButton size={22} color={colors.primary} {...restProps} />
     </UIContainer>
   );

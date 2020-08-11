@@ -1,24 +1,28 @@
 import styled from "@emotion/styled";
-import { propsThemeBackgroundContainer } from "./styledUtils/paints";
-import { computeDrawerLayoutActive, computeHeightHeaderNavigator, computeMargin } from "./styledUtils/boxes";
+import { layout, position, flex, margin, variant } from "styled-system";
+import variables from "./styledConstants/variables";
 
+export const UIContainer = styled.div(
+	(props) => ({
+		paddingTop: props.isMainContainerLayout && variables.heightToolbar,
+	}),
+	variant({
+		prop: "variantColor",
+		variants: {
+			page: {
+				backgroundColor: "grayDark1",
+			},
+			layout: {
+				backgroundColor: "light",
+			},
+		},
+	}),
+	layout,
+	position,
+	flex,
+	margin
+);
 
-export const UIContainer = styled.div`
-	${computeMargin};
-	${computeDrawerLayoutActive};
-	background: ${propsThemeBackgroundContainer};
-	position: ${(props) => props.position};
-	width: ${(props) => props.sizeWidth || props.sizeWidth};
-	height: ${(props) => props.sizeHeight};
-	padding: ${(props) => props.padding};
-	flex: ${(props) => props.flex};
-	z-index: ${(props) => props.index};
-	top: ${(props) => props.top};
-	bottom: ${(props) => props.bottom};
-	left: ${(props) => props.left};
-	right: ${(props) => props.right};
-`;
-
-export const UIContainerLayoutFixed = styled(UIContainer)`
-	${computeHeightHeaderNavigator};
-`
+export const UIContainerLayoutFixed = styled(UIContainer)((props) => ({
+	height: props.heightToolbar || variables.heightToolbar,
+}));

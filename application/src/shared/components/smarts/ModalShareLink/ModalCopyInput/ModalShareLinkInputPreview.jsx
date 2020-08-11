@@ -26,7 +26,7 @@ const UIModalInputPreviewLink = styled.div`
 const ModalShareLinkInputPreview = ({ linkShare }) => {
 	return (
 		<Fragment>
-			<UIContainer marginBottom="1em">
+			<UIContainer mb="1em">
 				<UIText weight size="small" variant="dark">
 					Or copy link
 				</UIText>

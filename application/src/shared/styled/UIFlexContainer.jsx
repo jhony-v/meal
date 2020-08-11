@@ -1,14 +1,12 @@
 import styled from "@emotion/styled";
-import { computePadding, computeMargin } from "./styledUtils/boxes";
+import { flexbox, layout, margin, padding } from "styled-system";
 
-export const UIFlexContainer = styled.div`
-	display : flex;
-	align-items: ${(props) => props.align};
-	justify-content: ${(props) => props.justify};
-	flex-direction: ${(props) => props.flexDir};
-	flex: ${(props) => props.flex};
-	width: ${(props) => props.sizeWidth};
-	height: ${(props) => props.sizeHeight };
-	${computeMargin};
-	${computePadding};
-`;
+export const UIFlexContainer = styled.div(
+	{
+		display: "flex",
+	},
+	flexbox,
+	layout,
+	margin,
+	padding
+);

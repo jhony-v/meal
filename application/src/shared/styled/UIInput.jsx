@@ -1,18 +1,24 @@
 import styled from "@emotion/styled";
+import { width, borderRadius, space, layout } from "styled-system";
 
-export const UIInput = styled.input`
-  padding: 10px;
-  border-radius: ${(props) => props.borderRadius || "20px"};
-  width: ${(props) => props.sizeWidth || "100%"};
-  background: ${(props) => props.theme.colors.grayLight1};
-`;
+export const UIInput = styled.input(
+	(props) => ({
+		padding: "10px",
+		background: props.theme.colors.grayLight1,
+	}),
+	width,
+	borderRadius
+);
+UIInput.defaultProps = { width: "100%", borderRadius: "20px" };
 
-export const UIInputTextArea = styled.textarea`
-  resize: none;
-  padding: ${(props) => props.padding};
-  margin: ${(props) => props.margin};
-  width: ${(props) => props.sizeWidth || "100%"};
-  &::-webkit-input-placeholder{
-    color : ${props => props.theme.colors.grayDark2};
-  }
-`;
+export const UIInputTextArea = styled.textarea(
+	(props) => ({
+		resize: "none",
+		"&::-webkit-input-placeholder": {
+			color: props.theme.colors.grayDark2,
+		},
+	}),
+	space,
+	layout
+);
+UIInputTextArea.defaultProps = { width: "100%" };

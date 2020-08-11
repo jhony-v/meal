@@ -1,14 +1,14 @@
 import styled from "@emotion/styled";
-import { computeGridRepeatTemplateColumns } from "./styledUtils/boxes";
+import { grid } from "styled-system";
 
+//   ${computeGridRepeatTemplateColumns};
+export const UIGrid = styled.div(
+	{
+		display: "flex",
+	},
+	{
+		grid,
+	}
+);
 
-export const UIGrid = styled.div`
-  display: grid;
-  ${computeGridRepeatTemplateColumns};
-  gap: ${(props) => props.gap && props.gap};
-`;
-
-export const UIGridItem = styled.div`
-  grid-column: ${(props) => props.gridColumn && props.gridColumn};
-  grid-row: ${(props) => props.gridRow && props.gridRow};
-`;
+export const UIGridItem = styled.div(grid);

@@ -11,7 +11,7 @@ const HomeTrendsContainer = () => {
     <FlatList
       data={Array(4).fill(0)}
       renderHeader={<UITextBoldLarge>Trends</UITextBoldLarge>}
-      renderFooter={<UIContainer marginTop="2em"><UIButton variant="primary" block>New post</UIButton></UIContainer>}
+      renderFooter={<UIContainer mt="2em"><UIButton variant="primary" block>New post</UIButton></UIContainer>}
       render={(e, i) => (
         <HomeTrendItem key={i} title="# New Event treends" detail="2353, Tweets" index={i}>
             <HomeTrendItemUserDetail/>

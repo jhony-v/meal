@@ -15,11 +15,11 @@ const NavigatorLink = ({ to, icon: IconLink, children, ...props }) => {
   return (
     <hoverRotate.ContainerMotion>
       <NavLink to={to} activeStyle={activeStyle} {...props}>
-        <UIFlexContainer justify="center">
+        <UIFlexContainer justifyContent="center">
           <hoverRotate.AnimateMotion>
             <IconLink />
           </hoverRotate.AnimateMotion>
-          <UIContainer margin="0 0 0 10px">
+          <UIContainer ml="10px">
             <UIText size="small1" weight variant="dark">
               {children}
             </UIText>

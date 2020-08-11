@@ -10,16 +10,16 @@ import InputCommentButtonSend from "./InputCommentButtonSend";
 const InputCommentUser = (props) => {
 	const { children, placeholder, avatar, maxLength, onSendMessage } = props;
   return (
-    <UIContainer sizeWidth="auto">
-      <UICardFlat radius="20px">
+    <UIContainer width="auto">
+      <UICardFlat borderRadius="20px">
         <InputCommentProvider maxLengthText={maxLength}>
-          <UIFlexContainer padding="20px">
+          <UIFlexContainer p="20px">
             <UIAvatarImage src={avatar} />
             <InputCommentTextArea placeholder={placeholder} />
           </UIFlexContainer>
           <InputCommentButtonSend onClick={onSendMessage} />
         </InputCommentProvider>
-        {children && <UIContainer padding="20px">{children}</UIContainer>}
+        {children && <UIContainer p="20px">{children}</UIContainer>}
       </UICardFlat>
     </UIContainer>
   );

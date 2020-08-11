@@ -12,8 +12,8 @@ export default function Home() {
 	return (
     <Drawer isMainContainerLayout>
 			<UIFlexContainer 
-			sizeHeight="100%" 
-			justify="space-between"
+			height="100%" 
+			justifyContent="space-between"
 			padding="2em 1in 0" >
         <HomeTrendsContainer/>
 				<UIContainer className={scss.feeds}>

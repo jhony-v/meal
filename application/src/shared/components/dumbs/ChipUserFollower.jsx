@@ -12,7 +12,7 @@ function ChipUserFollower(props){
 	return (
 		<UIFlexContainer {...restProps}>
 			<UIAvatarImage src={avatar} />
-			<UIContainer marginRight="10px" marginLeft="10px">
+			<UIContainer mx="10px" >
 					<UIText weight block variant="dark">{username}</UIText>
 					<UITextSmooth size="small2" onClick={onClick}>{description}</UITextSmooth>
 			</UIContainer>

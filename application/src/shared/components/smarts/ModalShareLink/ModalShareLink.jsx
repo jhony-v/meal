@@ -32,8 +32,8 @@ const ModalShareLink = ({ visible, link, onClose }) => {
 		return (
 			<UIBackdrop light>
 				<UIFlexContainer align="center" justify="center" sizeHeight="100%">
-						<CardShadowAnimated variants={variants} initial="closed" animate="open" shadow="0 10px 20px rgba(0,0,0,.1)">
-							<UIContainer padding="1em 3em" sizeWidth="600px">
+						<CardShadowAnimated variants={variants} initial="closed" animate="open" boxShadow="0 10px 20px rgba(0,0,0,.1)">
+							<UIContainer p="1em 3em" width="600px">
 								<ModalShareLinkHeader onClick={onClose} />
 								<AsyncModalShareListSocialNetworks linkShare={link} />
 								<ModalShareLinkInputPreview linkShare={link} />
