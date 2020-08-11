@@ -37,11 +37,10 @@ export default ({ link, transitionDelay, color, icon: IconComponent }) => {
 		<AvatarOutlinedAnimated
 			{...propsOutlined}
 			variants={variantsItem}
-			colorAvatar={color}
 			href={link}
 			custom={transitionDelay * 0.05}
 		>
-			<IconComponent size={25} />
+			<IconComponent size={25} color={color} />
 		</AvatarOutlinedAnimated>
 	);
 };
