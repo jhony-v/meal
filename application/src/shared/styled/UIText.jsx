@@ -5,7 +5,6 @@ export const UIText = styled.span(
 	({ theme, ...props }) => ({
 		userSelect: props.noSelect && "none",
 		fontWeight: props.weight && "bold",
-		fontSize: (props.size ? theme.fontSize[props.size] : theme.fontSize.regular) + "rem",
 		...(props.block && {
 			display: "block",
 			width: props.sizeWidth || "100%",
@@ -15,6 +14,7 @@ export const UIText = styled.span(
 	color,
 	fontSize
 );
+UIText.defaultProps = { fontSize : "normal.1" }
 
 export const UITextSmooth = styled(UIText)(({ theme }) => ({
 	color: theme.colors.neutralLightMedium,
@@ -22,7 +22,7 @@ export const UITextSmooth = styled(UIText)(({ theme }) => ({
 
 export const UITextBoldLarge = styled(UIText)(
 	({ theme }) => ({
-		fontSize: theme.fontSize.big * 1.4 + "rem",
+		fontSize: theme.fontSizes.big[0],
 		fontWeight: "bold",
 	}),
 	variant({

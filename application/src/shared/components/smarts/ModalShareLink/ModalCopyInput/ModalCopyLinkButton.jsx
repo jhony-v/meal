@@ -9,5 +9,5 @@ export default ({ linkShare }) => {
 			alert("Link copiado");
 		});
 	};
-	return <UIText size="small" weight onClick={onCopyText}>Copy</UIText>
+	return <UIText fontSize="small.2" weight onClick={onCopyText}>Copy</UIText>
 };

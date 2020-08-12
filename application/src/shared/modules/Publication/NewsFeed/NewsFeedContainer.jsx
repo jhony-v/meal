@@ -17,12 +17,12 @@ const NewsFeedContainer = () => {
 					<UIFlexContainer>
 						<UIAvatarImage src="https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774__340.jpg"/>
 						<UIContainer ml="10px">
-						<UIText weight block color="grayDark1">Jhon Doe Stark</UIText>
-						<UITextSmooth size="small3">Publicado hace 13 horas <IoMdGlobe size={12} /></UITextSmooth>
+						<UIText weight block color="neutral">Jhon Doe Stark</UIText>
+						<UITextSmooth fontSize="small.0">Publicado hace 13 horas <IoMdGlobe size={12} /></UITextSmooth>
 						</UIContainer>
 					</UIFlexContainer>
 					<UIContainer my="1em">
-						<UITextSmooth size="small2">
+						<UITextSmooth fontSize="small.1">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad libero cum voluptatem nihil commodi qui recusandae, dolores quas impedit. Explicabo, ipsa assumenda nam cumque nesciunt mollitia minus ut officia!
 						</UITextSmooth>
 					</UIContainer>

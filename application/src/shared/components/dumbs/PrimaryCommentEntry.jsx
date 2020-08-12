@@ -4,16 +4,14 @@ import { UIInput } from "shared/styled/UIInput";
 import { UIContainer } from "shared/styled/UIContainer";
 import { UIAvatar } from "shared/styled/UIAvatar";
 import { IoIosPaperPlane } from "react-icons/io";
-import { useTheme } from "emotion-theming";
 import PropTypes from "prop-types";
 
 function PrimaryCommentEntry({ placeholder, onKeyUp, onClick }) {
-  const { colors } = useTheme();
   return (
     <UIFlexContainer>
       <UIInput placeholder={placeholder} onKeyUp={onKeyUp} />
       <UIContainer ml="10px">
-        <UIAvatar personalized bgColor={colors.primary} color="white" onClick={onClick}>
+        <UIAvatar bg="primary" color="white" onClick={onClick}>
           <IoIosPaperPlane />
         </UIAvatar>
       </UIContainer>

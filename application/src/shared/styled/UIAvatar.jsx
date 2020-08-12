@@ -23,12 +23,11 @@ export const UIAvatar = styled.div(
 );
 UIAvatar.defaultProps = { borderRadius: "100%" };
 
-export const UIAvatarFeaturedPrimary = styled(UIAvatar)((props) => ({
+export const UIAvatarFeaturedPrimary = styled(UIAvatar)({
 	padding: "4px",
 	boxSizing: "content-box",
-	border: `2px solid ${props.theme.colors.primary}`,
-}));
+});
+UIAvatarFeaturedPrimary.defaultProps = { border: "avatar.featured" };
 
-export const UIAvatarFeaturedOutlined = styled(UIAvatar)((props) => ({
-	border: `1px solid ${props.theme.colors.neutralDarker}`,
-}));
+export const UIAvatarFeaturedOutlined = styled(UIAvatar)({});
+UIAvatarFeaturedOutlined.defaultProps = { border: "avatar.outline" };

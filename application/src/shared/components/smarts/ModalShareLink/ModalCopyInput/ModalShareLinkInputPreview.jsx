@@ -27,7 +27,7 @@ const ModalShareLinkInputPreview = ({ linkShare }) => {
 	return (
 		<Fragment>
 			<UIContainer mb="1em">
-				<UIText weight size="small" variant="dark">
+				<UIText weight fontSize="small.2" variant="dark">
 					Or copy link
 				</UIText>
 			</UIContainer>

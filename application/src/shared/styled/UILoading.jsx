@@ -7,9 +7,9 @@ export const UILoading = styled.div(
 	({ theme }) => ({
 		borderRadius: "100%",
 		margin: "auto",
-		border: `3px solid ${theme.colors.grayLight1}`,
-		animation: `${keyframeRotateAnimation} .5s infinite linear`,
+		border: `3px solid ${theme.colors.neutralLight}`,
 		borderLeftColor: theme.colors.primary,
+		animation: `${keyframeRotateAnimation} .5s infinite linear`,
 	}),
 	size
 );
