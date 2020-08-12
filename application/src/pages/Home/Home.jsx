@@ -14,7 +14,7 @@ export default function Home() {
 			<UIFlexContainer 
 			height="100%" 
 			justifyContent="space-between"
-			padding="2em 1in 0" >
+			p="2em 1in 0" >
         <HomeTrendsContainer/>
 				<UIContainer className={scss.feeds}>
     	    <HomeWrapperAddPostContainer/>

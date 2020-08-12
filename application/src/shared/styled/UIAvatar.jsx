@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { layout, color, background, borderRadius ,  width , height, borders } from "styled-system";
+import { layout, color, background, borderRadius ,  width , height, borders, margin } from "styled-system";
 
 export const UIAvatarImage = styled.img(
 	{
@@ -8,7 +8,8 @@ export const UIAvatarImage = styled.img(
 	layout,
 	width,
 	height,
-	borderRadius
+	borderRadius,
+	margin
 );
 UIAvatarImage.defaultProps = { size: "40px", borderRadius: "100%" };
 

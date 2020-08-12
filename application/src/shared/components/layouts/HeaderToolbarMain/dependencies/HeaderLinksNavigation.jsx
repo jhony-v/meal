@@ -10,7 +10,7 @@ export default function HeaderLinksNavigation() {
     return (
         <UIContainer width="50%">
             <UIFlexContainer justifyContent="space-between" alignItems="center">
-                <NavigatorLink to={routes.HOME.path} icon={IoIosHome}>Home</NavigatorLink>
+                <NavigatorLink exact to={routes.HOME.path} icon={IoIosHome}>Home</NavigatorLink>
                 <NavigatorLink to="/trends" icon={FaHashtag}>More</NavigatorLink>
                 <NavigatorLink to="/trends" icon={FaRegEnvelope}>Messages</NavigatorLink>
                 <NavigatorLink to="/trends" icon={FaGlobe}>Trends</NavigatorLink>

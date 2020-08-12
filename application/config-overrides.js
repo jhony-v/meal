@@ -1,3 +1,13 @@
-const { override, addBabelPreset } = require("customize-cra");
+const { override, addBabelPresets } = require("customize-cra");
 
-module.exports = override(addBabelPreset("@emotion/babel-preset-css-prop"));
+module.exports = override(
+	...addBabelPresets([
+		"@emotion/babel-preset-css-prop",
+		{
+			autoLabel: false,
+			sourceMap: false,
+			labelFormat: "[local]",
+			cssPropOptimization: true,
+		},
+	])
+);

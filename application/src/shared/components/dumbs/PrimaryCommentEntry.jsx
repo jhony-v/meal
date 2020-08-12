@@ -11,7 +11,7 @@ function PrimaryCommentEntry({ placeholder, onKeyUp, onClick }) {
     <UIFlexContainer>
       <UIInput placeholder={placeholder} onKeyUp={onKeyUp} />
       <UIContainer ml="10px">
-        <UIAvatar bg="primary" color="white" onClick={onClick}>
+        <UIAvatar bg="primary" color="primaryLight" onClick={onClick}>
           <IoIosPaperPlane />
         </UIAvatar>
       </UIContainer>
