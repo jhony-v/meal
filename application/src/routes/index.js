@@ -20,15 +20,15 @@ const routes = {
 		routes: {
 			DEFAUT: {
 				path: "/",
-				component: loadable(() => import("pages/Profile/ProfileModules/ProfileDefault")),
+				component: loadable(() => import("pages/Profile/Modules/ProfileDefault")),
 			},
 			ABOUT: {
 				path: "about",
-				component: loadable(() => import("pages/Profile/ProfileModules/ProfileAbout")),
+				component: loadable(() => import("pages/Profile/Modules/ProfileAbout")),
 			},
 			ASSETS: {
 				path: "assets",
-				component: loadable(() => import("pages/Profile/ProfileModules/ProfileAssets")),
+				component: loadable(() => import("pages/Profile/Modules/ProfileAssets")),
 			},
 		},
 	},

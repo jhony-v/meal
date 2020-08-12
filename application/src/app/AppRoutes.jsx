@@ -14,7 +14,7 @@ function AppRoutes() {
 				}
 			`}/>
       <Route exact path={routes.HOME.path} component={routes.HOME.component} />
-      <Route exact path={routes.PROFILE.path} component={routes.PROFILE.component} />
+      <Route path={routes.PROFILE.path} component={routes.PROFILE.component} />
     </Fragment>
   );
 }
