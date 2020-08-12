@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { flexbox, layout, margin, padding } from "styled-system";
+import { flexbox, layout, margin, padding, position , width, height} from "styled-system";
 
 export const UIFlexContainer = styled.div(
 	{
@@ -7,6 +7,9 @@ export const UIFlexContainer = styled.div(
 	},
 	flexbox,
 	layout,
+	width,
+	height,
 	margin,
-	padding
+	padding,
+	position
 );
