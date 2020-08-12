@@ -30,5 +30,5 @@ export const UIAvatarFeaturedPrimary = styled(UIAvatar)((props) => ({
 }));
 
 export const UIAvatarFeaturedOutlined = styled(UIAvatar)((props) => ({
-	border: `1px solid ${props.theme.colors.grayDarkBorder}`,
+	border: `1px solid ${props.theme.colors.neutralDarker}`,
 }));

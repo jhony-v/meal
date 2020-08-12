@@ -17,7 +17,7 @@ export const UIText = styled.span(
 );
 
 export const UITextSmooth = styled(UIText)(({ theme }) => ({
-	color: theme.colors.grayDark1,
+	color: theme.colors.neutralLightMedium,
 }));
 
 export const UITextBoldLarge = styled(UIText)(
@@ -28,7 +28,7 @@ export const UITextBoldLarge = styled(UIText)(
 	variant({
 		variants: {
 			dark: {
-				color: "dark",
+				color: "primaryDark",
 			},
 			primary: {
 				color: "primary",

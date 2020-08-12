@@ -8,7 +8,7 @@ import { UIContainerLayoutFixed } from "shared/styled/UIContainer";
 
 function HeaderToolbarMain() {
   return (
-    <UIContainerLayoutFixed variantColor="layout" className={scss.header}>
+    <UIContainerLayoutFixed variantColor="light" className={scss.header}>
       <UIFlexContainer alignItems="center" justifyContent="space-between" width="100%">
         <IconApplication />
         <HeaderLinksNavigation />

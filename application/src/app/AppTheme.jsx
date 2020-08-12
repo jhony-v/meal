@@ -1,9 +1,9 @@
 import React from "react";
 import { ThemeProvider } from "emotion-theming";
-import primary from "../themes/primary";
+import themes from "../themes";
 
 function AppTheme({ children }) {
-  return <ThemeProvider theme={primary}>{children}</ThemeProvider>;
+  return <ThemeProvider theme={themes}>{children}</ThemeProvider>;
 }
 
 export default AppTheme;

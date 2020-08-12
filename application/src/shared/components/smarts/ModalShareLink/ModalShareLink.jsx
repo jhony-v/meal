@@ -31,7 +31,7 @@ const ModalShareLink = ({ visible, link, onClose }) => {
 	if (visible)
 		return (
 			<UIBackdrop light>
-				<UIFlexContainer align="center" justify="center" sizeHeight="100%">
+				<UIFlexContainer alignItems="center" justifyContent="center" height="100%">
 						<CardShadowAnimated variants={variants} initial="closed" animate="open" boxShadow="0 10px 20px rgba(0,0,0,.1)">
 							<UIContainer p="1em 3em" width="600px">
 								<ModalShareLinkHeader onClick={onClose} />

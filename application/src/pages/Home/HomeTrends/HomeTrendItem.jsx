@@ -12,7 +12,7 @@ const HomeTrendItem = ({index, title , detail, children }) => {
       </UIContainer>
       <UIContainer>
         <UIContainer mb="5px">
-          <UIText weight size="small" variant="dark">{title}</UIText>
+          <UIText weight size="small" color="primaryDark">{title}</UIText>
         </UIContainer>
         <UITextSmooth size="small">{detail}</UITextSmooth>
         {children}

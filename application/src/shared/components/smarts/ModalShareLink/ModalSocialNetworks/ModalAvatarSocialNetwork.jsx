@@ -17,7 +17,7 @@ const variantsItem = {
 };
 
 const propsOutlined = {
-	sizeAvatar: 50,
+	size: 50,
 	as: "a",
 	target: "_blank",
 	title: "share link",

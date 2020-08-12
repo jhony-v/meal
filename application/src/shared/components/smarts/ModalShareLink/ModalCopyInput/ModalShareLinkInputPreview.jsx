@@ -10,11 +10,11 @@ const UIModalInputPreviewLink = styled.div`
 	display: flex;
 	align-items: center;
 	width: 100%;
-	border: 1px solid ${props=>props.theme.colors.grayDarkBorder};
+	border: 1px solid ${props=>props.theme.colors.neutralDarker};
 	input {
 		width: 100%;
 		margin-right: 20px;
-		color : ${props=>props.theme.colors.dark};
+		color : ${props=>props.theme.colors.primaryDark};
 	}
 	> :last-child {
 		flex: none;

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { layout, position, flex, margin, variant } from "styled-system";
+import { layout, position, flex, margin, variant, padding } from "styled-system";
 import variables from "./styledConstants/variables";
 
 export const UIContainer = styled.div(
@@ -9,18 +9,19 @@ export const UIContainer = styled.div(
 	variant({
 		prop: "variantColor",
 		variants: {
-			page: {
-				backgroundColor: "grayDark1",
+			lightMedium: {
+				backgroundColor: "neutralLightMedium",
 			},
-			layout: {
-				backgroundColor: "light",
+			light: {
+				backgroundColor: "primaryLight",
 			},
 		},
 	}),
 	layout,
 	position,
 	flex,
-	margin
+	margin,
+	padding
 );
 
 export const UIContainerLayoutFixed = styled(UIContainer)((props) => ({

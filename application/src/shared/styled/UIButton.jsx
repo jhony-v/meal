@@ -21,15 +21,15 @@ export const UIButton = memo(
 			variants: {
 				primary: {
 					bg: "primary",
-					color: "light",
+					color: "primaryLight",
 				},
 				outline: {
 					color: "primary",
 					border: "1px solid currentColor",
 				},
 				default: {
-					color: "grayDark3",
-					bg: "grayLight1",
+					color: "neutralLightMedium",
+					bg: "neutralLight",
 				},
 			},
 		}),

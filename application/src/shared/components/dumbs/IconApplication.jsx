@@ -3,7 +3,7 @@ import AvatarWallpaper from "./AvatarWallpaper";
 
 function IconApplication() {
   return (
-    <AvatarWallpaper sizeAvatar={30} image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFpif80rWnzxvdTHPtp5mmBWaDVc2Yq_ukhQ&usqp=CAU" />
+    <AvatarWallpaper size={30} image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFpif80rWnzxvdTHPtp5mmBWaDVc2Yq_ukhQ&usqp=CAU" />
   );
 }
 

@@ -8,9 +8,9 @@ import { useTheme } from "emotion-theming";
 const ModalShareLinkHeader = ({ onClick }) => {
 	const { colors } = useTheme();
 	return (
-		<UIFlexContainer align="center" justify="space-between">
+		<UIFlexContainer alignItems="center" justifyContent="space-between">
 			<UIText weight variant="dark">Share this link</UIText>
-			<UIAvatar background={colors.grayDarkBorder} colorAvatar="gray" onClick={onClick}>
+			<UIAvatar background={colors.neutralLight} color="gray" onClick={onClick}>
 				<IoIosClose size={30} />
 			</UIAvatar>
 		</UIFlexContainer>

@@ -9,12 +9,12 @@ const propsBackdropColor = (props) => {
 		color = 255;
 	}
 	themeColor = Array(3).fill(color).join(",");
-	opacity = props.opacity || 0.7;
+	opacity = props.opacity || 0.8;
 	return { backgroundColor: `rgba(${themeColor},${opacity})` };
 };
 
 export const UIBackdrop = styled.div((props) => ({
-	position: "absolute",
+	position: "fixed",
 	zIndex: 100,
 	...computePositionAbsolute(),
 	...propsBackdropColor(props),
