@@ -1,20 +1,18 @@
-import React , { forwardRef } from "react";
+import React, { forwardRef } from "react";
 import { useVideoPlayerContext } from "./Providers/VideoPlayerProvider";
+import { UIVideoSimple } from "shared/styled/UIVideo";
 
-const VideoPlayerMedia = forwardRef(({src}, ref) => {
-	const { onToggleFullScreen } = useVideoPlayerContext();
+const VideoPlayerMedia = forwardRef(({ src, ...props }, ref) => {
+	const { onToggleFullScreen, isFullscreen } = useVideoPlayerContext();
 	return (
-		<video 
-		width="100%" preload="metadata" ref={ref} src={src}
-		onDoubleClick={onToggleFullScreen}		
-		css={{
-			objectFit:"cover",
-			display : "block",
-			height:"200px",
-			"&:fullscreen" : {
-				height : "100%"
-			}
-		}}
+		<UIVideoSimple
+			{...props}
+			preload="metadata"
+			ref={ref}
+			src={src}
+			fullScreen={isFullscreen}
+			onDoubleClick={onToggleFullScreen}
+			onContextMenu={(e) => e.preventDefault()}
 		/>
 	);
 });

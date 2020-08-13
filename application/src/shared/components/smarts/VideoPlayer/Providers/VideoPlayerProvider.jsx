@@ -27,41 +27,50 @@ const VideoPlayerProvider = ({ video, children }) => {
 			video.current.parentNode.webkitRequestFullscreen();
 		}
 		else {
-			video.current.parentNode.webkitExitFullscreen();
+			document.webkitExitFullscreen();
 		}
 		setFullScreen(!isFullscreen);
 	}
- 	
-	const onTimeUpdate = () => {
-		let currentPercentage = (video.current.currentTime / video.current.duration) * 100;
-		setPercentage(currentPercentage);
-		setCurrenTime(video.current.currentTime);
-		onUpdateBuffered();
-	};
-	
-	const onUpdateBuffered = () => {
-		let currentBuffer = (100 * video.current.buffered.end(video.current.buffered.length - 1)) / video.current.duration;
-		setCurrentBufferPercentage(currentBuffer);
-	};
 
-	const onProgress = () => setDuration(video.current.duration || 0);
-	const onPlaying = () => setLoadingVideo(false);
-	const onWaiting = () => setLoadingVideo(true);
+
 	const onCurrentSpeed = (value) => setCurrentSpeed(value);
 
 	useEffect(() => {
 		video.current.playbackRate = currentSpeed;
 	},[currentSpeed,video]);
 
+
 	useEffect(() => {
-		if (video.current.src) {
+
+		const onTimeUpdate = () => {
+			let currentPercentage = (video.current.currentTime / video.current.duration) * 100;
+			setPercentage(currentPercentage);
+			setCurrenTime(video.current.currentTime);
+			onUpdateBuffered();
+		};
+		
+		const onUpdateBuffered = () => {
+			let currentBuffer = (100 * video.current.buffered.end(video.current.buffered.length - 1)) / video.current.duration;
+			setCurrentBufferPercentage(currentBuffer);
+		};
+	
+		const onProgress = () => setDuration(video.current.duration || 0);
+		const onPlaying = () => setLoadingVideo(false);
+		const onWaiting = () => setLoadingVideo(true);
+
+		const onVideoEvents = () => {
 			video.current.addEventListener("timeupdate", onTimeUpdate);
 			video.current.addEventListener("sekeed", onUpdateBuffered);
 			video.current.addEventListener("progress", onProgress);
 			video.current.addEventListener("playing", onPlaying);
 			video.current.addEventListener("waiting", onWaiting);
 		}
-	}, []);
+
+		if(video.current.src) {
+			onVideoEvents();
+		}
+		
+	},[video]);
 
 	return (
 		<VideoPlayerContext.Provider

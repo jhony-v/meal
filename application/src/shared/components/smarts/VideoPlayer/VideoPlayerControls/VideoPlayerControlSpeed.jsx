@@ -14,7 +14,7 @@ export default () => {
 			<AnimatePresence>
 				{open && <InnerInputRange {...propsInputRange} onChange={onChange} />}
 			</AnimatePresence>
-			<IoIosTimer color="white" size={20} onClick={onToggle} />
+			<IoIosTimer color="white" size={20} onClick={onToggle} css={{flex:"none"}} />
 		</Fragment>
 	);
 };
