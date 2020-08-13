@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { UIAvatar, UIAvatarImage } from "shared/styled/UIAvatar";
 
-function AvatarWallpaper({ image, avatarIcon, sizeAvatar, ...props }) {
+function AvatarWallpaper({ image, avatarIcon, ...props }) {
   return (
-    <UIAvatar {...props} {...props}>
+    <UIAvatar {...props}>
       {avatarIcon ? (
         avatarIcon
       ) : (
@@ -16,7 +16,6 @@ function AvatarWallpaper({ image, avatarIcon, sizeAvatar, ...props }) {
 
 AvatarWallpaper.propTypes = {
   image: PropTypes.string.isRequired,
-  sizeAvatar: PropTypes.number,
   avatarIcon: PropTypes.element,
 };
 

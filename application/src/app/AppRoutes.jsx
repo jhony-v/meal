@@ -10,7 +10,7 @@ function AppRoutes() {
     <Fragment>
 			<Global styles={css`
 				body {
-					background : ${theme.colors.light}
+					background : ${theme.colors.primaryLight}
 				}
 			`}/>
       <Route exact path={routes.HOME.path} component={routes.HOME.component} />

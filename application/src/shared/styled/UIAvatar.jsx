@@ -4,6 +4,7 @@ import { layout, color, background, borderRadius ,  width , height, borders, mar
 export const UIAvatarImage = styled.img(
 	{
 		userDrag: "none",
+		borderRadius : "100%",
 	},
 	layout,
 	width,
@@ -11,20 +12,21 @@ export const UIAvatarImage = styled.img(
 	borderRadius,
 	margin
 );
-UIAvatarImage.defaultProps = { size: "40px", borderRadius: "100%" };
+UIAvatarImage.defaultProps = { size: "40px" };
 
 export const UIAvatar = styled.div(
 	{
 		display: "flex",
 		alignItems: "center",
 		justifyContent: "center",
+		borderRadius : "100%",
 	},
 	layout,
 	color,
 	background,
 	borderRadius,
 );
-UIAvatar.defaultProps = { size : "40px", borderRadius: "100%" };
+UIAvatar.defaultProps = { size : "40px" };
 	
 export const UIAvatarFeaturedPrimary = styled(UIAvatar)(
 	{
