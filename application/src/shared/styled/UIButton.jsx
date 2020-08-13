@@ -26,6 +26,7 @@ export const UIButton = memo(
 				outline: {
 					color: "primary",
 					border: "1px solid currentColor",
+					fontWeight : "bold",
 				},
 				default: {
 					color: "neutralLightMedium",
