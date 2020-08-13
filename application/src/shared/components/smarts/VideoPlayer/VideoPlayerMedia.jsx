@@ -1,5 +1,4 @@
 import React , { forwardRef } from "react";
-import { css } from "@emotion/core";
 import { useVideoPlayerContext } from "./Providers/VideoPlayerProvider";
 
 const VideoPlayerMedia = forwardRef(({src}, ref) => {
@@ -8,14 +7,14 @@ const VideoPlayerMedia = forwardRef(({src}, ref) => {
 		<video 
 		width="100%" preload="metadata" ref={ref} src={src}
 		onDoubleClick={onToggleFullScreen}		
-		css={css`
-			object-fit: "cover";
-			display: "block";
-			height : "300px";
-			&:fullscreen {
+		css={{
+			objectFit:"cover",
+			display : "block",
+			height:"200px",
+			"&:fullscreen" : {
 				height : "100%"
 			}
-		`}
+		}}
 		/>
 	);
 });

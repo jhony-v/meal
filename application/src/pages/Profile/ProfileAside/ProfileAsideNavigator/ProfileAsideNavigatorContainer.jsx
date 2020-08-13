@@ -7,7 +7,7 @@ const ProfileAsideNavigatorContainer = () => {
 	const { url } = useRouteMatch();
 
 	return (
-		<UIFlexContainer my={3}>
+		<UIFlexContainer my={4}>
 			<ProfileAsideNavigatorLink exact to={url} text="Profile" />
 			<ProfileAsideNavigatorLink  to={`${url}/about`} text="About" />
 			<ProfileAsideNavigatorLink  to={`${url}/assets`} text="Assets" />

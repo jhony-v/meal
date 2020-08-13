@@ -8,13 +8,13 @@ import { useVideoPlayerContext } from "../Providers/VideoPlayerProvider";
 export default () => {
 	const { currentTime, duration , percentage , bufferPercentage } = useVideoPlayerContext();
 	return(
-		<UIFlexContainer sizeWidth="100%" marginHorizontal="10px" justify="space-between" align="center">
-		<UIText variant="light" size="small2">{timerVideo(currentTime)}</UIText>
+		<UIFlexContainer width="100%" mx="10px" justifyContent="space-between" alignItems="center">
+		<UIText color="primaryLight" fontSize="small.1">{timerVideo(currentTime)}</UIText>
 		<ScrollbarProgressContainer>
 			<ScrollbarProgress absolute percentage={bufferPercentage} />
 			<ScrollbarProgress percentage={percentage} thumb />
 		</ScrollbarProgressContainer>
-		<UIText variant="light" size="small2">{timerVideo(duration)}</UIText>
+		<UIText color="primaryLight" fontSize="small.1">{timerVideo(duration)}</UIText>
 		</UIFlexContainer>
 	)
 };

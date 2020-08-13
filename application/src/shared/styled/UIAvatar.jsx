@@ -24,7 +24,7 @@ export const UIAvatar = styled.div(
 	background,
 	borderRadius,
 );
-UIAvatar.defaultProps = { borderRadius: "100%" };
+UIAvatar.defaultProps = { size : "40px", borderRadius: "100%" };
 	
 export const UIAvatarFeaturedPrimary = styled(UIAvatar)(
 	{
