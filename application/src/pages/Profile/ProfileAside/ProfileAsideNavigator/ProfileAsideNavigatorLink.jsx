@@ -8,10 +8,11 @@ const ProfileAsideNavigatorLink = ({ to, exact, text }) => {
 		path: to,
 		exact,
 	});
-	const css = match && { borderBottom: "2px solid rgb(30,130,230)" };
+	const css = match && { borderBottom: "2px solid currentColor" };
+	const cssColor = match ? "primary" : "neutral";
 	
 	return (
-		<UIText block weight textAlign="center">
+		<UIText block weight textAlign="center" color={cssColor}>
 			<Link to={to}>
 				<UIContainer py={3} css={css}>{text}</UIContainer>
 			</Link>
