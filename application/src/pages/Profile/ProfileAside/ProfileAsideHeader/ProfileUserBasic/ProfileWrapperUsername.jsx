@@ -11,13 +11,13 @@ export default () => {
 				<AvatarWallpaper image={image} size={150} />
 			</UIContainer>
 			<UITextBoldLarge textAlign="center">
-				Jhony Vega Cuya Programmer
+				Jhony Vega | Programmer
 			</UITextBoldLarge>
 		</UIFlexContainer>
 	);
 };
 
-const image = "https://cdn.pixabay.com/photo/2020/07/20/06/42/english-bulldog-5422018__340.jpg";
+const image = "https://images7.alphacoders.com/393/thumb-1920-393953.jpg";
 const styles = {
 	container: {
 		flexDirection: "column",
