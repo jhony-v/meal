@@ -17,7 +17,7 @@ export default () => {
 	);
 };
 
-const image = "https://images7.alphacoders.com/393/thumb-1920-393953.jpg";
+const image = "https://cdn.pixabay.com/photo/2020/05/24/08/40/machine-5213060__340.jpg";
 const styles = {
 	container: {
 		flexDirection: "column",
