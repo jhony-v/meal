@@ -4,10 +4,12 @@ import { useVideoPlayerContext } from "../Providers/VideoPlayerProvider";
 
 export default () => {
 	const { playing, onTogglePlaying } = useVideoPlayerContext();
-	return (
-		<InnerIconPlayingList onClick={onTogglePlaying} icon={playing ? IoIosPause : IoIosPlayCircle} />
-	);
+	return <InnerIconPlayingList onClick={onTogglePlaying} icon={playing ? IoIosPause : IoIosPlayCircle} />
 };
+
+const InnerIconPlayingList = ({ icon: Icon, ...restProps }) => (
+	<Icon {...restProps} {...props} />
+);
 
 const props = {
 	color: "white",
@@ -19,7 +21,3 @@ const props = {
 		transform: "translate(-50%,-50%)",
 	},
 };
-
-const InnerIconPlayingList = ({ icon: Icon, ...restProps }) => (
-	<Icon {...restProps} {...props} />
-);

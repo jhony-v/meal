@@ -1,62 +1,58 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useReducer, useEffect } from "react";
+import VideoPlayerReducer from "./VideoPlayerReducer";
+import VideoPlayerStore from "./VideoPlayerStore";
+import { actions } from "./VideoPlayerActions";
 
 const VideoPlayerContext = React.createContext();
 const VideoPlayerProvider = ({ video, children }) => {
-	const [playing, setPlaying] = useState(false);
-	const [loadingVideo, setLoadingVideo] = useState(false);
-	const [muted, setMuted] = useState(false);
-	const [percentage, setPercentage] = useState(0);
-	const [bufferPercentage, setCurrentBufferPercentage] = useState(0);
-	const [duration, setDuration] = useState(0);
-	const [currentTime, setCurrenTime] = useState(0);
-	const [ currentSpeed , setCurrentSpeed ] = useState(1);
-	const [ isFullscreen , setFullScreen ] = useState(false);
+	const [state, dispatch] = useReducer(VideoPlayerReducer, VideoPlayerStore);
 
 	const onTogglePlaying = () => {
-		if (video.current.paused) video.current.play();
-		else video.current.pause();
-		setPlaying(!video.current.paused);
+		let e = video.current.paused;
+		e ? video.current.play() : video.current.pause();
+		dispatch(actions.togglePlaying(e));
 	};
-	
+
 	const onToggleMuted = () => {
-		setMuted((video.current.muted = !video.current.muted));
+		dispatch(actions.toggleMuted((video.current.muted = !video.current.muted)));
 	};
 
 	const onToggleFullScreen = () => {
-		if(!isFullscreen){
+		if (!state.getIn(["isFullScreen"]))
 			video.current.parentNode.webkitRequestFullscreen();
-		}
-		else {
-			document.webkitExitFullscreen();
-		}
-		setFullScreen(!isFullscreen);
-	}
+		else document.webkitExitFullscreen();
+		dispatch(actions.toggleFullScreen());
+	};
 
-
-	const onCurrentSpeed = (value) => setCurrentSpeed(value);
+	const onCurrentSpeed = (value) => dispatch(actions.setSpeedVideo(value));
 
 	useEffect(() => {
-		video.current.playbackRate = currentSpeed;
-	},[currentSpeed,video]);
-
+		video.current.playbackRate = state.getIn(["speed"]);
+	}, [state, video]);
 
 	useEffect(() => {
-
 		const onTimeUpdate = () => {
-			let currentPercentage = (video.current.currentTime / video.current.duration) * 100;
-			setPercentage(currentPercentage);
-			setCurrenTime(video.current.currentTime);
+			dispatch(
+				actions.setPlayVideoUpdate({
+					percentage: (video.current.currentTime / video.current.duration) * 100,
+					currentTime: video.current.currentTime,
+				})
+			);
 			onUpdateBuffered();
 		};
-		
+
 		const onUpdateBuffered = () => {
-			let currentBuffer = (100 * video.current.buffered.end(video.current.buffered.length - 1)) / video.current.duration;
-			setCurrentBufferPercentage(currentBuffer);
+			dispatch(
+				actions.setPercentageBuffered(
+					(100 * video.current.buffered.end(video.current.buffered.length - 1)) / video.current.duration
+				)
+			);
 		};
-	
-		const onProgress = () => setDuration(video.current.duration || 0);
-		const onPlaying = () => setLoadingVideo(false);
-		const onWaiting = () => setLoadingVideo(true);
+
+		const onProgress = () =>
+			dispatch(actions.setDuration(video.current.duration || 0));
+		const onPlaying = () => dispatch(actions.loadingVideoComplete());
+		const onWaiting = () => dispatch(actions.loadingVideoStart());
 
 		const onVideoEvents = () => {
 			video.current.addEventListener("timeupdate", onTimeUpdate);
@@ -64,25 +60,24 @@ const VideoPlayerProvider = ({ video, children }) => {
 			video.current.addEventListener("progress", onProgress);
 			video.current.addEventListener("playing", onPlaying);
 			video.current.addEventListener("waiting", onWaiting);
-		}
+		};
 
-		if(video.current.src) {
+		if (video.current.src) {
 			onVideoEvents();
 		}
-		
-	},[video]);
+	}, [video]);
 
 	return (
 		<VideoPlayerContext.Provider
 			value={{
-				muted,
-				playing,
-				percentage,
-				bufferPercentage,
-				duration,
-				currentTime,
-				isFullscreen,
-				loadingVideo,
+				muted: state.getIn(["muted"]),
+				playing: state.getIn(["playing"]),
+				loadingVideo: state.getIn(["loadingVideo"]),
+				isFullscreen: state.getIn(["isFullScreen"]),
+				percentage: state.getIn(["percentage"]),
+				bufferPercentage: state.getIn(["bufferPercentage"]),
+				duration: state.getIn(["time", "duration"]),
+				currentTime: state.getIn(["time", "current"]),
 				onTogglePlaying,
 				onToggleMuted,
 				onCurrentSpeed,
