@@ -27,6 +27,7 @@
     "framer-motion": "^1.10.3",
     "graphql": "^15.0.0",
     "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.20",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-apollo": "^3.1.5",
@@ -35,8 +36,7 @@
     "react-image": "^4.0.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "styled-system": "^5.1.5",
-    "underscore": "^1.10.2"
+    "styled-system": "^5.1.5"
   },
   "scripts": {
     "start": "react-app-rewired start",
