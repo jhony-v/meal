@@ -11,7 +11,7 @@ import NewsFeedContainer from "shared/modules/Publication/NewsFeed/NewsFeedConta
 export default function Home() {
 	return (
 		<Drawer isMainContainerLayout>
-			<UIFlexContainer
+			{/* <UIFlexContainer
 				justifyContent="space-between"
 				p="2em 1in 0"
 			>
@@ -21,7 +21,7 @@ export default function Home() {
 					<NewsFeedContainer />
 				</UIContainer>
 				<UserFollowersContainer />
-			</UIFlexContainer>
+			</UIFlexContainer> */}
 		</Drawer>
 	);
 }

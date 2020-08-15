@@ -5,7 +5,7 @@ import { Global, css } from "@emotion/core";
 import { useTheme } from "emotion-theming";
 
 function AppRoutes() {
-	const theme = useTheme();
+	const theme = useTheme<any>();
   return (
     <Fragment>
 			<Global styles={css`

@@ -20,6 +20,13 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^26.0.10",
+    "@types/loadable__component": "^5.13.0",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/styled-system": "^5.1.10",
     "classnames": "^2.2.6",
     "dayjs": "^1.8.32",
     "emotion-theming": "^10.0.27",
@@ -36,13 +43,18 @@
     "react-image": "^4.0.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "styled-system": "^5.1.5"
+    "styled-system": "^5.1.5",
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app-rewired eject",
+    "postinstall": "link-module-alias"
+  },
+  "_moduleAliases": {
+    "src/*": "src"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -65,6 +77,7 @@
     "cross-env": "^7.0.2",
     "customize-cra": "^1.0.0",
     "enzyme": "^3.11.0",
+    "link-module-alias": "^1.2.0",
     "react-app-rewired": "^2.1.6"
   }
 }

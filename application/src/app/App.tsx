@@ -6,7 +6,7 @@ function App() {
   return (
     <AppTheme>
       <AppRouteNavigator />
-    </AppTheme>
+		</AppTheme>
   );
 }
 

@@ -1,6 +1,19 @@
 import colors from "./colors";
 
-const borders = {
+export type ThemeBorders = {
+	avatar: {
+		featured: string;
+		outline: string;
+	};
+	loading: {
+		outset: string;
+	};
+	card: {
+		flat: string;
+	};
+};
+
+const borders : ThemeBorders = {
 	avatar: {
 		featured: `2px solid ${colors.colorsBase.primary}`,
 		outline: `1px solid ${colors.colorsBase.neutralDarker}`,

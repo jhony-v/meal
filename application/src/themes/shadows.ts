@@ -1,4 +1,11 @@
-const shadows = {
+export type ThemeShadows = {
+	small: string;
+	normal: string;
+	medium: string;
+	big: string;
+};
+
+const shadows : ThemeShadows = {
 	small: "0 2px 3px rgba(0,0,0,.1)",
 	normal: "0 10px 10px rgba(0,0,0,.01)",
 	medium: "0 5px 11px rgba(0,0,0,.1)",

@@ -4,7 +4,7 @@ import { UIText } from "shared/styled/UIText";
 import { UIContainer } from "shared/styled/UIContainer";
 import { UITextSmooth } from "shared/styled/UIText";
 
-const HomeTrendItem = ({index, title , detail, children }) => {
+const HomeTrendItem = ({index, title , detail, children } : any) => {
   return (
     <UIFlexContainer py="15px">
       <UIContainer mr="10px">
