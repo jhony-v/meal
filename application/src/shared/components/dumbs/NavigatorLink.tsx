@@ -1,5 +1,4 @@
-import React, { memo } from "react";
-import PropTypes from "prop-types";
+import React, { memo, ReactNode, FC } from "react";
 import { UIContainer } from "shared/styled/UIContainer";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer";
 import { UIText } from "shared/styled/UIText";
@@ -7,8 +6,8 @@ import { useTheme } from "emotion-theming";
 import { NavLink } from "react-router-dom";
 import useAnimationHoverRotate from "shared/animations/useAnimationHoverRotate";
 
-const NavigatorLink = ({ to, icon: IconLink, children, ...props }) => {
-  const theme = useTheme();
+const NavigatorLink : FC<NavigatorLinkProps> = ({ to, icon: IconLink, children, ...props }) => {
+  const theme = useTheme<any>();
   const hoverRotate = useAnimationHoverRotate();
   const activeStyle = { color: theme.colors.primary };
   
@@ -30,10 +29,10 @@ const NavigatorLink = ({ to, icon: IconLink, children, ...props }) => {
   );
 };
 
-NavigatorLink.propTypes = {
-  to : PropTypes.string.isRequired,
-  icon : PropTypes.func,
-  children : PropTypes.oneOfType([PropTypes.element,PropTypes.string]).isRequired
+type NavigatorLinkProps = {
+	to : string;
+	icon : Function;
+	children : string | ReactNode
 }
 
 export default memo(NavigatorLink);

@@ -4,9 +4,8 @@ import { UIInput } from "shared/styled/UIInput";
 import { UIContainer } from "shared/styled/UIContainer";
 import { UIAvatar } from "shared/styled/UIAvatar";
 import { IoIosPaperPlane } from "react-icons/io";
-import PropTypes from "prop-types";
 
-function PrimaryCommentEntry({ placeholder, onKeyUp, onClick }) {
+function PrimaryCommentEntry({ placeholder, onKeyUp, onClick }: PrimaryCommentEntryProps) {
   return (
     <UIFlexContainer>
       <UIInput placeholder={placeholder} onKeyUp={onKeyUp} />
@@ -19,11 +18,13 @@ function PrimaryCommentEntry({ placeholder, onKeyUp, onClick }) {
   );
 }
 
-PrimaryCommentEntry.propTypes = {
-  placeholder: PropTypes.string,
-};
+type PrimaryCommentEntryProps = {
+	placeholder : string,
+	onKeyUp : ( e : React.FormEvent<HTMLInputElement> ) => void,
+	onClick : ( e : React.FormEvent<HTMLElement>) => void
+} & typeof defaultProps;
 
-PrimaryCommentEntry.defaultProps = {
+const defaultProps = {
   placeholder: "Comentar...",
 };
 

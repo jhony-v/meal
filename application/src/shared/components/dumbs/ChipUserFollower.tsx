@@ -1,5 +1,4 @@
 import React, { memo } from 'react'
-import PropTypes from 'prop-types'
 import { UIFlexContainer } from 'shared/styled/UIFlexContainer'
 import { UIAvatarImage } from 'shared/styled/UIAvatar'
 import { UIButton } from 'shared/styled/UIButton'
@@ -7,7 +6,7 @@ import { UIContainer } from 'shared/styled/UIContainer'
 import { UIText } from 'shared/styled/UIText'
 import { UITextSmooth } from 'shared/styled/UIText'
 
-function ChipUserFollower(props){
+function ChipUserFollower(props : ChipUserFollowerProps){
 	const {avatar,username,description,onClick,buttonContent,...restProps} = props;
 	return (
 		<UIFlexContainer {...restProps}>
@@ -21,12 +20,12 @@ function ChipUserFollower(props){
 	)
 }
 
-ChipUserFollower.propTypes = {
-	avatar : PropTypes.string.isRequired,
-	username : PropTypes.string.isRequired,
-	description : PropTypes.string.isRequired,
-	onClick : PropTypes.func,
-	buttonContent : PropTypes.oneOfType([PropTypes.string,PropTypes.element])
+type ChipUserFollowerProps = {
+	avatar : string;
+	username : string;
+	description : string;
+	onClick : () => void;
+	buttonContent : string | React.ReactNode
 }
 
 export default memo(ChipUserFollower)
