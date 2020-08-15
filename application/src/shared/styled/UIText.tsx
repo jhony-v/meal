@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { variant, textAlign, color, fontSize } from "styled-system";
 
 export const UIText = styled.span(
-	({ theme, ...props }) => ({
+	({ theme, ...props }: any) => ({
 		userSelect: props.noSelect && "none",
 		fontWeight: props.weight && "bold",
 		...(props.block && {
@@ -14,14 +14,14 @@ export const UIText = styled.span(
 	color,
 	fontSize
 );
-UIText.defaultProps = { fontSize : "normal.1" }
+UIText.defaultProps = { fontSize: "normal.1" };
 
-export const UITextSmooth = styled(UIText)(({ theme }) => ({
+export const UITextSmooth = styled(UIText)(({ theme }: any) => ({
 	color: theme.colors.neutralLightMedium,
 }));
 
 export const UITextBoldLarge = styled(UIText)(
-	({ theme }) => ({
+	({ theme }: any) => ({
 		fontSize: theme.fontSizes.big[0],
 		fontWeight: "bold",
 	}),
