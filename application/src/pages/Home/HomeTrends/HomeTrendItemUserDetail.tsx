@@ -12,7 +12,7 @@ const HomeTrendItemUserDetail = ({ image, text } : any) => {
 				size={20}
       />
       <UIContainer ml="5px">
-        <UITextSmooth size="small">Change feeling avoid</UITextSmooth>
+        <UITextSmooth fontSize="small">Change feeling avoid</UITextSmooth>
       </UIContainer>
     </UIFlexContainer>
   );

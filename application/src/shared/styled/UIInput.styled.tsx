@@ -19,7 +19,7 @@ export const UIInputTextArea = styled.textarea<UIInputTextAreaProps>`
 	resize: none;
 	width: 100%;
 	&::-webkit-input-placeholder {
-		color: ${(props) => props.theme.colors.grayDark2};
+		color: ${(props) => props.theme.colors.neutralLightMedium};
 	}
 	${compose(space, layout)};
 `;

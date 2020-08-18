@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "themes/styled";
 
 const Container = styled.div`
 	width: 100%;
@@ -9,13 +9,19 @@ const Container = styled.div`
 	position: relative;
 `;
 
-const Scrollbar = styled.div`
+
+type ScrollBarProps = {
+	percentage ?: number;
+	absolute ?: boolean;
+	thumb ?: boolean;
+}
+const Scrollbar = styled.div<ScrollBarProps>`
 	height: 100%;
 	transition: width 0.5s;
 	border-radius: 10px;
-	width: ${(props : any) => props.percentage}%;
-	position: ${(props : any) => props.absolute && "absolute"};
-	background-color: ${(props : any) => props.thumb ? "white" : "rgba(255,255,255,.2)"};
+	width: ${(props) => props.percentage}%;
+	position: ${(props) => props.absolute && "absolute"};
+	background-color: ${(props) => props.thumb ? "white" : "rgba(255,255,255,.2)"};
 `;
 
 export default  {

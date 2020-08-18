@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
 import { motion } from "framer-motion";
+import styled from "themes/styled";
 
 const InputRange = styled(motion.input)`
 	-webkit-appearance: none;

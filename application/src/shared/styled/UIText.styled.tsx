@@ -31,10 +31,9 @@ UIText.defaultProps = { fontSize: "normal.1" };
 /**
  * Styled component text smooth
  */
-export const UITextSmooth = styled(UIText)(({ theme }) => ({
-	color: theme.colors.neutralLightMedium,
-}));
-
+export const UITextSmooth = styled(UIText)`
+	color : ${({theme}) => theme.colors.neutralLightMedium};
+`
 /**
  * Styled component text title semejant to h1
  */
