@@ -1,4 +1,4 @@
-export module MRoutes {
+export namespace MRoutes {
 	interface RouterCreatorData {
 		path: string;
 		component?: any;

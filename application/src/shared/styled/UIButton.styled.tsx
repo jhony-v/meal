@@ -1,8 +1,8 @@
 import { memo } from "react";
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
-import buttonsVariant from "themes/themesVariants/buttons.variants";
 import { MThemes } from "themes/themes.types";
+import { buttonsVariantNormal } from "themes/themesVariants/buttons.variants";
 
 type UIButtonProps = {
 	block?: boolean;
@@ -23,5 +23,5 @@ export const UIButton = memo(styled.button<UIButtonProps>`
 			display: block;
 			width: 100%;
 		`};
-	${buttonsVariant};
+	${buttonsVariantNormal};
 `);

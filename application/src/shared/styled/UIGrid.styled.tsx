@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "themes/styled";
 import { grid, GridProps, compose } from "styled-system";
 
 /**

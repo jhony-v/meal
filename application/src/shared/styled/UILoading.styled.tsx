@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "themes/styled";
 import { keyframeRotateAnimation } from "./styledUtils/keyframes";
 import { computePositionAbsolute } from "./styledUtils/css";
 import { css } from "@emotion/core";

@@ -57,11 +57,7 @@ export module MThemes {
 	};
 
 	/** Theme to all borders */
-	export type ThemeBordersPropsTypes =
-		| "avatar.featured"
-		| "avatar.outline"
-		| "loading.outset"
-		| "card.flat";
+	export type ThemeBordersPropsTypes = "avatar.featured" | "avatar.outline"	| "loading.outset" | "card.flat";
 	export type ThemeBorders = {
 		avatar: {
 			featured: string;
@@ -79,6 +75,5 @@ export module MThemes {
 	 * VARIANTS
 	 * Themes personalized of components globals
 	 */
-
 	export type ThemesVariantButtonsTypes = "primary" | "outline" | "default";
 }

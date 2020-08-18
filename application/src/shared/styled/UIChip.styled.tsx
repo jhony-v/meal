@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "themes/styled";
 import {
 	borderRadius,
 	fontSize,
@@ -20,7 +20,7 @@ export const UIChip = styled.div<UIChipProps>`
 	display: inline-flex;
 	align-items: center;
 	padding: 12px;
-	background-color: ${(props: any) => props.theme.colors.primaryLight};
+	background-color: ${(props) => props.theme.colors.primaryLight};
 	${compose(borderRadius, fontSize, border, margin)};
 `;
 UIChip.defaultProps = {

@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "themes/styled";
 import {
 	space,
 	borderRadius,
@@ -19,7 +19,7 @@ type UICardProps = {
 export const UICard = styled.div<SpaceProps & BorderRadiusProps & UICardProps>`
 	border-radius: 10px;
 	padding: 10px;
-	background: ${(props: any) => props.theme.colors.primaryLight};
+	background: ${(props) => props.theme.colors.primaryLight};
 	${compose(space, borderRadius, boxShadow)}
 `;
 UICard.defaultProps = { boxShadow: "normal" };

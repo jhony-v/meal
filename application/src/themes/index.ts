@@ -4,7 +4,6 @@ import shadows from "./themesDesign/shadows.design";
 import fontSizes from "./themesDesign/fontSizes.design";
 import borders from "./themesDesign/borders.design";
 import { MThemes } from "./themes.types";
-
 const primary: MThemes.ThemeBaseProps = {
 	colors: {
 		...colors.colorsBase,
@@ -22,5 +21,4 @@ const primary: MThemes.ThemeBaseProps = {
 		...icons,
 	},
 };
-
 export default primary;

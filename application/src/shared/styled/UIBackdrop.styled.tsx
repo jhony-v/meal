@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "themes/styled";
 import { computePositionAbsolute } from "./styledUtils/css";
 
 const propsBackdropColor = (props: UIBackdropProps) => {

@@ -1,6 +1,6 @@
 import { variant } from "styled-system";
 
-const layoutContainerVariant = variant({
+export const layoutContainerVariants = variant({
 	prop: "variantColor",
 	variants: {
 		lightMedium: {
@@ -11,5 +11,3 @@ const layoutContainerVariant = variant({
 		},
 	},
 });
-
-export default layoutContainerVariant;

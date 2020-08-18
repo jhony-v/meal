@@ -1,12 +1,7 @@
-import styled from "@emotion/styled";
-import system, {
-	variant,
-	textAlign,
-	color,
-	fontSize,
-	compose,
-} from "styled-system";
+import styled from "themes/styled";
+import system, { textAlign, color, fontSize, compose } from "styled-system";
 import { css } from "@emotion/core";
+import { textVariantsBold } from "themes/themesVariants/texts.variants";
 
 /**
  * Styled component text base
@@ -36,7 +31,7 @@ UIText.defaultProps = { fontSize: "normal.1" };
 /**
  * Styled component text smooth
  */
-export const UITextSmooth = styled(UIText)(({ theme }: any) => ({
+export const UITextSmooth = styled(UIText)(({ theme }) => ({
 	color: theme.colors.neutralLightMedium,
 }));
 
@@ -44,17 +39,8 @@ export const UITextSmooth = styled(UIText)(({ theme }: any) => ({
  * Styled component text title semejant to h1
  */
 export const UITextBoldLarge = styled(UIText)`
-	font-size: ${(props: any) => props.theme.fontSizes.big[0]};
+	font-size: ${(props) => props.theme.fontSizes.big[0]};
 	font-weight: bold;
-	${variant({
-		variants: {
-			dark: {
-				color: "primaryDark",
-			},
-			primary: {
-				color: "primary",
-			},
-		},
-	})}
+	${textVariantsBold};
 `;
 UITextBoldLarge.defaultProps = { variant: "dark" };

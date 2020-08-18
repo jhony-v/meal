@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "themes/styled";
 import { compose, layout, borderRadius, borders, LayoutProps, BorderRadiusProps, margin, color } from "styled-system";
 
 /**
