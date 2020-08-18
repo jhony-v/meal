@@ -1,10 +1,10 @@
 import React from "react";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer";
-import { UIContainer } from "shared/styled/UIContainer";
-import { UITextSmooth } from "shared/styled/UIText";
+import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
+import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UITextSmooth } from "shared/styled/UIText.styled";
 import AvatarWallpaper from "shared/components/dumbs/AvatarWallpaper";
 
-const HomeTrendItemUserDetail = ({ image, text }) => {
+const HomeTrendItemUserDetail = ({ image, text } : any) => {
   return (
     <UIFlexContainer my="5px">
       <AvatarWallpaper

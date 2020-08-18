@@ -10,6 +10,7 @@
 		"xml",
 		"svg",
 		"javascript",
+		"typescript"
 	],
 	"git.ignoreLimitWarning": true
 }

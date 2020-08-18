@@ -1,19 +1,20 @@
-import React, { memo, ReactNode, FC } from "react";
-import { UIContainer } from "shared/styled/UIContainer";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer";
-import { UIText } from "shared/styled/UIText";
+import React, { memo, ReactNode } from "react";
+import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
+import { UIText } from "shared/styled/UIText.styled";
 import { useTheme } from "emotion-theming";
 import { NavLink } from "react-router-dom";
 import useAnimationHoverRotate from "shared/animations/useAnimationHoverRotate";
+import { MThemes } from "themes/themes.types";
 
-const NavigatorLink : FC<NavigatorLinkProps> = ({ to, icon: IconLink, children, ...props }) => {
-  const theme = useTheme<any>();
+const NavigatorLink = ({ to, icon: IconLink, children, exact } : NavigatorLinkProps) : JSX.Element => {
+  const theme = useTheme<MThemes.ThemeBaseProps>();
   const hoverRotate = useAnimationHoverRotate();
   const activeStyle = { color: theme.colors.primary };
-  
-  return (
+	
+	return (
     <hoverRotate.ContainerMotion>
-      <NavLink to={to} activeStyle={activeStyle} {...props}>
+      <NavLink exact={exact} to={to} activeStyle={activeStyle}>
         <UIFlexContainer alignItems="center" justifyContent="center">
           <hoverRotate.AnimateMotion>
             <IconLink />
@@ -32,7 +33,8 @@ const NavigatorLink : FC<NavigatorLinkProps> = ({ to, icon: IconLink, children, 
 type NavigatorLinkProps = {
 	to : string;
 	icon : Function;
-	children : string | ReactNode
+	children : string | ReactNode,
+	exact ?: boolean;
 }
 
 export default memo(NavigatorLink);

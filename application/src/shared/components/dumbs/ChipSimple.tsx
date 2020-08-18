@@ -1,20 +1,16 @@
-import React, { memo, useState } from "react";
+import React, { memo, useState, ReactNode } from "react";
 import { IoIosClose } from "react-icons/io";
-import { UIChip } from "shared/styled/UIChip";
-import { UIContainer } from "shared/styled/UIContainer";
+import { UIChip } from "shared/styled/UIChip.styled";
+import { UIContainer } from "shared/styled/UIContainer.styled";
 import { motion, AnimatePresence } from "framer-motion";
-import { UIChipCloseButton } from "shared/styled/UIChip";
+import { UIChipCloseButton } from "shared/styled/UIChip.styled";
 
-function ChipSimple({ children, onCloseComplete, noRemove, ...restProps }) {
-	const [closed, setClosed] = useState(true);
+function ChipSimple({ children, onCloseComplete, noRemove, ...restProps } : ChipSimpleProps & any) {
+	const [closed, setClosed] = useState<boolean>(true);
 	return (
-		<AnimatePresence onCloseComplete={onCloseComplete}>
+		<AnimatePresence onExitComplete={onCloseComplete}>
 			{closed && (
-				<AnimatableChip
-					initial={false}
-					exit={{ opacity: 0, x: -40 }}
-					{...restProps}
-				>
+				<AnimatableChip {...restProps} initial={false} exit={{ opacity: 0, x: -40 }} >
 					<UIContainer mr={2}>{children}</UIContainer>
 					{!noRemove && (
 						<UIChipCloseButton onClick={() => setClosed(!closed)}>
@@ -25,6 +21,12 @@ function ChipSimple({ children, onCloseComplete, noRemove, ...restProps }) {
 			)}
 		</AnimatePresence>
 	);
+}
+
+type ChipSimpleProps = {
+	children : string | ReactNode;
+	onCloseComplete : () => void;
+	noRemove : boolean;
 }
 
 export default memo(ChipSimple);

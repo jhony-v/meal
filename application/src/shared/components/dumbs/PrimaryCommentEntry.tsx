@@ -1,8 +1,8 @@
 import React from "react";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer";
-import { UIInput } from "shared/styled/UIInput";
-import { UIContainer } from "shared/styled/UIContainer";
-import { UIAvatar } from "shared/styled/UIAvatar";
+import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
+import { UIInput } from "shared/styled/UIInput.styled";
+import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIAvatar } from "shared/styled/UIAvatar.styled";
 import { IoIosPaperPlane } from "react-icons/io";
 
 function PrimaryCommentEntry({ placeholder, onKeyUp, onClick }: PrimaryCommentEntryProps) {
@@ -22,9 +22,9 @@ type PrimaryCommentEntryProps = {
 	placeholder : string,
 	onKeyUp : ( e : React.FormEvent<HTMLInputElement> ) => void,
 	onClick : ( e : React.FormEvent<HTMLElement>) => void
-} & typeof defaultProps;
+};
 
-const defaultProps = {
+PrimaryCommentEntry.defaultProps = {
   placeholder: "Comentar...",
 };
 

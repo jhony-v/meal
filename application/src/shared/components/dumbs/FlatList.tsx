@@ -1,10 +1,10 @@
 import React, { memo, ReactNode } from "react";
-import { UIContainer } from "shared/styled/UIContainer";
+import { UIContainer } from "shared/styled/UIContainer.styled";
 
-function FlatList({ data, render, renderHeader, renderFooter } : FlatListProps) {
+function FlatList<T,D>({ data, render, renderHeader, renderFooter } : FlatListProps<T,D>) {
   const _header = renderHeader && <UIContainer>{renderHeader}</UIContainer>;
   const _footer = renderFooter && <UIContainer>{renderFooter}</UIContainer>;
-  const _render = !!data.length && <UIContainer>{data.map((e, i) => render(e, i))}</UIContainer>;
+  const _render = !!data.length && <UIContainer>{data.map((e : D, i : number) => render(e, i))}</UIContainer>;
 
   return (
     <UIContainer>
@@ -15,15 +15,15 @@ function FlatList({ data, render, renderHeader, renderFooter } : FlatListProps) 
   );
 }
 
-type FlatListProps = {
-	data : any[];
-	render ?: Function;
+type FlatListProps<T,D> = {
+	data : D[];
+	render ?: (currentData : D , index : number) => ReactNode;
 	renderHeader ?: string | ReactNode;
 	renderFooter ?: string | ReactNode;
-} typeof defaultProps ;
+};
 
-const defaultProps = {
-  data: [],
+FlatList.defaultProps = {
+	data: [],
   renderHeader: null,
   renderFooter: null,
 };

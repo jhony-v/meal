@@ -1,12 +1,12 @@
 import React, { memo } from 'react'
-import { UIFlexContainer } from 'shared/styled/UIFlexContainer'
-import { UIAvatarImage } from 'shared/styled/UIAvatar'
-import { UIButton } from 'shared/styled/UIButton'
-import { UIContainer } from 'shared/styled/UIContainer'
-import { UIText } from 'shared/styled/UIText'
-import { UITextSmooth } from 'shared/styled/UIText'
+import { UIFlexContainer } from 'shared/styled/UIFlexContainer.styled'
+import { UIAvatarImage } from 'shared/styled/UIAvatar.styled'
+import { UIButton } from 'shared/styled/UIButton.styled'
+import { UIContainer } from 'shared/styled/UIContainer.styled'
+import { UIText } from 'shared/styled/UIText.styled'
+import { UITextSmooth } from 'shared/styled/UIText.styled'
 
-function ChipUserFollower(props : ChipUserFollowerProps){
+function ChipUserFollower(props : ChipUserFollowerProps & any) {
 	const {avatar,username,description,onClick,buttonContent,...restProps} = props;
 	return (
 		<UIFlexContainer {...restProps}>
@@ -21,10 +21,10 @@ function ChipUserFollower(props : ChipUserFollowerProps){
 }
 
 type ChipUserFollowerProps = {
-	avatar : string;
-	username : string;
-	description : string;
-	onClick : () => void;
+	avatar ?: string;
+	username ?: string;
+	description ?: string;
+	onClick ?: () => void;
 	buttonContent : string | React.ReactNode
 }
 

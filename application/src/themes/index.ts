@@ -1,18 +1,11 @@
-import colors, { ThemeColorsBase, ThemeColorsBaseIcon } from "./colors";
-import icons from "./icons";
-import shadows, { ThemeShadows } from "./shadows";
-import fontSizes, { ThemeFontSizes } from "./fontSizes";
-import borders, { ThemeBorders } from "./borders";
+import colors from "./themesDesign/colors.design";
+import icons from "./themesComponent/icons";
+import shadows from "./themesDesign/shadows.design";
+import fontSizes from "./themesDesign/fontSizes.design";
+import borders from "./themesDesign/borders.design";
+import { MThemes } from "./themes.types";
 
-export type ThemeBase = {
-	colors: ThemeColorsBase;
-	fontSizes: ThemeFontSizes;
-	shadows: ThemeShadows;
-	borders: ThemeBorders;
-	icons: ThemeColorsBaseIcon;
-};
-
-const primary: ThemeBase = {
+const primary: MThemes.ThemeBaseProps = {
 	colors: {
 		...colors.colorsBase,
 	},

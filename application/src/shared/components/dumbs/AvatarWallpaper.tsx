@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import { UIAvatar, UIAvatarImage } from "shared/styled/UIAvatar";
+import { UIAvatar, UIAvatarImage } from "shared/styled/UIAvatar.styled";
 
-function AvatarWallpaper({ image, avatarIcon, ...props }: AvatarWallpaperProps) {
+function AvatarWallpaper({ image, avatarIcon, ...props }: AvatarWallpaperProps & any) {
 	return (
 		<UIAvatar {...props}>
 			{avatarIcon ? avatarIcon : <UIAvatarImage src={image} {...props} />}
@@ -12,9 +12,9 @@ function AvatarWallpaper({ image, avatarIcon, ...props }: AvatarWallpaperProps) 
 type AvatarWallpaperProps = {
 	image?: string;
 	avatarIcon?: ReactNode;
-} & typeof defaultProps;
+} 
 
-const defaultProps = {
+AvatarWallpaper.defaultProps = {
 	image: "",
 };
 

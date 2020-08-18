@@ -3,7 +3,7 @@ import { BrowserRouter, Switch } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import HeaderToolbarMain from "shared/components/layouts/HeaderToolbarMain";
 
-function AppNavigator() {
+function AppNavigator() : JSX.Element{
   return (
     <BrowserRouter>
 			<HeaderToolbarMain/>
