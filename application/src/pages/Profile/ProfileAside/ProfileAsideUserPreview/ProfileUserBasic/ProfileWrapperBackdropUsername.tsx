@@ -5,7 +5,7 @@ import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
 export default ({ image, children } : any) => {
 	return (
 		<UIContainer position="relative">
-			<UIAvatarImage {...styles.backdrop} src={image} />
+			<UIAvatarImage borderRadius={8} height={250} width="100%" src={image} />
 			<UIContainer {...styles.wrapperContainer}>{children}</UIContainer>
 		</UIContainer>
 	);
@@ -13,11 +13,6 @@ export default ({ image, children } : any) => {
 
 const mb = 120;
 const styles = {
-	backdrop: {
-		borderRadius: 8,
-		height: 250,
-		width: "100%",
-	},
 	wrapperContainer: {
 		bottom: mb,
 		mb: -mb,

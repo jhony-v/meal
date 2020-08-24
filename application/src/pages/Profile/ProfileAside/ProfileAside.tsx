@@ -1,6 +1,6 @@
 import React from "react";
 import { UIContainer } from "shared/styled/UIContainer.styled";
-import ProfileHeader from "./ProfileAsideHeader/ProfileHeader";
+import ProfileUserBasicPreview from "./ProfileAsideUserPreview/ProfileUserBasicPreview";
 import ProfileAsideNavigatorContainer from "./ProfileAsideNavigator/ProfileAsideNavigatorContainer";
 import ProfileActionConnectSimple from "./ProfileAsideActionsConnect/ProfileActionConnectSimple";
 import ProfileUserDescription from "./ProfileDescriptionComplete/ProfileUserDescription";
@@ -8,7 +8,7 @@ import ProfileUserDescription from "./ProfileDescriptionComplete/ProfileUserDesc
 const ProfileAside = () => {
 	return (
 		<UIContainer>
-			<ProfileHeader />
+			<ProfileUserBasicPreview />
 			<ProfileActionConnectSimple />
 			<ProfileAsideNavigatorContainer />
 			<ProfileUserDescription />

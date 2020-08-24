@@ -6,9 +6,7 @@ import { textVariantsBold } from "themes/themesVariants/texts.variants";
 /**
  * Styled component text base
  */
-type UITextProps = system.ColorStyleProps &
-	system.FontSizeProps &
-	system.TextAlignProps & {
+type UITextProps = system.ColorStyleProps & system.FontSizeProps & system.TextAlignProps & {
 		noSelect?: boolean;
 		weight?: boolean;
 		block?: boolean;
