@@ -1,5 +1,5 @@
-export namespace Interfaces {
-	export interface DatabaseConnection {
-		instance();
+export namespace IDataAccess {
+	export interface DatabaseConnection<T> {
+		instance() : T;
 	}
 }
