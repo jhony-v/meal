@@ -1,4 +1,4 @@
-import { Interfaces } from "@dataAccess/interfaces";
+import { Interfaces } from "@dataAccess/@types/interfaces";
 import { injectable } from "inversify";
 
 @injectable()

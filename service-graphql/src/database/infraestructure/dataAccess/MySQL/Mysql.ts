@@ -1,6 +1,6 @@
 import { injectable } from "inversify";
 import mysql, { Connection } from "mysql2/promise";
-import { Interfaces } from "@dataAccess/interfaces";
+import { Interfaces } from "@dataAccess/@types/interfaces";
 
 const mysqlConnection = mysql.createConnection({
 	database: "simple_chat",
