@@ -1,4 +1,5 @@
 export interface ProductCategoryAttributes {
 	productCategoryId?: number;
-	productCategoryName?: string;
+	name?: string;
+	image?: string;
 }

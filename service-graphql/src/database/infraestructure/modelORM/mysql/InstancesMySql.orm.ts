@@ -10,6 +10,7 @@ import { UserFoodAttributes } from "src/database/domain/models/UserFood.model";
 import { MainPublishedFoodAttributes } from "src/database/domain/models/MainPublishedFood.model";
 import { MainPublishedFoodTagAttributes } from "src/database/domain/models/MainPublishedFoodTag.model";
 import { FoodProductAttributes } from "src/database/domain/models/FoodProduct.model";
+import { UserFoodImagesAttributes } from "src/database/domain/models/UserFoodImages.model";
 
 export namespace InstancesMySql {
 	export interface FoodInstance extends Model<FoodAttributes,FoodAttributes> {}
@@ -23,4 +24,5 @@ export namespace InstancesMySql {
 	export interface UserFoodInstance extends Model<UserFoodAttributes,UserFoodAttributes>{}
 	export interface MainPublishedFoodInstance extends Model<MainPublishedFoodAttributes,MainPublishedFoodAttributes>{}
 	export interface MainPublishedFoodTagInstance extends Model<MainPublishedFoodTagAttributes,MainPublishedFoodTagAttributes>{}
+	export interface UserFoodImagesInstance extends Model<UserFoodImagesAttributes,UserFoodImagesAttributes>{}
 }

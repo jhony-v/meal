@@ -4,4 +4,5 @@ export interface UserAttributes {
 	fullName?: string;
 	email?: string;
 	password?: string;
+	avatar ?: string;
 }

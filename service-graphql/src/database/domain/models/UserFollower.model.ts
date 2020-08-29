@@ -1,2 +1,4 @@
-export interface UserFollowerAttributes {}
+export interface UserFollowerAttributes {
+	
+}
 

@@ -1,1 +1,3 @@
-export interface UserFoodAttributes{}
+export interface UserFoodAttributes {
+	userFoodId?: number;
+}
