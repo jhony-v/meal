@@ -5,7 +5,7 @@ import { InstancesMySql } from "../InstancesMySql.orm";
 
 const sequelize = dataAccess.get(MySQL).instance();
 
-const User = sequelize.define<InstancesMySql.UserInstance>("User",{
+export const User = sequelize.define<InstancesMySql.UserInstance>("User",{
 	userId : {
 		type : DataTypes.BIGINT,
 		autoIncrement : true,
@@ -17,10 +17,12 @@ const User = sequelize.define<InstancesMySql.UserInstance>("User",{
 	password : DataTypes.STRING,
 	avatar : DataTypes.STRING(500),
 });
-const UserFollower = sequelize.define<InstancesMySql.UserFollowerInstance>("UserFollower",{
+
+export const UserFollower = sequelize.define<InstancesMySql.UserFollowerInstance>("UserFollower",{
 	
 });
-const Product = sequelize.define<InstancesMySql.ProductInstance>("Product",{
+
+export const Product = sequelize.define<InstancesMySql.ProductInstance>("Product",{
 	productId : {
 		type : DataTypes.BIGINT,
 		autoIncrement : true,
@@ -30,7 +32,8 @@ const Product = sequelize.define<InstancesMySql.ProductInstance>("Product",{
 	description : DataTypes.STRING,
 	image : DataTypes.STRING(500),
 });
-const ProductCategory = sequelize.define<InstancesMySql.ProductCategoryInstance>("ProductCategory",{
+
+export const ProductCategory = sequelize.define<InstancesMySql.ProductCategoryInstance>("ProductCategory",{
 	productCategoryId : {
 		type : DataTypes.INTEGER,
 		autoIncrement : true,
@@ -39,7 +42,8 @@ const ProductCategory = sequelize.define<InstancesMySql.ProductCategoryInstance>
 	name : DataTypes.STRING(100),
 	image : DataTypes.STRING(500),
 });
-const Food = sequelize.define<InstancesMySql.FoodInstance>("Food",{
+
+export const Food = sequelize.define<InstancesMySql.FoodInstance>("Food",{
 	foodId : {
 		type : DataTypes.BIGINT,
 		autoIncrement : true,
@@ -52,7 +56,8 @@ const Food = sequelize.define<InstancesMySql.FoodInstance>("Food",{
 	punctuation : DataTypes.STRING(400),
 	video : DataTypes.STRING(500),
 });
-const FoodCategory = sequelize.define<InstancesMySql.FoodCategoryInstance>("FoodCategory",{
+
+export const FoodCategory = sequelize.define<InstancesMySql.FoodCategoryInstance>("FoodCategory",{
 	foodCategoryId : {
 		type : DataTypes.INTEGER,
 		autoIncrement : true,
@@ -60,7 +65,8 @@ const FoodCategory = sequelize.define<InstancesMySql.FoodCategoryInstance>("Food
 	},
 	name : DataTypes.STRING,
 });
-const FoodProduct = sequelize.define<InstancesMySql.FoodProductInstance>("FoodProduct",{
+
+export const FoodProduct = sequelize.define<InstancesMySql.FoodProductInstance>("FoodProduct",{
 	productId : {
 		type : DataTypes.BIGINT,
 		autoIncrement : true,
@@ -70,7 +76,8 @@ const FoodProduct = sequelize.define<InstancesMySql.FoodProductInstance>("FoodPr
 	description : DataTypes.STRING,
 	image : DataTypes.STRING(500), 
 });
-const FoodTag = sequelize.define<InstancesMySql.FoodTagInstance>("FoodTag",{
+
+export const FoodTag = sequelize.define<InstancesMySql.FoodTagInstance>("FoodTag",{
 	foodTagId:{
 		type : DataTypes.INTEGER,
 		autoIncrement : true,
@@ -78,28 +85,32 @@ const FoodTag = sequelize.define<InstancesMySql.FoodTagInstance>("FoodTag",{
 	},
 	name : DataTypes.STRING(50),
 });
-const MainPublishedFood = sequelize.define<InstancesMySql.MainPublishedFoodInstance>("MainPublishedFood",{
+
+export const MainPublishedFood = sequelize.define<InstancesMySql.MainPublishedFoodInstance>("MainPublishedFood",{
 	mainPublishedId : {
 		type : DataTypes.INTEGER,
 		autoIncrement : true,
 		primaryKey : true,
 	},
 });
-const MainPublishedFoodTag = sequelize.define<InstancesMySql.MainPublishedFoodTagInstance>("MainPublishedFoodTag",{
+
+export const MainPublishedFoodTag = sequelize.define<InstancesMySql.MainPublishedFoodTagInstance>("MainPublishedFoodTag",{
 	publishedFoodTagId : {
 		type : DataTypes.INTEGER,
 		autoIncrement : true,
 		primaryKey : true,
 	},
 });
-const UserFood = sequelize.define<InstancesMySql.UserFoodInstance>("UserFood",{
+
+export const UserFood = sequelize.define<InstancesMySql.UserFoodInstance>("UserFood",{
 	userFoodId : {
 		type : DataTypes.INTEGER,
 		autoIncrement : true,
 		primaryKey : true,
 	},
 });
-const UserFoodImages = sequelize.define<InstancesMySql.UserFoodImagesInstance>("UserFoodImages",{
+
+export const UserFoodImages = sequelize.define<InstancesMySql.UserFoodImagesInstance>("UserFoodImages",{
 	imageId : {
 		type : DataTypes.INTEGER,
 		autoIncrement : true,
