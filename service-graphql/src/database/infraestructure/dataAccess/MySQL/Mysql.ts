@@ -1,13 +1,14 @@
 import { injectable } from "inversify";
 import { IDataAccess } from "@dataAccess/@types/interfaces";
 import { Sequelize } from "sequelize";
+import { MYSQL_CONFIG } from "src/config";
 
-const sequelize = new Sequelize("MealPlatform", "root", "", {
+const sequelize = new Sequelize(MYSQL_CONFIG.DATABASE, MYSQL_CONFIG.USER, MYSQL_CONFIG.PASSWORD, {
+	host : MYSQL_CONFIG.HOST,
 	define: {
 		freezeTableName: true,
 	},
 	dialect: "mysql",
-	host : "localhost",
 });
 
 @injectable()
