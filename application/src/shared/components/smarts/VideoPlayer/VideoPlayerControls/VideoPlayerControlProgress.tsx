@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
 import { UIText } from "shared/styled/UIText.styled";
 import { useVideoPlayerContext } from "../Providers/VideoPlayerProvider";
-import ProgressStyled from "../VideoPlayerStyled/ProgressStyled";
+import { VideoProgressScrollBar, VideoProgressScrollBarWrapper } from "../styled";
 
 export default () => {
 	const {
@@ -13,10 +13,10 @@ export default () => {
 			<UIText color="primaryLight" fontSize="small.1">
 				{timerVideo(currentTime)}
 			</UIText>
-			<ProgressStyled.Container>
-				<ProgressStyled.Scrollbar absolute percentage={bufferPercentage} />
-				<ProgressStyled.Scrollbar percentage={percentage} thumb />
-			</ProgressStyled.Container>
+			<VideoProgressScrollBarWrapper>
+				<VideoProgressScrollBar absolute percentage={bufferPercentage} />
+				<VideoProgressScrollBar percentage={percentage} thumb />
+			</VideoProgressScrollBarWrapper>
 			<UIText color="primaryLight" fontSize="small.1">
 				{timerVideo(duration)}
 			</UIText>

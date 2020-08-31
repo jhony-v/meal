@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import AvatarWallpaper from "./AvatarWallpaper";
+import AvatarWallpaper from "../components/dumbs/AvatarWallpaper";
 
 function IconApplication() {
 	return (

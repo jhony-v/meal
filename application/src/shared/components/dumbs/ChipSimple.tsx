@@ -7,16 +7,20 @@ import { UIChipCloseButton } from "shared/styled/UIChip.styled";
 
 function ChipSimple({ children, onCloseComplete, noRemove, ...restProps } : ChipSimpleProps & any) {
 	const [closed, setClosed] = useState<boolean>(true);
+	
+	// show this button if the componente have the noRemove prop active
+	const chipCloseButton = () => (!noRemove && (
+		<UIChipCloseButton onClick={() => setClosed(!closed)}>
+			<IoIosClose size={20} />
+		</UIChipCloseButton>
+	));
+
 	return (
 		<AnimatePresence onExitComplete={onCloseComplete}>
 			{closed && (
 				<AnimatableChip {...restProps} initial={false} exit={{ opacity: 0, x: -40 }} >
 					<UIContainer mr={2}>{children}</UIContainer>
-					{!noRemove && (
-						<UIChipCloseButton onClick={() => setClosed(!closed)}>
-							<IoIosClose size={20} />
-						</UIChipCloseButton>
-					)}
+					{chipCloseButton()}
 				</AnimatableChip>
 			)}
 		</AnimatePresence>

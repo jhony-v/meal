@@ -3,7 +3,7 @@ import scss from "./HeaderToolbarMain.module.scss";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
 import ChipUsername from "shared/containers/ChipUsername";
 import HeaderLinksNavigation from "./dependencies/HeaderLinksNavigation";
-import IconApplication from "shared/components/dumbs/IconApplication";
+import IconApplication from "shared/containers/IconApplication";
 import { UIContainerLayoutFixed } from "shared/styled/UIContainer.styled";
 
 function HeaderToolbarMain() {

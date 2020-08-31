@@ -1,5 +1,4 @@
-import React,{ useRef } from "react";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import React, { useRef } from "react";
 import VideoPlayerFooterControls from "./VideoPlayerFooterControls";
 import VideoPlayerControlVolume from "./VideoPlayerControls/VideoPlayerControlVolume";
 import VideoPlayerControlSpeed from "./VideoPlayerControls/VideoPlayerControlSpeed";
@@ -7,23 +6,23 @@ import VideoPlayerMedia from "./VideoPlayerMedia";
 import VideoPlayerControlProgress from "./VideoPlayerControls/VideoPlayerControlProgress";
 import VideoPlayerProvider from "./Providers/VideoPlayerProvider";
 import VideoPlayerControlButtonPlaying from "./VideoPlayerControls/VideoPlayerControlButtonPlaying";
+import { VideoPlayerWrapper } from "./styled";
 
-
-const VideoPlayer = ({src} : any) => {
+const VideoPlayer = ({ src }: any) => {
 	const video = useRef();
 
 	return (
-		<UIContainer css={{overflow:"hidden",borderRadius:"10px"}} position="relative">
+		<VideoPlayerWrapper>
 			<VideoPlayerProvider video={video}>
 				<VideoPlayerMedia ref={video} src={src} />
-				<VideoPlayerControlButtonPlaying/>
+				<VideoPlayerControlButtonPlaying />
 				<VideoPlayerFooterControls>
-								<VideoPlayerControlVolume />
-								<VideoPlayerControlProgress  />
-								<VideoPlayerControlSpeed/>
+					<VideoPlayerControlVolume />
+					<VideoPlayerControlProgress />
+					<VideoPlayerControlSpeed />
 				</VideoPlayerFooterControls>
 			</VideoPlayerProvider>
-		</UIContainer>
+		</VideoPlayerWrapper>
 	);
 };
 

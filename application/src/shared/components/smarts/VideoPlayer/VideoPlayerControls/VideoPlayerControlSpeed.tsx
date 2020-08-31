@@ -1,18 +1,18 @@
-import React, { Fragment } from "react";
+import React, { Fragment, ChangeEvent } from "react";
 import { IoIosTimer } from "react-icons/io";
 import { useVideoPlayerContext } from "../Providers/VideoPlayerProvider";
 import useToggle from "shared/hooks/useToggle";
 import { AnimatePresence } from "framer-motion";
-import ProgressSpeedStyled from "../VideoPlayerStyled/ProgressSpeedStyled";
+import { InputRangeSpeed } from "../styled";
 
 export default () => {
 	const { onCurrentSpeed } = useVideoPlayerContext();
 	const { open, onToggle } = useToggle();
-	const onChange = (ev : any) => onCurrentSpeed(ev.target.value);
+	const onChange = (ev: ChangeEvent<HTMLInputElement>) => onCurrentSpeed(ev.target.value);
 	return (
 		<Fragment>
 			<AnimatePresence>
-				{open && <ProgressSpeedStyled.InputRange onChange={onChange} />}
+				{open && <InputRangeSpeed onChange={onChange} />}
 			</AnimatePresence>
 			<IoIosTimer
 				color="white"

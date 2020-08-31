@@ -4,10 +4,15 @@ import { useVideoPlayerContext } from "../Providers/VideoPlayerProvider";
 
 export default () => {
 	const { playing, onTogglePlaying } = useVideoPlayerContext();
-	return <InnerIconPlayingList onClick={onTogglePlaying} icon={playing ? IoIosPause : IoIosPlayCircle} />
+	return (
+		<InnerIconPlayingList
+			onClick={onTogglePlaying}
+			icon={playing ? IoIosPause : IoIosPlayCircle}
+		/>
+	);
 };
 
-const InnerIconPlayingList = ({ icon: Icon, ...restProps } : any) => (
+const InnerIconPlayingList = ({ icon: Icon, ...restProps }: any) => (
 	<Icon {...restProps} {...props} />
 );
 
