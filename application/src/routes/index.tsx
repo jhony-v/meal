@@ -35,9 +35,9 @@ const routes : MRoutes.RouterCreator = {
 			},
 		},
 	},
-	CONFIGURATION: {
-		path: "configuration",
-		component: loadable(() => import("pages/ConfigurationProfile"),fallbackPage),
+	SETTING: {
+		path: "settings",
+		component: loadable(() => import("pages/SettingProfile"),fallbackPage),
 	},
 };
 

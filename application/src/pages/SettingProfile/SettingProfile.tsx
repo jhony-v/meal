@@ -1,7 +1,7 @@
 import React from 'react';
 
-const ConfigurationProfile = () => {
+const SettingProfile = () => {
   return <div>ConfigurationProfile</div>;
 };
 
-export default ConfigurationProfile;
+export default SettingProfile;
