@@ -18,10 +18,12 @@ const variants: Variants = {
 	open: {
 		opacity: 1,
 		height: "auto",
+		x : 0
 	},
 	close: {
 		opacity: 0,
 		height: 0,
+		x: -50
 	},
 };
 

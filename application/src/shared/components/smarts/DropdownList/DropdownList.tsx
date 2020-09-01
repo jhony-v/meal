@@ -1,9 +1,7 @@
 import React from "react";
 import { DropdownListMainWrapper } from "./styled";
 import DropdownListItem, { DropdownListItemProps } from "./DropdownListItem/DropdownListItem";
-import DropDownListProvider, {
-	DropdownListConsumer,
-} from "./Providers/DropDownListProvider";
+import DropDownListProvider, {	DropdownListConsumer } from "./Providers/DropDownListProvider";
 
 const DropdownList = ({ children, initial }: DropdownListProps) => {
 	return (
@@ -11,12 +9,13 @@ const DropdownList = ({ children, initial }: DropdownListProps) => {
 			<DropDownListProvider initial={initial}>
 				{React.Children.map(children,(child: React.ReactElement<DropdownListItemProps>, index: number) => (
 						<DropdownListConsumer>
-							{({setActiveDropdownIndex}) =>
+							{(props) =>
 								React.cloneElement(child, {
-									onClick: () => setActiveDropdownIndex(index),
-									index: index,
-								})
-							}
+									onSelectItem: (selfActive : boolean) => { 
+										selfActive ?  props.setActiveDropdownIndex(-1) : props.setActiveDropdownIndex(index) 
+									},
+									active : props.dropdownIndex === index,
+							})}
 						</DropdownListConsumer>
 					)
 				)}

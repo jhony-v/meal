@@ -8,8 +8,10 @@ const colors: MThemes.ThemeColors = {
 		neutral: "rgba(0,0,0,.6)",
 		neutralDarker: "rgba(0,0,0,.1)",
 		neutralDarkerMedium: "rgb(50,50,50)",
+		neutralLightSmall : "#fafafa",
 		neutralLight: "rgb(240,240,240)",
 		neutralLightMedium: "#808080",
+
 	},
 	colorsBaseIcons: {
 		love: "#FD2B83",

@@ -2,25 +2,25 @@ import React, { memo } from 'react'
 import { DropdownListItemWrapper } from '../styled';
 import DropdownListItemHeader from './DropdownListItemHeader';
 import DropdownListItemBody from './DropdownListItemBody';
-import { useDropdowntListContext } from '../Providers/DropDownListProvider';
 
-const DropdownListItem = ({header,index,children,onClick} : DropdownListItemProps) => {
-	const { dropdownIndex } = useDropdowntListContext();
-	const active = dropdownIndex === index;
+const DropdownListItem = ({header,active,children,onSelectItem} : DropdownListItemProps) => {
+	const onSelectDropDown = () => {
+		active ? onSelectItem(true) : onSelectItem(false);
+	};
 
 	return (
 		<DropdownListItemWrapper>
-			<DropdownListItemHeader onClick={onClick} active={active}>{header}</DropdownListItemHeader>
+			<DropdownListItemHeader onClick={onSelectDropDown} active={active}>{header}</DropdownListItemHeader>
 			<DropdownListItemBody active={active}>{children}</DropdownListItemBody>
 		</DropdownListItemWrapper>
 		);
 }
 
 export type DropdownListItemProps = {
-	index?: number;
+	active?: boolean;
 	header?: React.ReactNode;
 	children: React.ReactNode;
-	onClick?: React.MouseEventHandler<HTMLElement>;
+	onSelectItem?: (selfActive : boolean) => void;
 };
 
 

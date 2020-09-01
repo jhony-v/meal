@@ -29,6 +29,7 @@ export module MThemes {
 		neutralDarkerMedium: string;
 		neutralLight: string;
 		neutralLightMedium: string;
+		neutralLightSmall : string;
 	};
 
 	/** Theme colors of all icons created */
