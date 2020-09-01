@@ -11,7 +11,7 @@ type UIButtonProps = {
 
 export const UIButton = memo(styled.button<UIButtonProps>`
 	&:hover {
-		opacity: 0;
+		opacity: 0.9;
 	}
 	padding: 10px 20px;
 	transition: opacity 0.1s;
