@@ -10,7 +10,7 @@ export default function Profile() {
 	return (
 		<Drawer isDrawer>
 			<UIContainer p="2em 1in 0">
-				<UIGrid gridTemplateColumns="360px 1fr 260px" gridGap={20}>
+				<UIGrid gridTemplateColumns="360px 1fr 320px" gridGap={20}>
 					<ProfileAside />
 					<ProfilePreviewModules />
 					<ProfileInterestingStuff />

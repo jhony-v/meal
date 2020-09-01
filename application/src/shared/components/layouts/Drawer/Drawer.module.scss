@@ -1,5 +1,9 @@
 .drawer {
-    height: 100vh;
+		height: 100vh;
+		width: 1500px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
     display: flex;
     flex-direction: column;
 		align-items: stretch;
