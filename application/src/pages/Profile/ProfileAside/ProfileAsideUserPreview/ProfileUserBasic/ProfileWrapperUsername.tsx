@@ -2,13 +2,13 @@ import React from "react";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
 import { UIContainer } from "shared/styled/UIContainer.styled";
 import { UITextBoldLarge } from "shared/styled/UIText.styled";
-import AvatarWallpaper from "shared/components/dumbs/AvatarWallpaper";
+import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
 
 export default () => {
 	return (
 		<UIFlexContainer flexDirection="column" alignItems="center">
 			<UIContainer mb={10}>
-				<AvatarWallpaper image={image} size={150} />
+				<UIAvatarImage src={image} size={150} />
 			</UIContainer>
 			<UITextBoldLarge textAlign="center">
 				Jhony Vega | Programmer

@@ -1,18 +1,26 @@
 import React from "react";
-import { motion } from "framer-motion";
-import AvatarWallpaper from "shared/components/dumbs/AvatarWallpaper";
-import { AiFillCaretDown } from "react-icons/ai";
+import { UICard } from "shared/styled/UICard.styled";
+import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UserModalWrapper } from "./styled";
+import UserModalSButtonOpen from "./UserModalSButtonOpen";
+import { useCycle, AnimatePresence, } from "framer-motion";
+import UserModalSAsyncs from "./Async/UserModalSAsyncs";
 
 const UserModalSettingsContainer = () => {
+	const [visible, cycleVisible] = useCycle<boolean>(false,true);
 	return (
-		<motion.div>
-			<AvatarWallpaper
-				css={{cursor:"pointer"}}
-				avatarIcon={<AiFillCaretDown size={20} />}
-				bg="rgba(30,130,230,.1)"
-				color="primary"
-			/>
-		</motion.div>
+		<UIContainer position="relative">
+			<UserModalSButtonOpen onClick={() => cycleVisible()} />
+			<AnimatePresence>
+				{visible && (
+					<UserModalWrapper onHoverEnd={()=>cycleVisible()} >
+						<UICard boxShadow="medium">
+							<UserModalSAsyncs.Card/>
+						</UICard>
+					</UserModalWrapper>
+				)}
+			</AnimatePresence>
+		</UIContainer>
 	);
 };
 

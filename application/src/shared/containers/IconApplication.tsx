@@ -1,9 +1,9 @@
 import React, { memo } from "react";
-import AvatarWallpaper from "../components/dumbs/AvatarWallpaper";
+import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
 
 function IconApplication() {
 	return (
-		<AvatarWallpaper size={40} image="https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png" />
+		<UIAvatarImage size={40} src="https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png" />
 	);
 }
 

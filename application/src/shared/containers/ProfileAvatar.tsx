@@ -1,11 +1,11 @@
 import React from "react";
-import AvatarWallpaper from "shared/components/dumbs/AvatarWallpaper";
+import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
 
 const ProfileAvatar = ({ ...props }) => {
   return (
-    <AvatarWallpaper
+    <UIAvatarImage
       {...props}
-      image="https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774__340.jpg"
+      src="https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774__340.jpg"
     />
   );
 };

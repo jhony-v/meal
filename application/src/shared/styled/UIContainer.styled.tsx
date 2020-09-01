@@ -12,7 +12,6 @@ type UIContainerProps = LayoutProps & PositionProps & FlexBasisProps & SpaceProp
 	} & any;
 	
 export const UIContainer = styled.div<UIContainerProps>`
-	padding-top : ${props=>props.isDrawer && variables.heightToolbar};
 	${layoutContainerVariants};
 	${compose(layout,position,flex,space)};
 `
@@ -22,6 +21,9 @@ export const UIContainerSpan = styled.span<LayoutProps & SpaceProps>`
 	${compose(layout,space)};
 `
 
+export const UIContainerLayoutDrawer = styled(UIContainer)`
+	padding-top : ${(props : UIContainerProps) =>props.isDrawer && variables.heightToolbar};
+`
 /**
  * Container with fixed pool on the head
  */

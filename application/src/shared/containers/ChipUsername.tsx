@@ -1,9 +1,9 @@
 import React from "react";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
 import { UIText } from "shared/styled/UIText.styled";
-import AvatarWallpaper from "shared/components/dumbs/AvatarWallpaper";
 import { UIContainerSpan } from "shared/styled/UIContainer.styled";
 import UserModalSettingsContainer from "shared/modules/User/UserModalSettings/UserModalSettingsContainer";
+import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
 
 const ChipUsername = () => {
 	return (
@@ -12,7 +12,7 @@ const ChipUsername = () => {
 				Jhony vega
 			</UIText>
 			<UIContainerSpan ml={10}>
-				<AvatarWallpaper image="https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774__340.jpg" />
+				<UIAvatarImage src="https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774__340.jpg" />
 			</UIContainerSpan>
 			<UIContainerSpan ml={10}>
 				<UserModalSettingsContainer/>
