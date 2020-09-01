@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 export const DropdownListMainWrapper = styled(motion.div)`
 	border-radius: 15px;
 	overflow: hidden;
-	width: 300px;
 `;
 
 export const DropdownListItemWrapper = styled(motion.div)`
