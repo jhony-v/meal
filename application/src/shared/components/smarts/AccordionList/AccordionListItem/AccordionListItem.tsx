@@ -1,22 +1,22 @@
 import React, { memo } from 'react'
-import { DropdownListItemWrapper } from '../styled';
-import DropdownListItemHeader from './DropdownListItemHeader';
-import DropdownListItemBody from './DropdownListItemBody';
+import { AccordionListItemWrapper } from '../styled';
+import DropdownListItemHeader from './AccordionListItemHeader';
+import DropdownListItemBody from './AccordionListItemBody';
 
-const DropdownListItem = ({header,active,children,onSelectItem} : DropdownListItemProps) => {
+const DropdownListItem = ({header,active,children,onSelectItem} : AccordionListItemProps) => {
 	const onSelectDropDown = () => {
 		active ? onSelectItem(true) : onSelectItem(false);
 	};
 
 	return (
-		<DropdownListItemWrapper>
+		<AccordionListItemWrapper>
 			<DropdownListItemHeader onClick={onSelectDropDown} active={active}>{header}</DropdownListItemHeader>
 			<DropdownListItemBody active={active}>{children}</DropdownListItemBody>
-		</DropdownListItemWrapper>
+		</AccordionListItemWrapper>
 		);
 }
 
-export type DropdownListItemProps = {
+export type AccordionListItemProps = {
 	active?: boolean;
 	header?: React.ReactNode;
 	children: React.ReactNode;

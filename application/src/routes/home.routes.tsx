@@ -1,6 +1,6 @@
 import loadable from "@loadable/component";
-import { fallbackPage } from "routes";
 import { MRoutes } from "./routes.types";
+import { fallbackPage } from "./fallbacks.routes";
 
 const HOME : MRoutes.RouterCreator = {
 	HOME: {
