@@ -8,7 +8,7 @@ import { UserModalSettingButtonWrapper } from "../styled";
 
 export default function UserModalSButtonNavigate(props : UserModalButtonSettingsProps) {
 	return (
-		<UserModalSettingButtonWrapper>
+		<UserModalSettingButtonWrapper to={props.to}>
 			<UIFlexContainer alignItems="center">
 				<UIContainer pr={2}>
 					<UIAvatar bg="neutralDarker" color="neutral">
@@ -24,4 +24,5 @@ export default function UserModalSButtonNavigate(props : UserModalButtonSettings
 type UserModalButtonSettingsProps = {
 	text : string;
 	icon : IconType;
+	to ?: string;
 }

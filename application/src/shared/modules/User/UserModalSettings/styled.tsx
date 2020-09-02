@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import styled from "themes/styled";
-import { UIButton } from "shared/styled/UIButton.styled";
+import { UIButtonLink } from "shared/styled/UIButton.styled";
 
 export const UserModalWrapper = styled(motion.div)`
 	position: absolute;
@@ -23,13 +23,10 @@ UserModalWrapper.defaultProps = {
 	},
 };
 
-export const UserModalSettingButtonWrapper = styled(UIButton)`
+export const UserModalSettingButtonWrapper = styled(UIButtonLink)`
 	margin: 5px 0;
-	transition: background-color 0.2s;
+	display : block;
 	&:hover {
 		background-color: ${(props) => props.theme.colors.neutralLight};
 	}
 `;
-UserModalSettingButtonWrapper.defaultProps = {
-	block: true,
-};

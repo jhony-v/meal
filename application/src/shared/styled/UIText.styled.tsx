@@ -10,7 +10,6 @@ type UITextProps = system.ColorStyleProps & system.FontSizeProps & system.TextAl
 		noSelect?: boolean;
 		weight?: boolean;
 		block?: boolean;
-		sizeWidth?: string;
 	};
 
 export const UIText = styled.span<UITextProps>`
@@ -20,7 +19,7 @@ export const UIText = styled.span<UITextProps>`
 		props.block &&
 		css`
 			display: block;
-			width: ${props.sizeWidth || "100%"};
+			width: 100%;
 		`}
 	${compose(textAlign, color, fontSize)};
 `;

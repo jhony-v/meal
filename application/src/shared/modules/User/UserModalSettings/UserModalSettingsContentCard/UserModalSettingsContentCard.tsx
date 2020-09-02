@@ -1,18 +1,18 @@
 import React from "react";
 import UserModalSButtonNavigate from "./UserModalSButtonNavigate";
-import { IoIosSettings } from "react-icons/io";
+import { IoIosSettings, IoIosPerson } from "react-icons/io";
 import { ImContrast } from "react-icons/im";
 import { RiLogoutBoxFill } from "react-icons/ri";
+import UserModalSPreviewUserInformation from "./UserModalSPreviewUserInformation";
 
 export default function UserModalSettingsContentCard() {
 	return (
-		<div>
-			<UserModalSButtonNavigate
-				text="Configurar mi cuenta"
-				icon={IoIosSettings}
-			/>
-			<UserModalSButtonNavigate text="Cambiar tema" icon={ImContrast} />
-			<UserModalSButtonNavigate text="Logout" icon={RiLogoutBoxFill} />
-		</div>
+		<>
+			<UserModalSPreviewUserInformation/>
+			<UserModalSButtonNavigate to="/" text="Configurar mi cuenta" icon={IoIosSettings} />
+			<UserModalSButtonNavigate to="/" text="Administrar mi perfil" icon={IoIosPerson} />
+			<UserModalSButtonNavigate to="/" text="Cambiar tema" icon={ImContrast} />
+			<UserModalSButtonNavigate to="/" text="Cerrar sesión" icon={RiLogoutBoxFill} />
+		</>
 	);
 }
