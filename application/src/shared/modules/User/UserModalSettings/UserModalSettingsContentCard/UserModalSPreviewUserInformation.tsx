@@ -12,7 +12,7 @@ export default function UserModalSPreviewUserInformation() {
 				<ProfileAvatar size={80} />
 				<UIContainer pl={2}>
 					<UIText weight>Jhony Vega | Programmer</UIText>
-					<UITextSmooth fontSize="normal.0">
+					<UITextSmooth fontSize="normal.0" block>
 						username@gmail.com
 					</UITextSmooth>
 				</UIContainer>
