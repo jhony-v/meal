@@ -1,17 +1,17 @@
 import React from "react";
-import { DropdownListItemHeaderWrapper, DropdownListIconWrapper } from "../styled";
+import { AccordionListItemHeaderWrapper, AccordionListIconWrapper } from "../styled";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
 export default ({ children, onClick, active }: DropdownListHeaderProps) => {
 	const Icon = active ? IconsActive.up : IconsActive.down;
 	
 	return (
-		<DropdownListItemHeaderWrapper onClick={onClick}>
+		<AccordionListItemHeaderWrapper onClick={onClick}>
 			{children}
-			<DropdownListIconWrapper active={active}>
+			<AccordionListIconWrapper active={active}>
 				<Icon size={18} />
-			</DropdownListIconWrapper>
-		</DropdownListItemHeaderWrapper>
+			</AccordionListIconWrapper>
+		</AccordionListItemHeaderWrapper>
 	);
 };
 
