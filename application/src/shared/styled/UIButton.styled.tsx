@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 import { MThemes } from "themes/themes.types";
