@@ -7,17 +7,6 @@ import { Link } from "react-router-dom";
 import { UIAvatar } from "./UIAvatar.styled";
 import { compose, shadow, BoxShadowProps } from "styled-system";
 
-
-type UIButtonProps = {
-	block?: boolean;
-	variant?: MThemes.ThemesVariantButtonsTypes;
-};
-
-type UIButtonLinkProps = UIButtonProps & {
-	to?: string;
-	className?: string;
-	children?: React.ReactNode | string;
-};
 /**
  * styles shared between buttons
  */
@@ -34,8 +23,14 @@ const themeDefaultButton = css`
 	text-align: center;
 `;
 
-
-
+/**
+ * Link button with equal style to button 
+ */
+type UIButtonLinkProps = UIButtonProps & {
+	to?: string;
+	className?: string;
+	children?: React.ReactNode | string;
+};
 export const UIButtonLink = styled(( props : UIButtonLinkProps) => (
 	<Link to={props.to} className={props.className}>{props.children}</Link>
 ))<UIButtonLinkProps>`
@@ -44,14 +39,23 @@ export const UIButtonLink = styled(( props : UIButtonLinkProps) => (
 	${(props) => defineBlock(props)};
 `;
 
-
-export const UIButton = memo(styled.button<UIButtonProps>`
+/**
+ * Button base global 
+ */
+type UIButtonProps = {
+	block?: boolean;
+	variant?: MThemes.ThemesVariantButtonsTypes;
+};
+export const UIButton = styled.button<UIButtonProps>`
 	${themeDefaultButton};
 	${buttonsVariantNormal};
 	${(props) => defineBlock(props)};
-`);
+`;
 
-
+/**
+ * Floating botton with avatar component inheritance. 
+ * This componente receive a react icon component
+ */
 export const UIButtonFloating = styled(UIAvatar)<BoxShadowProps>`
 	position: fixed;
 	bottom: 20px;
@@ -71,5 +75,8 @@ export const UIButtonFloating = styled(UIAvatar)<BoxShadowProps>`
 	${(compose(shadow))};
 `
 UIButtonFloating.defaultProps = {
-	boxShadow : "big"
+	boxShadow : "big",
+	bg: "primary",
+	color: "primaryLight",
+	size: 50,
 }

@@ -16,8 +16,3 @@ const Template: StoryUIButtonFloatingProps = (args) => (
 );
 
 export const Default: StoryUIButtonFloatingProps = Template.bind({});
-Default.args = {
-	bg: "primary",
-	color: "primaryLight",
-	size: 50,
-};
