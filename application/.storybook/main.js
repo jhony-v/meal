@@ -7,5 +7,6 @@ module.exports = {
 		"@storybook/addon-docs",
 		"@storybook/addon-storysource",
 		"storybook-addon-jsx",
+		"@storybook/addon-controls",
 	],
 };

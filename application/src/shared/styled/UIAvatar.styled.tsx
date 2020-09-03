@@ -35,6 +35,7 @@ UIAvatar.defaultProps = { size: 40 };
 export const UIAvatarFeaturedPrimary = styled(UIAvatar)`
 	padding: 4px;
 	box-sizing: content-box;
+	display: inline-block;
 	${compose(borders)};
 `;
 UIAvatarFeaturedPrimary.defaultProps = {
