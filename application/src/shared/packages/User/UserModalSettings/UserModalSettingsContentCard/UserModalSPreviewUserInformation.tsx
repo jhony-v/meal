@@ -1,5 +1,5 @@
 import React from "react";
-import ProfileAvatar from "shared/modules/User/UserDecorators/ProfileAvatar";
+import ProfileAvatar from "shared/packages/User/UserDecorators/ProfileAvatar";
 import { UIContainer } from "shared/styled/UIContainer.styled";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
 import { UIText, UITextSmooth } from "shared/styled/UIText.styled";

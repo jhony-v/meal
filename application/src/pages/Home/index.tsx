@@ -4,9 +4,9 @@ import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
 import Drawer from "shared/components/layouts/Drawer";
 import HomeTrends from "./HomeTrends";
 import HomeWrapperAddPost from "./HomeWrapperAddPost";
-import UserFollowers from "shared/modules/User/UserFollowers/UserFollowers";
+import UserFollowers from "shared/packages/User/UserFollowers/UserFollowers";
 import { UIContainer } from "shared/styled/UIContainer.styled";
-import NewsFeedContainer from "shared/modules/Publication/NewsFeed/NewsFeedContainer";
+import NewsFeedContainer from "shared/packages/Publication/NewsFeed/NewsFeedContainer";
 
 export default function Home() {
 	return (

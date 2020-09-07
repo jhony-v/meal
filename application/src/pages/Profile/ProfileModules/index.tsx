@@ -1,5 +1,5 @@
 import React from 'react'
-import NewsFeedContainer from 'shared/modules/Publication/NewsFeed/NewsFeedContainer'
+import NewsFeedContainer from 'shared/packages/Publication/NewsFeed/NewsFeedContainer'
 import { UIInput } from 'shared/styled/UIInput.styled'
 
 const ProfileModules = () => {

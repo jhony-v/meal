@@ -2,7 +2,7 @@ import React from "react";
 import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
 import { UIText } from "shared/styled/UIText.styled";
 import { UIContainerSpan } from "shared/styled/UIContainer.styled";
-import UserModalSettings from "shared/modules/User/UserModalSettings/UserModalSettings";
+import UserModalSettings from "shared/packages/User/UserModalSettings/UserModalSettings";
 import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
 
 const ChipUsername = () => {
