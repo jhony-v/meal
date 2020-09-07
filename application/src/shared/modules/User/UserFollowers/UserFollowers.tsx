@@ -3,7 +3,7 @@ import FlatList from "shared/components/dumbs/FlatList";
 import UserFollowerItem from "./UserFollowerItem";
 import { UITextBoldLarge } from "shared/styled/UIText.styled";
 
-const UserFollowersContainer = () => {
+const UserFollowers = () => {
 	return (
 		<FlatList
 			renderHeader={<UITextBoldLarge>Followers</UITextBoldLarge>}
@@ -15,4 +15,4 @@ const UserFollowersContainer = () => {
 	);
 };
 
-export default UserFollowersContainer;
+export default UserFollowers;

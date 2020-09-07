@@ -6,7 +6,7 @@ import { UIButton } from "shared/styled/UIButton.styled";
 import HomeTrendItem from "./HomeTrendItem";
 import HomeTrendItemUserDetail from "./HomeTrendItemUserDetail";
 
-const HomeTrendsContainer = () => {
+const HomeTrends = () => {
   return (
     <FlatList
       data={Array(4).fill(0)}
@@ -21,4 +21,4 @@ const HomeTrendsContainer = () => {
   );
 };
 
-export default HomeTrendsContainer;
+export default HomeTrends;

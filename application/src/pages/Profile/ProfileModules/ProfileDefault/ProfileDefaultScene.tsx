@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ProfileDefault() {
+export default function ProfileDefaultScene() {
 	return (
 		<div>
 			

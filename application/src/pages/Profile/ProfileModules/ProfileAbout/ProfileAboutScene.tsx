@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ProfileAssets() {
+export default function ProfileAboutScene() {
 	return (
 		<div>
 			

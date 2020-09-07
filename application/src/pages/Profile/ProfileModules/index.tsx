@@ -2,7 +2,7 @@ import React from 'react'
 import NewsFeedContainer from 'shared/modules/Publication/NewsFeed/NewsFeedContainer'
 import { UIInput } from 'shared/styled/UIInput.styled'
 
-const ProfilePreviewModules = () => {
+const ProfileModules = () => {
 	return (
 		<div>
 			<UIInput placeholder="Search meals, discover, learn..." />
@@ -11,4 +11,4 @@ const ProfilePreviewModules = () => {
 	)
 }
 
-export default ProfilePreviewModules
+export default ProfileModules

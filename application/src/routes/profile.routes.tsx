@@ -9,15 +9,15 @@ const PROFILE : MRoutes.RouterCreator = {
 	routes: {
 		DEFAULT: {
 			path: "/",
-			component: loadable(() => import("pages/Profile/Modules/ProfileDefault")),
+			component: loadable(() => import("pages/Profile/ProfileModules/ProfileDefault/ProfileDefaultScene")),
 		},
 		ABOUT: {
 			path: "about",
-			component: loadable(() => import("pages/Profile/Modules/ProfileAbout")),
+			component: loadable(() => import("pages/Profile/ProfileModules/ProfileAbout/ProfileAboutScene")),
 		},
 		ASSETS: {
 			path: "assets",
-			component: loadable(() => import("pages/Profile/Modules/ProfileAssets")),
+			component: loadable(() => import("pages/Profile/ProfileModules/ProfileAssets/ProfileAssetsScene")),
 		},
 	},
 },

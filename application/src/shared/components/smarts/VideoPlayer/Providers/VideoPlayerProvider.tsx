@@ -54,7 +54,7 @@ const VideoPlayerProvider = ({ video, children } : VideoPlayerProviderProps) => 
 			);
 		};
 
-		const onProgress = () => dispatch(actions.setDuration(video.current.duration || 0));
+		const onProgress = () => dispatch(actions.setDuration(video.current?.duration || 0));
 		const onPlaying = () => dispatch(actions.loadingVideoComplete());
 		const onWaiting = () => dispatch(actions.loadingVideoStart());
 
