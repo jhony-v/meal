@@ -29,8 +29,8 @@ function ChipSimple({ children, onCloseComplete, noRemove, ...restProps } : Chip
 
 type ChipSimpleProps = {
 	children : string | ReactNode;
-	onCloseComplete : () => void;
-	noRemove : boolean;
+	onCloseComplete ?: () => void;
+	noRemove ?: boolean;
 }
 
 export default memo(ChipSimple);

@@ -19,7 +19,7 @@ type UICardProps = {
 export const UICard = styled.div<SpaceProps & BorderRadiusProps & UICardProps>`
 	border-radius: 10px;
 	padding: 10px;
-	background: ${(props) => props.theme.colors.primaryLight};
+	background: ${(props) => props.theme.colors?.primaryLight};
 	${compose(space, borderRadius, boxShadow)}
 `;
 UICard.defaultProps = { boxShadow: "normal" };

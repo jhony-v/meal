@@ -20,7 +20,7 @@ export const UIChip = styled.div<UIChipProps>`
 	display: inline-flex;
 	align-items: center;
 	padding: 12px;
-	background-color: ${(props) => props.theme.colors.primaryLight};
+	background-color: ${({theme}) => theme.colors?.primaryLight};
 	${compose(borderRadius, fontSize, border, margin)};
 `;
 UIChip.defaultProps = {

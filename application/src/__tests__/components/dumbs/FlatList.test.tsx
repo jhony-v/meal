@@ -8,7 +8,7 @@ interface Item {
 const items: Item[] = [{ item: "a" }, { item: "b" }, { item: "c" }];
 
 let wrapperMountComponentList: ReactWrapper<any>;
-beforeEach(function () {
+beforeEach(() => {
 	wrapperMountComponentList = mount(
 		<FlatList
 			renderHeader={<span className="header" />}
@@ -19,18 +19,21 @@ beforeEach(function () {
 	);
 });
 
-describe("test FlatList", function () {
+describe("test FlatList", () => {
 	it("should items render is correct", function () {
-		expect(wrapperMountComponentList.props().data.length).toEqual(items.length);
+		const lengthOfRenderItems = wrapperMountComponentList.props().data.length;
+		expect(lengthOfRenderItems).toEqual(items.length);
 	});
 
-	it("should exists header", function () {
-		expect(wrapperMountComponentList.props().renderHeader).not.toBeUndefined();
+	it("should exists header", () => {
+		const headerProp = wrapperMountComponentList.props().renderHeader;
+		expect(headerProp).not.toBeUndefined();
 	});
-	it("should exists footer", function () {
-		expect(wrapperMountComponentList.props().renderHeader).not.toBeUndefined();
+	it("should exists footer", () => {
+		const footerProp = wrapperMountComponentList.props().renderFooter;
+		expect(footerProp).not.toBeUndefined();
 	});
-	it("should render items of list", function () {
-		expect(wrapperMountComponentList.find(<div/>)).toBeDefined();
+	it("should render items of list", () => {
+		expect(wrapperMountComponentList.find(<div />)).toBeDefined();
 	});
 });

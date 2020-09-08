@@ -28,4 +28,8 @@ type ChipUserFollowerProps = {
 	buttonContent : string | React.ReactNode
 }
 
+ChipUserFollower.defaultProps = {
+	buttonContent : "seguir"
+}
+
 export default memo(ChipUserFollower)
