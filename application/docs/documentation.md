@@ -1,7 +1,7 @@
 # <p align="center"> DOCUMENTATION </p>
 ## File and folders structure
 Folder project structure by folders and files.
-```yml
+```ruby
 .storybook
 .vscode
 docs
