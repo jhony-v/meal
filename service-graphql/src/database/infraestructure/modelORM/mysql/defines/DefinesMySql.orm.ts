@@ -28,7 +28,7 @@ export const Product = sequelize.define<InstancesMySql.ProductInstance>("Product
 		autoIncrement : true,
 		primaryKey : true 
 	},
-	productName : DataTypes.STRING,
+	name : DataTypes.STRING,
 	description : DataTypes.STRING,
 	image : DataTypes.STRING(500),
 });

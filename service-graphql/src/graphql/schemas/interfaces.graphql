@@ -1,0 +1,34 @@
+interface PropModelName {
+	name: String
+}
+
+interface PropImage {
+	image: String
+}
+
+interface PropVideo {
+	video: String
+}
+
+interface PropCreatedUpdated {
+	createdAt: String
+	modifiedAt: String
+}
+
+interface PropCreateImageVideoFiles {
+	image: String
+	video: String
+}
+
+interface PropUserAccountSecurity {
+	username: String
+	email: String
+	password: String
+}
+
+interface PropUserAccountPublic {
+	userId: ID
+	fullName: String
+	username: String
+	avatar: String
+}
