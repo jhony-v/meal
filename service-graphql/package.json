@@ -6,7 +6,8 @@
  "scripts": {
   "start": "node dist/index.js",
   "dev": "nodemon",
-  "build": "npx rimraf dist && tsc"
+  "build": "npx rimraf dist && tsc",
+  "test": "jest"
  },
  "keywords": [
   "graphql",
@@ -24,12 +25,15 @@
  "devDependencies": {
   "@types/mysql2": "github:types/mysql2",
   "@types/node": "^14.0.27",
+  "apollo-server-testing": "^2.17.0",
+  "jest": "^26.4.2",
   "nodemon": "^2.0.4",
   "ts-node": "^8.10.2",
   "typescript": "^3.9.7"
  },
  "dependencies": {
   "@types/bcrypt": "^3.0.0",
+  "@types/jest": "^26.0.13",
   "@types/sequelize": "^4.28.9",
   "@types/uuid": "^8.0.0",
   "apollo-server": "^2.16.1",
