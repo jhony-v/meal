@@ -1,0 +1,79 @@
+#All Definitions 
+
+type Food implements PropModelName & PropCreateImageVideoFiles & PropCreatedUpdated{
+	foodId: ID
+	name: String
+	punctuation: Int
+	presentation: String
+	description: String
+	createdAt: String
+  modifiedAt: String
+	image: String
+	video: String
+}
+
+type FoodCategory implements PropModelName {
+	foodCategoryId: ID
+	name: String
+}
+
+type FoodProduct implements PropModelName & PropImage{
+	foodProduct: ID
+	name: String
+	image: String
+}
+
+type FoodTag implements PropModelName{
+ 	foodTagId: ID
+	name: String
+	createdAt: String
+}
+
+type MainPublishedFood {
+	mainPublishedFood: ID
+}
+
+type MainPublishedFoodTag {
+	mainPublishedFoodTagId: ID 
+}
+
+type Product implements PropModelName & PropImage & PropCreatedUpdated{
+	productId: ID
+	name: String
+	description: String
+	image: String
+	createdAt: String
+  modifiedAt: String
+}
+
+type ProductCategory implements PropModelName {
+	productCategoryId: Int
+	name: String
+}
+
+type User implements PropUserAccountPublic & PropUserAccountSecurity {
+	userId: ID
+	fullName: String
+	username: String
+	avatar: String
+	email: String
+	password: String
+	createdAt: String
+}
+
+type UserFollower implements PropUserAccountPublic {
+	userFollowerId: ID
+	userId: ID
+	fullName: String
+	username: String
+	avatar: String
+}
+
+type UserFood {
+	userFoodId: ID
+}
+
+type UserFoodImages {
+	userFoodImagesId: ID
+	image: String
+}

@@ -1,17 +1,19 @@
 import { injectable } from "inversify";
-import mysql, { Connection } from "mysql2/promise";
-import { Interfaces } from "@dataAccess/@types/interfaces";
+import { IDataAccess } from "@dataAccess/@types/interfaces";
+import { Sequelize } from "sequelize";
+import { MYSQL_CONFIG } from "src/config";
 
-const mysqlConnection = mysql.createConnection({
-	database: "simple_chat",
-	host: "localhost",
-	user: "root",
-	password: "",
+const sequelize = new Sequelize(MYSQL_CONFIG.DATABASE, MYSQL_CONFIG.USER, MYSQL_CONFIG.PASSWORD, {
+	host : MYSQL_CONFIG.HOST,
+	define: {
+		freezeTableName: true,
+	},
+	dialect: "mysql",
 });
 
 @injectable()
-export default class MySQL implements Interfaces.DatabaseConnection {
-	async instance(): Promise<Connection> {
-		return await mysqlConnection;
+export default class MySQL implements IDataAccess.DatabaseConnection<Sequelize> {
+	instance(): Sequelize {
+		return sequelize;
 	}
 }
