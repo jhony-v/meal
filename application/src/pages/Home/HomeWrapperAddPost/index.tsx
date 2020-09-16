@@ -1,5 +1,5 @@
 import React from "react";
-import InputCommentUser from "shared/components/smarts/InputComment/InputCommentUser";
+import InputCommentUser from "shared/components/smarts/InputComment";
 import HomeWrapperAddExtra from "./HomeWrapperAddPostExtra";
 
 const HomeWrapperAddPost = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { UIContainer } from "shared/styled/UIContainer.styled";
-import VideoPlayer from "shared/components/smarts/VideoPlayer/VideoPlayer";
+import VideoPlayer from "shared/components/smarts/VideoPlayer";
 import ProfileInterestingFoodsContainer from "./ProfileInterestingFoods/ProfileInterestingFoodsContainer";
 
 const ProfileInterestingStuff = () => {
