@@ -4,9 +4,9 @@ import CardPreviewHistoryBackground, { CardBackgroundImageProps } from "./CardPr
 import { HistoryUserCard } from "./styled";
 
 const CardPreviewHistory = (props: CardPreviewHistoryProps) => {
-	const { onClick, image, user } = props;
+	const { onClick, image, user, w } = props;
 	return (
-		<UIContainer onClick={onClick}>
+		<UIContainer onClick={onClick} width={w}>
 			<CardPreviewHistoryBackground image={image}>
 				<HistoryUserCard.Avatar src={user.avatar} />
 				<HistoryUserCard.Text>{user.fullName}</HistoryUserCard.Text>
@@ -15,9 +15,14 @@ const CardPreviewHistory = (props: CardPreviewHistoryProps) => {
 	);
 };
 
+CardPreviewHistory.defaultProps = {
+	w : 150
+}
+
 type CardPreviewHistoryProps = CardBackgroundImageProps & {
 	user?: User;
 	onClick?: () => void;
+	w ?: string | number;
 };
 
 interface User {

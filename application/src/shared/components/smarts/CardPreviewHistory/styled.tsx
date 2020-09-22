@@ -11,7 +11,7 @@ export const ContainerBackground = styled(motion.div)<ContainerBackgroundProps>`
 	border-radius: 20px;
 	display: inline-block;
 	height: 250px;
-	width: 150px;
+	width: 100%;
 	padding: 16px;
 	transition:transform .1s;
 	&:hover {
