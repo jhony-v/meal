@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import styled from "themes/styled";
 import { UIButtonLink } from "shared/styled/StyledButtons/UIButton.styled";
+import styled from "themes/styled";
 
 export const UserModalWrapper = styled(motion.div)`
 	position: absolute;

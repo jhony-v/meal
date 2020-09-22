@@ -7,6 +7,7 @@ function AppRoutes(): JSX.Element {
 		<Fragment>
 			<Route exact path={routes.HOME.path} component={routes.HOME.component} />
 			<Route path={routes.PROFILE.path} component={routes.PROFILE.component} />
+			<Route path={routes.SETTING.path} component={routes.SETTING.component} />
 		</Fragment>
 	);
 }

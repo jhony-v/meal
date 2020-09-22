@@ -9,8 +9,8 @@
   "author": {
     "name": "Jhony Vega",
     "url": "https://github.com/jhony-24"
-	},
-	"scripts": {
+  },
+  "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
@@ -44,12 +44,14 @@
     "facepaint": "^1.2.1",
     "framer-motion": "^2.6.5",
     "graphql": "^15.3.0",
+    "i18next": "^19.7.0",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.20",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-apollo": "^3.1.5",
     "react-dom": "^16.13.1",
+    "react-i18next": "^11.7.2",
     "react-icons": "^3.11.0",
     "react-image": "^4.0.3",
     "react-router-dom": "^5.2.0",

@@ -4,21 +4,18 @@ import { MRoutes } from "./routes.types";
 
 const SETTING : MRoutes.RouterCreator = {
 	SETTING: {
-		path: "settings",
+		path: "/settings",
 		component: loadable(() => import("pages/SettingProfile"),fallbackPage),
 		routes : {
 			DEFAULT : {
-				path : ""
+				path : "/"
 			},
 			ACCOUNT : {
-				path : "acount",
+				path : "account",
 			}	,
-			CONTACT : {
-				path : "contact",
+			THEME : {
+				path : "theme",
 			},
-			PROFILE : {
-				path : "profile"
-			}
 		}
 	},
 }

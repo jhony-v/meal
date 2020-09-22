@@ -9,9 +9,9 @@ export default function UserModalSettingsContentCard() {
 	return (
 		<>
 			<UserModalSPreviewUserInformation/>
-			<UserModalSettingsButtonNavigate to="/" text="Configurar mi cuenta" icon={IoIosSettings} />
-			<UserModalSettingsButtonNavigate to="/" text="Administrar mi perfil" icon={IoIosPerson} />
-			<UserModalSettingsButtonNavigate to="/" text="Cambiar tema" icon={ImContrast} />
+			<UserModalSettingsButtonNavigate to="/settings" text="Administrar mi perfil" icon={IoIosPerson} />
+			<UserModalSettingsButtonNavigate to="/settings/account" text="Configurar mi cuenta" icon={IoIosSettings} />
+			<UserModalSettingsButtonNavigate to="/settings/theme" text="Cambiar tema" icon={ImContrast} />
 			<UserModalSettingsButtonNavigate to="/" text="Cerrar sesión" icon={RiLogoutBoxFill} />
 		</>
 	);
