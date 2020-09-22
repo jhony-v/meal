@@ -76,5 +76,4 @@ export module MThemes {
 	 * VARIANTS
 	 * Themes personalized of components globals
 	 */
-	export type ThemesVariantButtonsTypes = "primary" | "outline" | "default";
 }

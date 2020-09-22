@@ -1,10 +1,10 @@
 import React, { memo } from 'react'
-import { UIFlexContainer } from 'shared/styled/UIFlexContainer.styled'
-import { UIAvatarImage } from 'shared/styled/UIAvatar.styled'
-import { UIButton } from 'shared/styled/UIButton.styled'
-import { UIContainer } from 'shared/styled/UIContainer.styled'
-import { UIText } from 'shared/styled/UIText.styled'
-import { UITextSmooth } from 'shared/styled/UIText.styled'
+import { UIFlexContainer } from 'shared/styled/StyledWrappers/UIFlexContainer.styled'
+import { UIAvatarImage } from 'shared/styled/StyledAvatars/UIAvatar.styled'
+import { UIButton } from 'shared/styled/StyledButtons/UIButton.styled'
+import { UIContainer } from 'shared/styled/StyledWrappers/UIContainer.styled'
+import { UIText } from 'shared/styled/StyledLabels/UIText.styled'
+import { UITextSmooth } from 'shared/styled/StyledLabels/UIText.styled'
 
 function ChipUserFollower(props : ChipUserFollowerProps & any) {
 	const {avatar,username,description,onClick,buttonContent,...restProps} = props;

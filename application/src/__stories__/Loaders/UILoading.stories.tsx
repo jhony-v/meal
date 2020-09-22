@@ -1,6 +1,6 @@
 import React from 'react'
 import { Meta } from "@storybook/react/types-6-0";
-import { UILoading, UILoadingPage } from 'shared/styled/UILoading.styled';
+import { UILoading, UILoadingPage } from 'shared/styled/StyledLoaders/UILoading.styled';
 
 export default {
 	title : "Loaders/UILoading",

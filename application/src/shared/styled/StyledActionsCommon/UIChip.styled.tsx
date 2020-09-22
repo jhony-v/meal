@@ -10,7 +10,7 @@ import {
 	compose,
 	BorderRadiusProps,
 } from "styled-system";
-import { UIAvatar } from "./UIAvatar.styled";
+import { UIAvatar } from "../StyledAvatars/UIAvatar.styled";
 
 /**
  * Styled component chip

@@ -1,7 +1,7 @@
 import React from "react";
 import ChipUserFollower from "shared/components/dumbs/ChipUserFollower";
 import { mount } from "enzyme";
-import { UIButton } from "shared/styled/UIButton.styled";
+import { UIButton } from "shared/styled/StyledButtons/UIButton.styled";
 
 describe("ChipUserFollower component", () => {
 	it("should have important props ", () => {

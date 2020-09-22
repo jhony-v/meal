@@ -1,5 +1,5 @@
 import React from "react";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
 import { ContainerBackground } from "./styled";
 
 export default (props: CardBackgroundImageProps) => {

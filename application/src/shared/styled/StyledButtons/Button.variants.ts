@@ -1,6 +1,6 @@
 import { variant } from "styled-system";
 
-export const buttonsVariantNormal = variant({
+export const ButtonVariant = variant({
 	variants: {
 		primary: {
 			bg: "primary",
@@ -16,4 +16,4 @@ export const buttonsVariantNormal = variant({
 			bg: "neutralLight",
 		},
 	},
-});
+})

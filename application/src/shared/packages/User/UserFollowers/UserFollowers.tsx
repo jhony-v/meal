@@ -1,7 +1,7 @@
 import React from "react";
 import FlatList from "shared/components/dumbs/FlatList";
 import UserFollowerItem from "./UserFollowerItem";
-import { UITextBoldLarge } from "shared/styled/UIText.styled";
+import { UITextBoldLarge } from "shared/styled/StyledLabels/UIText.styled";
 
 const UserFollowers = () => {
 	return (

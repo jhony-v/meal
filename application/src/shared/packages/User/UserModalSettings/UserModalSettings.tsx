@@ -1,6 +1,6 @@
 import React from "react";
-import { UICard } from "shared/styled/UICard.styled";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UICard } from "shared/styled/StyledCards/UICard.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 import { UserModalWrapper } from "./styled";
 import UserModalSettingsButtonOpen from "./UserModalSettingsComponents/UserModalSettingsButtonOpen";
 import { useCycle, AnimatePresence, } from "framer-motion";

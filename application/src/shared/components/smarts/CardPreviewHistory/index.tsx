@@ -1,5 +1,5 @@
 import React from "react";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 import CardPreviewHistoryBackground, { CardBackgroundImageProps } from "./CardPreviewHistoryBackground";
 import { HistoryUserCard } from "./styled";
 

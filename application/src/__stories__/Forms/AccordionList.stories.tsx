@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import AccordionList from "shared/components/smarts/AccordionList";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 
 export default {
 	title: "Forms/AccordionList",

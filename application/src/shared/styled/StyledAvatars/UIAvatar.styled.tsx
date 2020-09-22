@@ -1,15 +1,11 @@
 import styled from "themes/styled";
-import { compose, layout, borderRadius, borders, LayoutProps, BorderRadiusProps, margin, color } from "styled-system";
+import { compose, layout, borderRadius, borders, margin, color } from "styled-system";
+import { UIAvatarTypes } from "./UIAvatar.types";
 
 /**
  * Styled component to define the self avatar circle into image
  */
-type UIAvatarImageProps = {
-		size?: string | number;
-		width?: string | number;
-		height?: string | number;
-};
-export const UIAvatarImage = styled.img<LayoutProps & BorderRadiusProps & UIAvatarImageProps>`
+export const UIAvatarImage = styled.img<UIAvatarTypes.UIAvatarImageProps>`
 	-webkit-user-drag: none;
 	border-radius: 100%;
 	width: ${(props) => props.size || props.width || "40px"};
@@ -20,7 +16,7 @@ export const UIAvatarImage = styled.img<LayoutProps & BorderRadiusProps & UIAvat
 /**
  * Avatar of type icons
  */
-export const UIAvatar = styled.div<LayoutProps & BorderRadiusProps & any>`
+export const UIAvatar = styled.div<UIAvatarTypes.UIAvatarProps>`
 	display: flex;
 	align-items: center;
 	justify-content: center;

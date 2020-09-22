@@ -1,8 +1,8 @@
 import React from "react";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 import ProfileInterestingFoodsItem from "./ProfileInterestingFoodsItem";
-import { UIScrollBarList } from "shared/styled/UIScrollBarList.styled";
-import { UIText } from "shared/styled/UIText.styled";
+import { UIScrollBarList } from "shared/styled/StyledWrappers/UIScrollBarList.styled";
+import { UIText } from "shared/styled/StyledLabels/UIText.styled";
 
 const ProfileInterestingFoodsContainer = () => {
 	return (

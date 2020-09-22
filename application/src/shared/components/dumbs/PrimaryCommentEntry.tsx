@@ -1,8 +1,8 @@
 import React from "react";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
-import { UIInput } from "shared/styled/UIInput.styled";
-import { UIContainer } from "shared/styled/UIContainer.styled";
-import { UIAvatar } from "shared/styled/UIAvatar.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
+import { UIInput } from "shared/styled/StyledInputs/UIInput.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
+import { UIAvatar } from "shared/styled/StyledAvatars/UIAvatar.styled";
 import { IoIosPaperPlane } from "react-icons/io";
 
 function PrimaryCommentEntry({ placeholder, onKeyUp, onClick }: PrimaryCommentEntryProps) {

@@ -1,11 +1,11 @@
 import React from 'react'
 import FlatList from 'shared/components/dumbs/FlatList'
-import { UICard } from 'shared/styled/UICard.styled'
-import { UIContainer } from 'shared/styled/UIContainer.styled'
-import { UIFlexContainer } from 'shared/styled/UIFlexContainer.styled'
-import { UIAvatarImage } from 'shared/styled/UIAvatar.styled'
-import { UIText } from 'shared/styled/UIText.styled'
-import { UITextSmooth } from 'shared/styled/UIText.styled'
+import { UICard } from 'shared/styled/StyledCards/UICard.styled'
+import { UIContainer } from 'shared/styled/StyledWrappers/UIContainer.styled'
+import { UIFlexContainer } from 'shared/styled/StyledWrappers/UIFlexContainer.styled'
+import { UIAvatarImage } from 'shared/styled/StyledAvatars/UIAvatar.styled'
+import { UIText } from 'shared/styled/StyledLabels/UIText.styled'
+import { UITextSmooth } from 'shared/styled/StyledLabels/UIText.styled'
 import { IoMdGlobe } from 'react-icons/io'
 
 const NewsFeedContainer = () => {

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
+import { UIAvatarImage } from "shared/styled/StyledAvatars/UIAvatar.styled";
 import styled from "themes/styled";
 
 type ContainerBackgroundProps = {

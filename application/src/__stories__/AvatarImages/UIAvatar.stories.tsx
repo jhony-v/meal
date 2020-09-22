@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import StoryComponentProps from "__stories__/@types/StoryComponentProps";
-import { UIAvatar } from "shared/styled/UIAvatar.styled";
+import { UIAvatar } from "shared/styled/StyledAvatars/UIAvatar.styled";
 import { IoIosAlbums } from "react-icons/io";
 
 export default {

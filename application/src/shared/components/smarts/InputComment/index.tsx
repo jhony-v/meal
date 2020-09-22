@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import { UIContainer } from "shared/styled/UIContainer.styled";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
-import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
+import { UIAvatarImage } from "shared/styled/StyledAvatars/UIAvatar.styled";
 import InputCommentProvider from "./Providers/InputCommentProvider";
 import InputCommentTextArea from "./InputCommentTextArea";
 import InputCommentButtonSend from "./InputCommentButtonSend";

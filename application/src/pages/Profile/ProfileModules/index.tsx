@@ -1,6 +1,6 @@
 import React from 'react'
 import NewsFeedContainer from 'shared/packages/Publication/NewsFeed/NewsFeedContainer'
-import { UIInput } from 'shared/styled/UIInput.styled'
+import { UIInput } from 'shared/styled/StyledInputs/UIInput.styled'
 
 const ProfileModules = () => {
 	return (

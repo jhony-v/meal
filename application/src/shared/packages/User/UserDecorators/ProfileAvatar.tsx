@@ -1,5 +1,5 @@
 import React from "react";
-import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
+import { UIAvatarImage } from "shared/styled/StyledAvatars/UIAvatar.styled";
 
 const ProfileAvatar = ({ ...props }) => {
   return (

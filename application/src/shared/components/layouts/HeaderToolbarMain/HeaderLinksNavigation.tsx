@@ -1,6 +1,6 @@
 import React from 'react'
-import { UIContainer } from 'shared/styled/UIContainer.styled'
-import { UIFlexContainer } from 'shared/styled/UIFlexContainer.styled'
+import { UIContainer } from 'shared/styled/StyledWrappers/UIContainer.styled'
+import { UIFlexContainer } from 'shared/styled/StyledWrappers/UIFlexContainer.styled'
 import { IoIosHome } from 'react-icons/io'
 import { FaUser, FaGlobe, FaRegEnvelope, FaHashtag } from 'react-icons/fa'
 import routes from 'routes'

@@ -1,5 +1,5 @@
 import React from "react";
-import { UIInputTextArea } from "shared/styled/UIInput.styled";
+import { UIInputTextArea } from "shared/styled/StyledInputs/UIInput.styled";
 import { useInputCommentContext } from "./Providers/InputCommentProvider";
 
 export default ({ placeholder }: InputCommentTextAreaProps) => {

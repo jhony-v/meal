@@ -1,8 +1,8 @@
 import React from "react";
 import FlatList from "shared/components/dumbs/FlatList";
-import { UIContainer } from "shared/styled/UIContainer.styled";
-import { UITextBoldLarge } from "shared/styled/UIText.styled";
-import { UIButton } from "shared/styled/UIButton.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
+import { UITextBoldLarge } from "shared/styled/StyledLabels/UIText.styled";
+import { UIButton } from "shared/styled/StyledButtons/UIButton.styled";
 import HomeTrendItem from "./HomeTrendItem";
 import HomeTrendItemUserDetail from "./HomeTrendItemUserDetail";
 

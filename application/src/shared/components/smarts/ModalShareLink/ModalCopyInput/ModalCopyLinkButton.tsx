@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { UIText } from "shared/styled/UIText.styled";
+import { UIText } from "shared/styled/StyledLabels/UIText.styled";
 
 export default ({ linkShare }: any) => {
 	const [shared, setShared] = useState(false);

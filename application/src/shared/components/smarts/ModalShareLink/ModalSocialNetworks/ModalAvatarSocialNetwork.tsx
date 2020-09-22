@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { UIAvatarFeaturedOutlined } from "shared/styled/UIAvatar.styled";
+import { UIAvatarFeaturedOutlined } from "shared/styled/StyledAvatars/UIAvatar.styled";
 
 const variantsItem = {
 	closed: {

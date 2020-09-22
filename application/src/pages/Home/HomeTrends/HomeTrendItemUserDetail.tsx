@@ -1,8 +1,8 @@
 import React from "react";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
-import { UIContainer } from "shared/styled/UIContainer.styled";
-import { UITextSmooth } from "shared/styled/UIText.styled";
-import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
+import { UITextSmooth } from "shared/styled/StyledLabels/UIText.styled";
+import { UIAvatarImage } from "shared/styled/StyledAvatars/UIAvatar.styled";
 
 const HomeTrendItemUserDetail = ({ image, text } : any) => {
   return (

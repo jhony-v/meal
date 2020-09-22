@@ -1,13 +1,13 @@
 import React from "react";
-import { UIBackdrop } from "shared/styled/UIBackdrop.styled";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
-import { UICard } from "shared/styled/UICard.styled";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIBackdrop } from "shared/styled/StyledWrappers/UIBackdrop.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
+import { UICard } from "shared/styled/StyledCards/UICard.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 import ModalShareLinkInputPreview from "./ModalCopyInput/ModalShareLinkInputPreview";
 import ModalShareLinkHeader from "./ModalShareLinkHeader";
 import { motion } from "framer-motion";
 import loadable from "@loadable/component";
-import { UILoading } from "shared/styled/UILoading.styled";
+import { UILoading } from "shared/styled/StyledLoaders/UILoading.styled";
 
 const variants = {
 	closed: {

@@ -1,5 +1,5 @@
 import styled from "themes/styled";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
 
 export const ModalFlexBetween = styled(UIFlexContainer)`
 	align-items: center;

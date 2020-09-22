@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
-import { UIAvatarImage, UIAvatarFeaturedPrimary } from "shared/styled/UIAvatar.styled";
+import { UIAvatarImage, UIAvatarFeaturedPrimary } from "shared/styled/StyledAvatars/UIAvatar.styled";
 import StoryComponentProps from "__stories__/@types/StoryComponentProps";
 
 export default {

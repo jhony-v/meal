@@ -1,9 +1,9 @@
 import React, { memo, useState, ReactNode } from "react";
 import { IoIosClose } from "react-icons/io";
-import { UIChip } from "shared/styled/UIChip.styled";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIChip } from "shared/styled/StyledActionsCommon/UIChip.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 import { motion, AnimatePresence } from "framer-motion";
-import { UIChipCloseButton } from "shared/styled/UIChip.styled";
+import { UIChipCloseButton } from "shared/styled/StyledActionsCommon/UIChip.styled";
 
 function ChipSimple({ children, onCloseComplete, noRemove, ...restProps } : ChipSimpleProps & any) {
 	const [closed, setClosed] = useState<boolean>(true);

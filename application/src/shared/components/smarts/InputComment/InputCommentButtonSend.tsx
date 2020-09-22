@@ -1,6 +1,6 @@
 import React from "react";
-import { UIButton } from "shared/styled/UIButton.styled";
-import { UITextSmooth } from "shared/styled/UIText.styled";
+import { UIButton } from "shared/styled/StyledButtons/UIButton.styled";
+import { UITextSmooth } from "shared/styled/StyledLabels/UIText.styled";
 import { useInputCommentContext } from "./Providers/InputCommentProvider";
 import { ButtonSendFlex } from "./styled";
 

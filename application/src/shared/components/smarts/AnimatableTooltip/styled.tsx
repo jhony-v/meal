@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { UIContainerSpan } from "shared/styled/UIContainer.styled";
+import { UIContainerSpan } from "shared/styled/StyledWrappers/UIContainer.styled";
 import { color, compose, variant } from "styled-system";
 import styled from "themes/styled";
 
@@ -9,7 +9,7 @@ import styled from "themes/styled";
 export const UIContainerAnimated = motion.custom(UIContainerSpan);
 
 /**
- * Tooltip modal
+ * Tooltip modal to show and hide
  */
 export type UIToolTipAnimatedVariantProps = "default" | "light";
 export const UIToolTipAnimated = styled(motion.div)`

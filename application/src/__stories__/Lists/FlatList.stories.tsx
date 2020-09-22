@@ -2,8 +2,8 @@ import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import FlatList from "shared/components/dumbs/FlatList";
 import StoryComponentProps from "__stories__/@types/StoryComponentProps";
-import { UIContainer } from "shared/styled/UIContainer.styled";
-import { UIButton } from "shared/styled/UIButton.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
+import { UIButton } from "shared/styled/StyledButtons/UIButton.styled";
 
 export default {
 	title: "Lists/FlatList",

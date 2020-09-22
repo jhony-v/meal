@@ -1,8 +1,8 @@
 import React from "react";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
-import { UIText } from "shared/styled/UIText.styled";
-import { UIContainer } from "shared/styled/UIContainer.styled";
-import { UITextSmooth } from "shared/styled/UIText.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
+import { UIText } from "shared/styled/StyledLabels/UIText.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
+import { UITextSmooth } from "shared/styled/StyledLabels/UIText.styled";
 
 const HomeTrendItem = ({index, title , detail, children } : any) => {
   return (

@@ -1,5 +1,6 @@
 import styled from "themes/styled";
-import { space, layout, SpaceProps, LayoutProps, compose } from "styled-system";
+import { space, layout, compose } from "styled-system";
+import { InputTypes } from "./Input.types";
 
 /**
  * Input Type global base
@@ -14,8 +15,7 @@ export const UIInput = styled.input`
 /**
  * Textarea component
  */
-type UIInputTextAreaProps = SpaceProps & LayoutProps;
-export const UIInputTextArea = styled.textarea<UIInputTextAreaProps>`
+export const UIInputTextArea = styled.textarea<InputTypes.UIInputTextAreaProps>`
 	resize: none;
 	width: 100%;
 	&::-webkit-input-placeholder {

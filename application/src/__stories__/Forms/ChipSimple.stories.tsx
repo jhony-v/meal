@@ -23,17 +23,17 @@ const Template: StoryChipSimpleProps = (args) => (
 
 export const Default = Template.bind({});
 
-export const CChipUserFollower : StoryComponentProps<typeof ChipUserFollower> = (args) => {
+export const ChipUserfollower : StoryComponentProps<typeof ChipUserFollower> = (args) => {
 	return <ChipUserFollower {...args} />;
 };
-CChipUserFollower.args = {
+ChipUserfollower.args = {
 	avatar:"https://www.themandarin.com.au/wp-content/uploads/2020/07/space-astronaut.jpg" ,
 	username:"User Mark Jhonson",
 	description:"Software developer in facebook",
 	buttonContent:"Follow" ,
 }
 
-CChipUserFollower.argTypes = {
+ChipUserfollower.argTypes = {
 	avatar : {
 		control : {
 			type : "string"

@@ -1,7 +1,7 @@
 import React from 'react'
-import { UIText } from 'shared/styled/UIText.styled';
+import { UIText } from 'shared/styled/StyledLabels/UIText.styled';
 import { Link } from 'react-router-dom';
-import { UIContainer } from 'shared/styled/UIContainer.styled';
+import { UIContainer } from 'shared/styled/StyledWrappers/UIContainer.styled';
 import useStyleLinkMatch from 'shared/hooks/useStyleLinkMatch';
 
 const NavigatorLinkTab = (props : NavigatorLinkTabProps) => {

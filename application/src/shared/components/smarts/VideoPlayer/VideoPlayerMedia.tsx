@@ -1,11 +1,11 @@
 import React, { forwardRef } from "react";
 import { useVideoPlayerContext } from "./Providers/VideoPlayerProvider";
-import { UIVideoSimple } from "shared/styled/UIVideo.styled";
+import { VideoStream } from "./styled";
 
 const VideoPlayerMedia = forwardRef(({ src, ...props } : any, ref) => {
 	const { onToggleFullScreen, isFullscreen } = useVideoPlayerContext();
 	return (
-		<UIVideoSimple
+		<VideoStream
 			{...props}
 			preload="metadata"
 			ref={ref}

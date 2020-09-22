@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
+import { UIAvatarImage } from "shared/styled/StyledAvatars/UIAvatar.styled";
 
 function IconApplication() {
 	return (

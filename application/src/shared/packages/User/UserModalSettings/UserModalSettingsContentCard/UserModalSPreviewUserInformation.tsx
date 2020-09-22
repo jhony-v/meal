@@ -1,9 +1,9 @@
 import React from "react";
 import ProfileAvatar from "shared/packages/User/UserDecorators/ProfileAvatar";
-import { UIContainer } from "shared/styled/UIContainer.styled";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
-import { UIText, UITextSmooth } from "shared/styled/UIText.styled";
-import { UIButtonLink } from "shared/styled/UIButton.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
+import { UIText, UITextSmooth } from "shared/styled/StyledLabels/UIText.styled";
+import { UIButtonLink } from "shared/styled/StyledButtons/UIButton.styled";
 
 export default function UserModalSPreviewUserInformation() {
 	return (

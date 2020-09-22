@@ -1,9 +1,9 @@
 import React from "react";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
-import { UIContainer } from "shared/styled/UIContainer.styled";
-import { UIAvatar } from "shared/styled/UIAvatar.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
+import { UIAvatar } from "shared/styled/StyledAvatars/UIAvatar.styled";
 import { IoIosPaperPlane } from "react-icons/io";
-import { UIButton } from "shared/styled/UIButton.styled";
+import { UIButton } from "shared/styled/StyledButtons/UIButton.styled";
 
 const ProfileActionConnectSimple = () => {
 	return (

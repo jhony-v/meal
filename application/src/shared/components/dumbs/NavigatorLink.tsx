@@ -1,7 +1,7 @@
 import React, { memo, ReactNode } from "react";
-import { UIContainer } from "shared/styled/UIContainer.styled";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
-import { UIText } from "shared/styled/UIText.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
+import { UIText } from "shared/styled/StyledLabels/UIText.styled";
 import { useTheme } from "emotion-theming";
 import { NavLink } from "react-router-dom";
 import useAnimationHoverRotate from "shared/hooks/useAnimationHoverRotate";

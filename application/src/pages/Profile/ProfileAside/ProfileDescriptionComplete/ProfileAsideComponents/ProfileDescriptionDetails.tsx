@@ -1,6 +1,6 @@
 import React from "react";
-import { UIContainer } from "shared/styled/UIContainer.styled";
-import { UIText } from "shared/styled/UIText.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
+import { UIText } from "shared/styled/StyledLabels/UIText.styled";
 
 const ProfileDescriptionDetails = ({ title, children } : any) => {
 	return (

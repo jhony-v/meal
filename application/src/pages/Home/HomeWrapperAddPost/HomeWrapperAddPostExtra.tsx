@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosImage, IoIosHappy, IoIosPersonAdd } from "react-icons/io";
 import HomeWrapperExtraButton from "./HomeWrapperExtraButton";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
 
 export default () => {
     return (

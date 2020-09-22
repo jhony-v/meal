@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
-import { UIButtonFloating } from "shared/styled/UIButton.styled";
+import { UIButtonFloating } from "shared/styled/StyledButtons/UIButton.styled";
 import StoryComponentProps from "__stories__/@types/StoryComponentProps";
 import { ImBell } from "react-icons/im";
 

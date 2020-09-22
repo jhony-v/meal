@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import AnimatableTooltip from "shared/components/smarts/AnimatableTooltip";
-import { UIButton } from "shared/styled/UIButton.styled";
+import { UIButton } from "shared/styled/StyledButtons/UIButton.styled";
 import StoryComponentProps from "__stories__/@types/StoryComponentProps";
 
 export default {

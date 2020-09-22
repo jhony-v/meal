@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileDescriptionDetails from "../ProfileAsideComponents/ProfileDescriptionDetails";
-import { UITextSmooth } from "shared/styled/UIText.styled";
+import { UITextSmooth } from "shared/styled/StyledLabels/UIText.styled";
 
 const ProfileDetailsDescription = () => {
 	return (

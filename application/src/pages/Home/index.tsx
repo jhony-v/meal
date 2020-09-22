@@ -1,11 +1,11 @@
 import React from "react";
 import scss from "./Home.module.scss";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
 import Drawer from "shared/components/layouts/Drawer";
 import HomeTrends from "./HomeTrends";
 import HomeWrapperAddPost from "./HomeWrapperAddPost";
 import UserFollowers from "shared/packages/User/UserFollowers/UserFollowers";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 import NewsFeedContainer from "shared/packages/Publication/NewsFeed/NewsFeedContainer";
 
 export default function Home() {

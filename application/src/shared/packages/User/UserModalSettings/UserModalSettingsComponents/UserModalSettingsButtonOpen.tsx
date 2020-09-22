@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillCaretDown } from "react-icons/ai";
-import { UIAvatar } from "shared/styled/UIAvatar.styled";
+import { UIAvatar } from "shared/styled/StyledAvatars/UIAvatar.styled";
 
 export default function UserModalSettingsButtonOpen(props: UserModalSButtonOpenProps) {
 	return (

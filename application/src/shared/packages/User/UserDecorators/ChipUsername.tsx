@@ -1,9 +1,9 @@
 import React from "react";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
-import { UIText } from "shared/styled/UIText.styled";
-import { UIContainerSpan } from "shared/styled/UIContainer.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
+import { UIText } from "shared/styled/StyledLabels/UIText.styled";
+import { UIContainerSpan } from "shared/styled/StyledWrappers/UIContainer.styled";
 import UserModalSettings from "shared/packages/User/UserModalSettings/UserModalSettings";
-import { UIAvatarImage } from "shared/styled/UIAvatar.styled";
+import { UIAvatarImage } from "shared/styled/StyledAvatars/UIAvatar.styled";
 
 const ChipUsername = () => {
 	return (

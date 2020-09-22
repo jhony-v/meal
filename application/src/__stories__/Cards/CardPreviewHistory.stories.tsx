@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import CardPreviewHistory from "shared/components/smarts/CardPreviewHistory";
-import { UIGrid } from "shared/styled/UIGrid.styled";
+import { UIGrid } from "shared/styled/StyledWrappers/UIGrid.styled";
 
 export default {
 	title: "Cards/CardPreviewHistory",

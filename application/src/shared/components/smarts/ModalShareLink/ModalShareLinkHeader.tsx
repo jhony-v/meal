@@ -1,7 +1,7 @@
 import React from "react";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
-import { UIText } from "shared/styled/UIText.styled";
-import { UIAvatar } from "shared/styled/UIAvatar.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
+import { UIText } from "shared/styled/StyledLabels/UIText.styled";
+import { UIAvatar } from "shared/styled/StyledAvatars/UIAvatar.styled";
 import { IoIosClose } from "react-icons/io";
 
 const ModalShareLinkHeader = ({ onClick }: any) => {

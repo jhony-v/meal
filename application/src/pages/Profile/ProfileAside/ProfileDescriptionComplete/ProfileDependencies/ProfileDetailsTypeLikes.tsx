@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileDescriptionDetails from "../ProfileAsideComponents/ProfileDescriptionDetails";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
 import ChipSimple from "shared/components/dumbs/ChipSimple";
 
 const ProfileDetailsTypeLikes = () => {

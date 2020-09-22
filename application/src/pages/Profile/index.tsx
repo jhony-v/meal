@@ -1,7 +1,7 @@
 import React from "react";
 import Drawer from "shared/components/layouts/Drawer";
-import { UIContainer } from "shared/styled/UIContainer.styled";
-import { UIGrid } from "shared/styled/UIGrid.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
+import { UIGrid } from "shared/styled/StyledWrappers/UIGrid.styled";
 import ProfileAside from "./ProfileAside";
 import ProfileInterestingStuff from "./ProfileInterestingStuff";
 import ProfileModules from "./ProfileModules";

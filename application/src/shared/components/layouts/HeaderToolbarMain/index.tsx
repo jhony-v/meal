@@ -1,10 +1,10 @@
 import React from "react";
 import scss from "./HeaderToolbarMain.module.scss";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
 import ChipUsername from "shared/packages/User/UserDecorators/ChipUsername";
 import HeaderLinksNavigation from "./HeaderLinksNavigation";
 import IconApplication from "shared/packages/GeneralApplication/IconApplication";
-import { UIContainerLayoutFixed } from "shared/styled/UIContainer.styled";
+import { UIContainerLayoutFixed } from "shared/styled/StyledWrappers/UIContainer.styled";
 
 function HeaderToolbarMain() {
   return (

@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { UIContainer, UIContainerLayoutDrawer } from 'shared/styled/UIContainer.styled';
+import { UIContainer, UIContainerLayoutDrawer } from 'shared/styled/StyledWrappers/UIContainer.styled';
 import scss from "./Drawer.module.scss";
 
 function Drawer({ children, isDrawer } : DrawerProps) {

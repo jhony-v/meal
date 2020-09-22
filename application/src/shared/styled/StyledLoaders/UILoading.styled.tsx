@@ -1,12 +1,12 @@
 import styled from "themes/styled";
-import { keyframeRotateAnimation } from "./styledUtils/keyframes";
-import { computePositionAbsolute } from "./styledUtils/css";
+import { keyframeRotateAnimation } from "../styledUtils/keyframes";
+import { computePositionAbsolute } from "../styledUtils/css";
 import { css } from "@emotion/core";
 
 /**
  * Loading spinner global
  */
-export const UILoading = styled.div(({ theme }: any) => css`
+export const UILoading = styled.div(({ theme }) => css`
 		border-radius: 100%;
 		margin: auto;
 		width: 40px;

@@ -1,5 +1,5 @@
 import React from "react";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
 import { useRouteMatch } from "react-router-dom";
 import NavigatorLinkTab from "shared/components/dumbs/NavigatorLinkTab";
 

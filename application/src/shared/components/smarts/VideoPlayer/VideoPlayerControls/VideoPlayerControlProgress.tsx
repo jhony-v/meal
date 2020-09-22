@@ -1,7 +1,7 @@
 import React from "react";
 import dayjs from "dayjs";
-import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
-import { UIText } from "shared/styled/UIText.styled";
+import { UIFlexContainer } from "shared/styled/StyledWrappers/UIFlexContainer.styled";
+import { UIText } from "shared/styled/StyledLabels/UIText.styled";
 import { useVideoPlayerContext } from "../Providers/VideoPlayerProvider";
 import { VideoProgressScrollBar, VideoProgressScrollBarWrapper } from "../styled";
 

@@ -1,5 +1,5 @@
 import React, { memo, ReactNode } from "react";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 
 function FlatList<D>({ data, render, renderHeader, renderFooter } : FlatListProps<D>) {
   const _header = renderHeader && <UIContainer>{renderHeader}</UIContainer>;

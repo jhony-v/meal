@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import { UIText } from "shared/styled/UIText.styled";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIText } from "shared/styled/StyledLabels/UIText.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 import ModalCopyLinkButton from "./ModalCopyLinkButton";
 import { ModalInputPreviewLink } from "../styled";
 

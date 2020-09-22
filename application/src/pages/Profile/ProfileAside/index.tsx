@@ -1,5 +1,5 @@
 import React from "react";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 import ProfileUserBasicPreview from "./ProfileAsideUserPreview/ProfileUserBasicPreview";
 import ProfileAsideNavigatorContainer from "./ProfileAsideNavigator/ProfileAsideNavigatorContainer";
 import ProfileActionConnectSimple from "./ProfileAsideActionsConnect/ProfileActionConnectSimple";

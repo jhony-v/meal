@@ -1,5 +1,5 @@
 import styled from "themes/styled";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 import { motion } from "framer-motion";
 
 export const FooterControls = styled.div`
@@ -9,6 +9,19 @@ export const FooterControls = styled.div`
 	left: 0;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.4);
+`;
+
+type UIVideoSimpleProps = {
+	width?: string;
+	height?: string;
+	fullScreen?: boolean;
+};
+export const VideoStream = styled.video<UIVideoSimpleProps>`
+	user-select: none;
+	object-fit: cover;
+	display: block;
+	width: ${(props) => props.width || "100%"};
+	height: ${(props) => (props.fullScreen ? "100%" : props.height || "180px")};
 `;
 
 export const VideoPlayerWrapper = styled(UIContainer)`

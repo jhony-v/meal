@@ -1,5 +1,5 @@
 import React from "react";
-import { UIContainer } from "shared/styled/UIContainer.styled";
+import { UIContainer } from "shared/styled/StyledWrappers/UIContainer.styled";
 import { useTheme } from "emotion-theming";
 
 export default function HomeWrapperExtraButton({icon: IconButton,...restProps} : any) {
