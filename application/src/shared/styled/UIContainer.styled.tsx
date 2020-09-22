@@ -16,9 +16,9 @@ export const UIContainer = styled.div<UIContainerProps>`
 	${compose(layout,position,flex,space)};
 `
 
-export const UIContainerSpan = styled.span<LayoutProps & SpaceProps>`
+export const UIContainerSpan = styled.span<LayoutProps & SpaceProps & PositionProps>`
 	display:inline-block;
-	${compose(layout,space)};
+	${compose(layout,space,position)};
 `
 
 export const UIContainerLayoutDrawer = styled(UIContainer)`

@@ -4,7 +4,7 @@ import { UIFlexContainer } from "shared/styled/UIFlexContainer.styled";
 import { UIText } from "shared/styled/UIText.styled";
 import { useTheme } from "emotion-theming";
 import { NavLink } from "react-router-dom";
-import useAnimationHoverRotate from "shared/animations/useAnimationHoverRotate";
+import useAnimationHoverRotate from "shared/hooks/useAnimationHoverRotate";
 import { MThemes } from "themes/themes.types";
 
 const NavigatorLink = ({ to, icon: IconLink, children, exact } : NavigatorLinkProps) : JSX.Element => {

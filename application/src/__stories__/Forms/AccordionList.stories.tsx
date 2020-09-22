@@ -27,6 +27,14 @@ export const Default = () => {
 					aperiam veniam molestiae.
 				</UIContainer>
 			</AccordionList.Item>
+			<AccordionList.Item header="item 3">
+				<UIContainer p={3}>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+					nam accusamus aperiam possimus iste quos consectetur? Numquam vitae
+					quod minima, reiciendis totam in excepturi, dolor eveniet labore
+					aperiam veniam molestiae.
+				</UIContainer>
+			</AccordionList.Item>
 		</AccordionList>
 	);
 };
