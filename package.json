@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "build-application" : "cd application && npm start"
+    }
+}
