@@ -12,5 +12,7 @@
 		"javascript",
 		"typescript"
 	],
-	"git.ignoreLimitWarning": true
+	"git.ignoreLimitWarning": true,
+	"files.autoSave": "onFocusChange",
+	"files.autoSaveDelay": 600
 }
